@@ -1,0 +1,5 @@
+C:/DigitalKnob/lib/zlib/CMakeFiles/ALL_BUILD.dir
+C:/DigitalKnob/lib/zlib/CMakeFiles/ZERO_CHECK.dir
+C:/DigitalKnob/lib/zlib/CMakeFiles/example.dir
+C:/DigitalKnob/lib/zlib/CMakeFiles/minigzip.dir
+C:/DigitalKnob/lib/zlib/CMakeFiles/zlib.dir

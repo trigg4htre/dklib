@@ -1,0 +1,184 @@
+\hypertarget{class_d_k_color_picker}{\section{D\-K\-Color\-Picker Class Reference}
+\label{class_d_k_color_picker}\index{D\-K\-Color\-Picker@{D\-K\-Color\-Picker}}
+}
+
+
+{\ttfamily \#include $<$D\-K\-Color\-Picker.\-h$>$}
+
+Inheritance diagram for D\-K\-Color\-Picker\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_d_k_color_picker}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_d_k_color_picker_aacbb6d4a2aa1f9fb3ef19f21d28f2bc4}{D\-K\-Color\-Picker} ()
+\item 
+void \hyperlink{class_d_k_color_picker_ab052533e9c0da56e4daeab97a0c50a9e}{Create} ()
+\item 
+\hyperlink{class_d_k_color_picker_a80a5165afcc71278b1b53cdaae4ee673}{$\sim$\-D\-K\-Color\-Picker} ()
+\item 
+void \hyperlink{class_d_k_color_picker_acf46d3dd387795292807df1125bdca9e}{On\-Text\-Button} (\hyperlink{class_d_k_event}{D\-K\-Event} $\ast$\hyperlink{class_d_k_event_a3deebb932ed734363c4ece87971bc45f}{event})
+\item 
+void \hyperlink{class_d_k_color_picker_a6280c7eab9ab687ad049b92116a5c74e}{On\-Window\-Close} (S\-D\-L\-\_\-\-Event $\ast$\hyperlink{class_d_k_event_a3deebb932ed734363c4ece87971bc45f}{event})
+\item 
+void \hyperlink{class_d_k_color_picker_a3eb4d359074376e302943f239722a299}{On\-Mouse\-Button\-Down} (S\-D\-L\-\_\-\-Event $\ast$\hyperlink{class_d_k_event_a3deebb932ed734363c4ece87971bc45f}{event})
+\item 
+void \hyperlink{class_d_k_color_picker_ae05688bd9bac8f9872c584e01ba10dbd}{On\-Mouse\-Motion} (S\-D\-L\-\_\-\-Event $\ast$\hyperlink{class_d_k_event_a3deebb932ed734363c4ece87971bc45f}{event})
+\item 
+void \hyperlink{class_d_k_color_picker_a89ef83f5e94f291fd3c2e11e0e71feeb}{Link\-Color\-Picker\-Event} (void($\ast$\hyperlink{class_d_k_event_adffe2183781aba801fb8ec90370598bf}{Color\-Picker\-Event})(void $\ast$, \hyperlink{class_d_k_event}{D\-K\-Event} $\ast$\hyperlink{class_d_k_event_a3deebb932ed734363c4ece87971bc45f}{event}), void $\ast$arg, int \hyperlink{class_d_k_event_a46877918e12fcb3b2c8988379b6fa6fa}{id})
+\item 
+\hyperlink{class_d_k_color}{D\-K\-Color} \hyperlink{class_d_k_color_picker_a0ec7c73044dac4e52b567fc2f87cb216}{Get\-Current\-Color} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+void($\ast$ \hyperlink{class_d_k_color_picker_aedb0961fdfaed5d6f21bb31a51df3f7b}{On\-Color\-Picker} )(void $\ast$, \hyperlink{class_d_k_event}{D\-K\-Event} $\ast$)
+\item 
+void $\ast$ \hyperlink{class_d_k_color_picker_a560f58119ce901c3b4adc7c25b6680ae}{m\-\_\-arg}
+\item 
+\hyperlink{class_d_k_font}{D\-K\-Font} \hyperlink{class_d_k_color_picker_af3a1bc4a39f8a262febd12cc14310963}{font}
+\item 
+\hyperlink{class_d_k_image}{D\-K\-Image} \hyperlink{class_d_k_color_picker_a00ef57610642745db44a477ada9da610}{palette}
+\item 
+\hyperlink{class_d_k_image}{D\-K\-Image} \hyperlink{class_d_k_color_picker_abfc3a9740a566b1e3d505f055ee3690a}{alpha}
+\item 
+\hyperlink{class_d_k_image}{D\-K\-Image} \hyperlink{class_d_k_color_picker_a651f66c199ad4886c09d532775262b7b}{checkers1}
+\item 
+\hyperlink{class_d_k_square}{D\-K\-Square} \hyperlink{class_d_k_color_picker_aacce85e3f5c5e1f45a456a96484bccb7}{current\-\_\-color}
+\item 
+\hyperlink{class_d_k_image}{D\-K\-Image} \hyperlink{class_d_k_color_picker_a13a4259afa8fb58ed8b371d6dba32f91}{checkers2}
+\item 
+\hyperlink{class_d_k_square}{D\-K\-Square} \hyperlink{class_d_k_color_picker_ab243ee53e2392d8496e0ff53910aa1af}{selected\-\_\-color}
+\item 
+\hyperlink{class_d_k_text_button}{D\-K\-Text\-Button} \hyperlink{class_d_k_color_picker_ac5b7a15c4d4cb455a1411967265e62b0}{ok}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_d_k_color_picker_aacbb6d4a2aa1f9fb3ef19f21d28f2bc4}{\index{D\-K\-Color\-Picker@{D\-K\-Color\-Picker}!D\-K\-Color\-Picker@{D\-K\-Color\-Picker}}
+\index{D\-K\-Color\-Picker@{D\-K\-Color\-Picker}!DKColorPicker@{D\-K\-Color\-Picker}}
+\subsubsection[{D\-K\-Color\-Picker}]{\setlength{\rightskip}{0pt plus 5cm}D\-K\-Color\-Picker\-::\-D\-K\-Color\-Picker (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_color_picker_aacbb6d4a2aa1f9fb3ef19f21d28f2bc4}
+\hypertarget{class_d_k_color_picker_a80a5165afcc71278b1b53cdaae4ee673}{\index{D\-K\-Color\-Picker@{D\-K\-Color\-Picker}!$\sim$\-D\-K\-Color\-Picker@{$\sim$\-D\-K\-Color\-Picker}}
+\index{$\sim$\-D\-K\-Color\-Picker@{$\sim$\-D\-K\-Color\-Picker}!DKColorPicker@{D\-K\-Color\-Picker}}
+\subsubsection[{$\sim$\-D\-K\-Color\-Picker}]{\setlength{\rightskip}{0pt plus 5cm}D\-K\-Color\-Picker\-::$\sim$\-D\-K\-Color\-Picker (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_color_picker_a80a5165afcc71278b1b53cdaae4ee673}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_d_k_color_picker_ab052533e9c0da56e4daeab97a0c50a9e}{\index{D\-K\-Color\-Picker@{D\-K\-Color\-Picker}!Create@{Create}}
+\index{Create@{Create}!DKColorPicker@{D\-K\-Color\-Picker}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Color\-Picker\-::\-Create (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_color_picker_ab052533e9c0da56e4daeab97a0c50a9e}
+\hypertarget{class_d_k_color_picker_a0ec7c73044dac4e52b567fc2f87cb216}{\index{D\-K\-Color\-Picker@{D\-K\-Color\-Picker}!Get\-Current\-Color@{Get\-Current\-Color}}
+\index{Get\-Current\-Color@{Get\-Current\-Color}!DKColorPicker@{D\-K\-Color\-Picker}}
+\subsubsection[{Get\-Current\-Color}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-K\-Color} D\-K\-Color\-Picker\-::\-Get\-Current\-Color (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_color_picker_a0ec7c73044dac4e52b567fc2f87cb216}
+\hypertarget{class_d_k_color_picker_a89ef83f5e94f291fd3c2e11e0e71feeb}{\index{D\-K\-Color\-Picker@{D\-K\-Color\-Picker}!Link\-Color\-Picker\-Event@{Link\-Color\-Picker\-Event}}
+\index{Link\-Color\-Picker\-Event@{Link\-Color\-Picker\-Event}!DKColorPicker@{D\-K\-Color\-Picker}}
+\subsubsection[{Link\-Color\-Picker\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Color\-Picker\-::\-Link\-Color\-Picker\-Event (
+\begin{DoxyParamCaption}
+\item[{void($\ast$)(void $\ast$, {\bf D\-K\-Event} $\ast${\bf event})}]{Color\-Picker\-Event, }
+\item[{void $\ast$}]{arg, }
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_color_picker_a89ef83f5e94f291fd3c2e11e0e71feeb}
+\hypertarget{class_d_k_color_picker_a3eb4d359074376e302943f239722a299}{\index{D\-K\-Color\-Picker@{D\-K\-Color\-Picker}!On\-Mouse\-Button\-Down@{On\-Mouse\-Button\-Down}}
+\index{On\-Mouse\-Button\-Down@{On\-Mouse\-Button\-Down}!DKColorPicker@{D\-K\-Color\-Picker}}
+\subsubsection[{On\-Mouse\-Button\-Down}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Color\-Picker\-::\-On\-Mouse\-Button\-Down (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_k_color_picker_a3eb4d359074376e302943f239722a299}
+
+
+Reimplemented from \hyperlink{class_d_k_window_abdf86d93190b7ba0ec1702421e3c653a}{D\-K\-Window}.
+
+\hypertarget{class_d_k_color_picker_ae05688bd9bac8f9872c584e01ba10dbd}{\index{D\-K\-Color\-Picker@{D\-K\-Color\-Picker}!On\-Mouse\-Motion@{On\-Mouse\-Motion}}
+\index{On\-Mouse\-Motion@{On\-Mouse\-Motion}!DKColorPicker@{D\-K\-Color\-Picker}}
+\subsubsection[{On\-Mouse\-Motion}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Color\-Picker\-::\-On\-Mouse\-Motion (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_k_color_picker_ae05688bd9bac8f9872c584e01ba10dbd}
+
+
+Reimplemented from \hyperlink{class_d_k_event_a8082934ad6166b2a493851c633a78708}{D\-K\-Event}.
+
+\hypertarget{class_d_k_color_picker_acf46d3dd387795292807df1125bdca9e}{\index{D\-K\-Color\-Picker@{D\-K\-Color\-Picker}!On\-Text\-Button@{On\-Text\-Button}}
+\index{On\-Text\-Button@{On\-Text\-Button}!DKColorPicker@{D\-K\-Color\-Picker}}
+\subsubsection[{On\-Text\-Button}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Color\-Picker\-::\-On\-Text\-Button (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-K\-Event} $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_k_color_picker_acf46d3dd387795292807df1125bdca9e}
+
+
+Reimplemented from \hyperlink{class_d_k_event_abce060932c2e6306209987a60b2886fe}{D\-K\-Event}.
+
+\hypertarget{class_d_k_color_picker_a6280c7eab9ab687ad049b92116a5c74e}{\index{D\-K\-Color\-Picker@{D\-K\-Color\-Picker}!On\-Window\-Close@{On\-Window\-Close}}
+\index{On\-Window\-Close@{On\-Window\-Close}!DKColorPicker@{D\-K\-Color\-Picker}}
+\subsubsection[{On\-Window\-Close}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Color\-Picker\-::\-On\-Window\-Close (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_k_color_picker_a6280c7eab9ab687ad049b92116a5c74e}
+
+
+Reimplemented from \hyperlink{class_d_k_event_a6161540936445623e8a208c01686bcc6}{D\-K\-Event}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_d_k_color_picker_abfc3a9740a566b1e3d505f055ee3690a}{\index{D\-K\-Color\-Picker@{D\-K\-Color\-Picker}!alpha@{alpha}}
+\index{alpha@{alpha}!DKColorPicker@{D\-K\-Color\-Picker}}
+\subsubsection[{alpha}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-K\-Image} D\-K\-Color\-Picker\-::alpha}}\label{class_d_k_color_picker_abfc3a9740a566b1e3d505f055ee3690a}
+\hypertarget{class_d_k_color_picker_a651f66c199ad4886c09d532775262b7b}{\index{D\-K\-Color\-Picker@{D\-K\-Color\-Picker}!checkers1@{checkers1}}
+\index{checkers1@{checkers1}!DKColorPicker@{D\-K\-Color\-Picker}}
+\subsubsection[{checkers1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-K\-Image} D\-K\-Color\-Picker\-::checkers1}}\label{class_d_k_color_picker_a651f66c199ad4886c09d532775262b7b}
+\hypertarget{class_d_k_color_picker_a13a4259afa8fb58ed8b371d6dba32f91}{\index{D\-K\-Color\-Picker@{D\-K\-Color\-Picker}!checkers2@{checkers2}}
+\index{checkers2@{checkers2}!DKColorPicker@{D\-K\-Color\-Picker}}
+\subsubsection[{checkers2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-K\-Image} D\-K\-Color\-Picker\-::checkers2}}\label{class_d_k_color_picker_a13a4259afa8fb58ed8b371d6dba32f91}
+\hypertarget{class_d_k_color_picker_aacce85e3f5c5e1f45a456a96484bccb7}{\index{D\-K\-Color\-Picker@{D\-K\-Color\-Picker}!current\-\_\-color@{current\-\_\-color}}
+\index{current\-\_\-color@{current\-\_\-color}!DKColorPicker@{D\-K\-Color\-Picker}}
+\subsubsection[{current\-\_\-color}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-K\-Square} D\-K\-Color\-Picker\-::current\-\_\-color}}\label{class_d_k_color_picker_aacce85e3f5c5e1f45a456a96484bccb7}
+\hypertarget{class_d_k_color_picker_af3a1bc4a39f8a262febd12cc14310963}{\index{D\-K\-Color\-Picker@{D\-K\-Color\-Picker}!font@{font}}
+\index{font@{font}!DKColorPicker@{D\-K\-Color\-Picker}}
+\subsubsection[{font}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-K\-Font} D\-K\-Color\-Picker\-::font}}\label{class_d_k_color_picker_af3a1bc4a39f8a262febd12cc14310963}
+\hypertarget{class_d_k_color_picker_a560f58119ce901c3b4adc7c25b6680ae}{\index{D\-K\-Color\-Picker@{D\-K\-Color\-Picker}!m\-\_\-arg@{m\-\_\-arg}}
+\index{m\-\_\-arg@{m\-\_\-arg}!DKColorPicker@{D\-K\-Color\-Picker}}
+\subsubsection[{m\-\_\-arg}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ D\-K\-Color\-Picker\-::m\-\_\-arg}}\label{class_d_k_color_picker_a560f58119ce901c3b4adc7c25b6680ae}
+\hypertarget{class_d_k_color_picker_ac5b7a15c4d4cb455a1411967265e62b0}{\index{D\-K\-Color\-Picker@{D\-K\-Color\-Picker}!ok@{ok}}
+\index{ok@{ok}!DKColorPicker@{D\-K\-Color\-Picker}}
+\subsubsection[{ok}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-K\-Text\-Button} D\-K\-Color\-Picker\-::ok}}\label{class_d_k_color_picker_ac5b7a15c4d4cb455a1411967265e62b0}
+\hypertarget{class_d_k_color_picker_aedb0961fdfaed5d6f21bb31a51df3f7b}{\index{D\-K\-Color\-Picker@{D\-K\-Color\-Picker}!On\-Color\-Picker@{On\-Color\-Picker}}
+\index{On\-Color\-Picker@{On\-Color\-Picker}!DKColorPicker@{D\-K\-Color\-Picker}}
+\subsubsection[{On\-Color\-Picker}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ D\-K\-Color\-Picker\-::\-On\-Color\-Picker)(void $\ast$, {\bf D\-K\-Event} $\ast$)}}\label{class_d_k_color_picker_aedb0961fdfaed5d6f21bb31a51df3f7b}
+\hypertarget{class_d_k_color_picker_a00ef57610642745db44a477ada9da610}{\index{D\-K\-Color\-Picker@{D\-K\-Color\-Picker}!palette@{palette}}
+\index{palette@{palette}!DKColorPicker@{D\-K\-Color\-Picker}}
+\subsubsection[{palette}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-K\-Image} D\-K\-Color\-Picker\-::palette}}\label{class_d_k_color_picker_a00ef57610642745db44a477ada9da610}
+\hypertarget{class_d_k_color_picker_ab243ee53e2392d8496e0ff53910aa1af}{\index{D\-K\-Color\-Picker@{D\-K\-Color\-Picker}!selected\-\_\-color@{selected\-\_\-color}}
+\index{selected\-\_\-color@{selected\-\_\-color}!DKColorPicker@{D\-K\-Color\-Picker}}
+\subsubsection[{selected\-\_\-color}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-K\-Square} D\-K\-Color\-Picker\-::selected\-\_\-color}}\label{class_d_k_color_picker_ab243ee53e2392d8496e0ff53910aa1af}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+G\-:/\-Programming/\-Digital\-Knob/\-Libs/digitalknob/\hyperlink{_d_k_color_picker_8h}{D\-K\-Color\-Picker.\-h}\item 
+G\-:/\-Programming/\-Digital\-Knob/\-Libs/digitalknob/\hyperlink{_d_k_color_picker_8cpp}{D\-K\-Color\-Picker.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,303 @@
+\hypertarget{class_stack_walker}{\section{Stack\-Walker Class Reference}
+\label{class_stack_walker}\index{Stack\-Walker@{Stack\-Walker}}
+}
+
+
+{\ttfamily \#include $<$Stack\-Walker.\-h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_stack_walker_1_1_callstack_entry}{Callstack\-Entry}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2}{Stack\-Walk\-Options} \{ \\*
+\hyperlink{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2a217edd06baf71722717097d0dfa1f766}{Retrieve\-None} = 0, 
+\hyperlink{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2a7e8ceb867b904c580c6f745f5d182802}{Retrieve\-Symbol} = 1, 
+\hyperlink{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2abb12b49bb039b045e1d8aeb530bc4941}{Retrieve\-Line} = 2, 
+\hyperlink{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2aa84a7a674a45b13f77ca173e44917cbf}{Retrieve\-Module\-Info} = 4, 
+\\*
+\hyperlink{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2aa955b878359106a2494f579faccb2354}{Retrieve\-File\-Version} = 8, 
+\hyperlink{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2a91202654d609646725e168223b0f1551}{Retrieve\-Verbose} = 0x\-F, 
+\hyperlink{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2a80f3f984925d8c6e322d087770edf6c6}{Sym\-Build\-Path} = 0x10, 
+\hyperlink{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2a9a1c39fb96215df2b05d12c02d198698}{Sym\-Use\-Sym\-Srv} = 0x20, 
+\\*
+\hyperlink{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2aa8ab514748c8fed1fcaf8b50d35123cb}{Sym\-All} = 0x30, 
+\hyperlink{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2a2955cdf5dd2683a3951f89d41d8b9c3c}{Options\-All} = 0x3\-F
+ \}
+\item 
+enum \{ \hyperlink{class_stack_walker_a1744699928d413e6223b3c16df901ccfa9be56eae1b6e1edf9fbcd5df5e7dbb91}{S\-T\-A\-C\-K\-W\-A\-L\-K\-\_\-\-M\-A\-X\-\_\-\-N\-A\-M\-E\-L\-E\-N} = 1024
+ \}
+\item 
+typedef enum \\*
+\hyperlink{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2}{Stack\-Walker\-::\-Stack\-Walk\-Options} \hyperlink{class_stack_walker_a547d82a4196c05a09fd365d83ca9cd44}{Stack\-Walk\-Options}
+\item 
+typedef B\-O\-O\-L(\-\_\-\-\_\-stdcall $\ast$ \hyperlink{class_stack_walker_a61956985807c0d6c582304c78c6dc85c}{P\-Read\-Process\-Memory\-Routine} )(H\-A\-N\-D\-L\-E h\-Process, \hyperlink{_stack_walker_8h_a97fb241c597b99bcb965858f53cacac4}{D\-W\-O\-R\-D64} qw\-Base\-Address, P\-V\-O\-I\-D lp\-Buffer, D\-W\-O\-R\-D n\-Size, L\-P\-D\-W\-O\-R\-D lp\-Number\-Of\-Bytes\-Read, L\-P\-V\-O\-I\-D p\-User\-Data)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_stack_walker_a70ca0d3bd1d2b015815fc951ab0442df}{Stack\-Walker} (int options=\hyperlink{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2a2955cdf5dd2683a3951f89d41d8b9c3c}{Options\-All}, L\-P\-C\-S\-T\-R sz\-Sym\-Path=N\-U\-L\-L, D\-W\-O\-R\-D dw\-Process\-Id=Get\-Current\-Process\-Id(), H\-A\-N\-D\-L\-E h\-Process=Get\-Current\-Process())
+\item 
+\hyperlink{class_stack_walker_af36f5f0c916b2f350363c7ec8a8de15a}{Stack\-Walker} (D\-W\-O\-R\-D dw\-Process\-Id, H\-A\-N\-D\-L\-E h\-Process)
+\item 
+virtual \hyperlink{class_stack_walker_ae208af01c973541f335e5391677f2492}{$\sim$\-Stack\-Walker} ()
+\item 
+B\-O\-O\-L \hyperlink{class_stack_walker_a3e0e7f1329f594d89362309bf8fe2b21}{Load\-Modules} ()
+\item 
+B\-O\-O\-L \hyperlink{class_stack_walker_a26bacb66734ee2d1de20d51070b825ba}{Show\-Callstack} (H\-A\-N\-D\-L\-E h\-Thread=Get\-Current\-Thread(), const C\-O\-N\-T\-E\-X\-T $\ast$context=N\-U\-L\-L, \hyperlink{class_stack_walker_a61956985807c0d6c582304c78c6dc85c}{P\-Read\-Process\-Memory\-Routine} read\-Memory\-Function=N\-U\-L\-L, L\-P\-V\-O\-I\-D p\-User\-Data=N\-U\-L\-L)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_stack_walker_a6de6dcd460d11abee0c498fb55cba96e}{Callstack\-Entry\-Type} \{ \hyperlink{class_stack_walker_a6de6dcd460d11abee0c498fb55cba96eaa638808af6959ce776853d2b1c706bba}{first\-Entry}, 
+\hyperlink{class_stack_walker_a6de6dcd460d11abee0c498fb55cba96ea3f79f8f3d18eca44ec7d1c4f403edd37}{next\-Entry}, 
+\hyperlink{class_stack_walker_a6de6dcd460d11abee0c498fb55cba96ea953ece8d7477db020bbe434a96ad7803}{last\-Entry}
+ \}
+\item 
+typedef struct \\*
+\hyperlink{struct_stack_walker_1_1_callstack_entry}{Stack\-Walker\-::\-Callstack\-Entry} \hyperlink{class_stack_walker_ad0ad9c321961aad36f54779a8ca4ec12}{Callstack\-Entry}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_stack_walker_a7feaf96c40d81dcbd0bfcd34f78eaa30}{On\-Sym\-Init} (L\-P\-C\-S\-T\-R sz\-Search\-Path, D\-W\-O\-R\-D sym\-Options, L\-P\-C\-S\-T\-R sz\-User\-Name)
+\item 
+virtual void \hyperlink{class_stack_walker_a64c6c648aee9a33e881f449aecd51912}{On\-Load\-Module} (L\-P\-C\-S\-T\-R img, L\-P\-C\-S\-T\-R mod, \hyperlink{_stack_walker_8h_a97fb241c597b99bcb965858f53cacac4}{D\-W\-O\-R\-D64} base\-Addr, D\-W\-O\-R\-D size, D\-W\-O\-R\-D result, L\-P\-C\-S\-T\-R sym\-Type, L\-P\-C\-S\-T\-R pdb\-Name, U\-L\-O\-N\-G\-L\-O\-N\-G file\-Version)
+\item 
+virtual void \hyperlink{class_stack_walker_a0fbb480cd30e9ff437a4baf9a18c2372}{On\-Callstack\-Entry} (\hyperlink{class_stack_walker_a6de6dcd460d11abee0c498fb55cba96e}{Callstack\-Entry\-Type} e\-Type, \hyperlink{struct_stack_walker_1_1_callstack_entry}{Callstack\-Entry} \&entry)
+\item 
+virtual void \hyperlink{class_stack_walker_ab2220ae2084e72d2f0f005784c21e8dc}{On\-Dbg\-Help\-Err} (L\-P\-C\-S\-T\-R sz\-Func\-Name, D\-W\-O\-R\-D gle, \hyperlink{_stack_walker_8h_a97fb241c597b99bcb965858f53cacac4}{D\-W\-O\-R\-D64} addr)
+\item 
+virtual void \hyperlink{class_stack_walker_a20ec3b0a1ba7723e113889135989ea6b}{On\-Output} (L\-P\-C\-S\-T\-R sz\-Text)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static B\-O\-O\-L \-\_\-\-\_\-stdcall \hyperlink{class_stack_walker_a3428311b98b8e8366419e9e5467c294d}{my\-Read\-Proc\-Mem} (H\-A\-N\-D\-L\-E h\-Process, \hyperlink{_stack_walker_8h_a97fb241c597b99bcb965858f53cacac4}{D\-W\-O\-R\-D64} qw\-Base\-Address, P\-V\-O\-I\-D lp\-Buffer, D\-W\-O\-R\-D n\-Size, L\-P\-D\-W\-O\-R\-D lp\-Number\-Of\-Bytes\-Read)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_stack_walker_internal}{Stack\-Walker\-Internal} $\ast$ \hyperlink{class_stack_walker_a13524e6f4cd89a8b3a3fd378e3cd3f55}{m\-\_\-sw}
+\item 
+H\-A\-N\-D\-L\-E \hyperlink{class_stack_walker_a7db892daef90d499084f5e9dd5294ab9}{m\-\_\-h\-Process}
+\item 
+D\-W\-O\-R\-D \hyperlink{class_stack_walker_adf8bda5434856605a470d42c3db49b38}{m\-\_\-dw\-Process\-Id}
+\item 
+B\-O\-O\-L \hyperlink{class_stack_walker_a20279e66ed48886369111d47dee4762f}{m\-\_\-modules\-Loaded}
+\item 
+L\-P\-S\-T\-R \hyperlink{class_stack_walker_aff1b39f2ea31f24b4a693928cdf5549d}{m\-\_\-sz\-Sym\-Path}
+\item 
+int \hyperlink{class_stack_walker_a3534033da2986b16d5f15f0b4feefa54}{m\-\_\-options}
+\item 
+int \hyperlink{class_stack_walker_acc7320865d2e5ce2d33536e94208c1f0}{m\-\_\-\-Max\-Recursion\-Count}
+\item 
+friend \hyperlink{class_stack_walker_ab0d4fa92227f651635d04da2947b873a}{Stack\-Walker\-Internal}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_stack_walker_ad0ad9c321961aad36f54779a8ca4ec12}{\index{Stack\-Walker@{Stack\-Walker}!Callstack\-Entry@{Callstack\-Entry}}
+\index{Callstack\-Entry@{Callstack\-Entry}!StackWalker@{Stack\-Walker}}
+\subsubsection[{Callstack\-Entry}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Stack\-Walker\-::\-Callstack\-Entry}  {\bf Stack\-Walker\-::\-Callstack\-Entry}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_stack_walker_ad0ad9c321961aad36f54779a8ca4ec12}
+\hypertarget{class_stack_walker_a61956985807c0d6c582304c78c6dc85c}{\index{Stack\-Walker@{Stack\-Walker}!P\-Read\-Process\-Memory\-Routine@{P\-Read\-Process\-Memory\-Routine}}
+\index{P\-Read\-Process\-Memory\-Routine@{P\-Read\-Process\-Memory\-Routine}!StackWalker@{Stack\-Walker}}
+\subsubsection[{P\-Read\-Process\-Memory\-Routine}]{\setlength{\rightskip}{0pt plus 5cm}typedef B\-O\-O\-L(\-\_\-\-\_\-stdcall $\ast$ Stack\-Walker\-::\-P\-Read\-Process\-Memory\-Routine)(H\-A\-N\-D\-L\-E h\-Process, {\bf D\-W\-O\-R\-D64} qw\-Base\-Address, P\-V\-O\-I\-D lp\-Buffer, D\-W\-O\-R\-D n\-Size, L\-P\-D\-W\-O\-R\-D lp\-Number\-Of\-Bytes\-Read, L\-P\-V\-O\-I\-D p\-User\-Data)}}\label{class_stack_walker_a61956985807c0d6c582304c78c6dc85c}
+\hypertarget{class_stack_walker_a547d82a4196c05a09fd365d83ca9cd44}{\index{Stack\-Walker@{Stack\-Walker}!Stack\-Walk\-Options@{Stack\-Walk\-Options}}
+\index{Stack\-Walk\-Options@{Stack\-Walk\-Options}!StackWalker@{Stack\-Walker}}
+\subsubsection[{Stack\-Walk\-Options}]{\setlength{\rightskip}{0pt plus 5cm}typedef enum {\bf Stack\-Walker\-::\-Stack\-Walk\-Options}  {\bf Stack\-Walker\-::\-Stack\-Walk\-Options}}}\label{class_stack_walker_a547d82a4196c05a09fd365d83ca9cd44}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_stack_walker_a1744699928d413e6223b3c16df901ccf}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{class_stack_walker_a1744699928d413e6223b3c16df901ccf}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\-T\-A\-C\-K\-W\-A\-L\-K\-\_\-\-M\-A\-X\-\_\-\-N\-A\-M\-E\-L\-E\-N@{S\-T\-A\-C\-K\-W\-A\-L\-K\-\_\-\-M\-A\-X\-\_\-\-N\-A\-M\-E\-L\-E\-N}!Stack\-Walker@{Stack\-Walker}}\index{Stack\-Walker@{Stack\-Walker}!S\-T\-A\-C\-K\-W\-A\-L\-K\-\_\-\-M\-A\-X\-\_\-\-N\-A\-M\-E\-L\-E\-N@{S\-T\-A\-C\-K\-W\-A\-L\-K\-\_\-\-M\-A\-X\-\_\-\-N\-A\-M\-E\-L\-E\-N}}\item[{\em 
+\hypertarget{class_stack_walker_a1744699928d413e6223b3c16df901ccfa9be56eae1b6e1edf9fbcd5df5e7dbb91}{S\-T\-A\-C\-K\-W\-A\-L\-K\-\_\-\-M\-A\-X\-\_\-\-N\-A\-M\-E\-L\-E\-N}\label{class_stack_walker_a1744699928d413e6223b3c16df901ccfa9be56eae1b6e1edf9fbcd5df5e7dbb91}
+}]\end{description}
+\end{Desc}
+\hypertarget{class_stack_walker_a6de6dcd460d11abee0c498fb55cba96e}{\index{Stack\-Walker@{Stack\-Walker}!Callstack\-Entry\-Type@{Callstack\-Entry\-Type}}
+\index{Callstack\-Entry\-Type@{Callstack\-Entry\-Type}!StackWalker@{Stack\-Walker}}
+\subsubsection[{Callstack\-Entry\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Stack\-Walker\-::\-Callstack\-Entry\-Type}\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_stack_walker_a6de6dcd460d11abee0c498fb55cba96e}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{first\-Entry@{first\-Entry}!Stack\-Walker@{Stack\-Walker}}\index{Stack\-Walker@{Stack\-Walker}!first\-Entry@{first\-Entry}}\item[{\em 
+\hypertarget{class_stack_walker_a6de6dcd460d11abee0c498fb55cba96eaa638808af6959ce776853d2b1c706bba}{first\-Entry}\label{class_stack_walker_a6de6dcd460d11abee0c498fb55cba96eaa638808af6959ce776853d2b1c706bba}
+}]\index{next\-Entry@{next\-Entry}!Stack\-Walker@{Stack\-Walker}}\index{Stack\-Walker@{Stack\-Walker}!next\-Entry@{next\-Entry}}\item[{\em 
+\hypertarget{class_stack_walker_a6de6dcd460d11abee0c498fb55cba96ea3f79f8f3d18eca44ec7d1c4f403edd37}{next\-Entry}\label{class_stack_walker_a6de6dcd460d11abee0c498fb55cba96ea3f79f8f3d18eca44ec7d1c4f403edd37}
+}]\index{last\-Entry@{last\-Entry}!Stack\-Walker@{Stack\-Walker}}\index{Stack\-Walker@{Stack\-Walker}!last\-Entry@{last\-Entry}}\item[{\em 
+\hypertarget{class_stack_walker_a6de6dcd460d11abee0c498fb55cba96ea953ece8d7477db020bbe434a96ad7803}{last\-Entry}\label{class_stack_walker_a6de6dcd460d11abee0c498fb55cba96ea953ece8d7477db020bbe434a96ad7803}
+}]\end{description}
+\end{Desc}
+\hypertarget{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2}{\index{Stack\-Walker@{Stack\-Walker}!Stack\-Walk\-Options@{Stack\-Walk\-Options}}
+\index{Stack\-Walk\-Options@{Stack\-Walk\-Options}!StackWalker@{Stack\-Walker}}
+\subsubsection[{Stack\-Walk\-Options}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Stack\-Walker\-::\-Stack\-Walk\-Options}}}\label{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Retrieve\-None@{Retrieve\-None}!Stack\-Walker@{Stack\-Walker}}\index{Stack\-Walker@{Stack\-Walker}!Retrieve\-None@{Retrieve\-None}}\item[{\em 
+\hypertarget{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2a217edd06baf71722717097d0dfa1f766}{Retrieve\-None}\label{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2a217edd06baf71722717097d0dfa1f766}
+}]\index{Retrieve\-Symbol@{Retrieve\-Symbol}!Stack\-Walker@{Stack\-Walker}}\index{Stack\-Walker@{Stack\-Walker}!Retrieve\-Symbol@{Retrieve\-Symbol}}\item[{\em 
+\hypertarget{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2a7e8ceb867b904c580c6f745f5d182802}{Retrieve\-Symbol}\label{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2a7e8ceb867b904c580c6f745f5d182802}
+}]\index{Retrieve\-Line@{Retrieve\-Line}!Stack\-Walker@{Stack\-Walker}}\index{Stack\-Walker@{Stack\-Walker}!Retrieve\-Line@{Retrieve\-Line}}\item[{\em 
+\hypertarget{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2abb12b49bb039b045e1d8aeb530bc4941}{Retrieve\-Line}\label{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2abb12b49bb039b045e1d8aeb530bc4941}
+}]\index{Retrieve\-Module\-Info@{Retrieve\-Module\-Info}!Stack\-Walker@{Stack\-Walker}}\index{Stack\-Walker@{Stack\-Walker}!Retrieve\-Module\-Info@{Retrieve\-Module\-Info}}\item[{\em 
+\hypertarget{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2aa84a7a674a45b13f77ca173e44917cbf}{Retrieve\-Module\-Info}\label{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2aa84a7a674a45b13f77ca173e44917cbf}
+}]\index{Retrieve\-File\-Version@{Retrieve\-File\-Version}!Stack\-Walker@{Stack\-Walker}}\index{Stack\-Walker@{Stack\-Walker}!Retrieve\-File\-Version@{Retrieve\-File\-Version}}\item[{\em 
+\hypertarget{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2aa955b878359106a2494f579faccb2354}{Retrieve\-File\-Version}\label{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2aa955b878359106a2494f579faccb2354}
+}]\index{Retrieve\-Verbose@{Retrieve\-Verbose}!Stack\-Walker@{Stack\-Walker}}\index{Stack\-Walker@{Stack\-Walker}!Retrieve\-Verbose@{Retrieve\-Verbose}}\item[{\em 
+\hypertarget{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2a91202654d609646725e168223b0f1551}{Retrieve\-Verbose}\label{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2a91202654d609646725e168223b0f1551}
+}]\index{Sym\-Build\-Path@{Sym\-Build\-Path}!Stack\-Walker@{Stack\-Walker}}\index{Stack\-Walker@{Stack\-Walker}!Sym\-Build\-Path@{Sym\-Build\-Path}}\item[{\em 
+\hypertarget{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2a80f3f984925d8c6e322d087770edf6c6}{Sym\-Build\-Path}\label{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2a80f3f984925d8c6e322d087770edf6c6}
+}]\index{Sym\-Use\-Sym\-Srv@{Sym\-Use\-Sym\-Srv}!Stack\-Walker@{Stack\-Walker}}\index{Stack\-Walker@{Stack\-Walker}!Sym\-Use\-Sym\-Srv@{Sym\-Use\-Sym\-Srv}}\item[{\em 
+\hypertarget{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2a9a1c39fb96215df2b05d12c02d198698}{Sym\-Use\-Sym\-Srv}\label{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2a9a1c39fb96215df2b05d12c02d198698}
+}]\index{Sym\-All@{Sym\-All}!Stack\-Walker@{Stack\-Walker}}\index{Stack\-Walker@{Stack\-Walker}!Sym\-All@{Sym\-All}}\item[{\em 
+\hypertarget{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2aa8ab514748c8fed1fcaf8b50d35123cb}{Sym\-All}\label{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2aa8ab514748c8fed1fcaf8b50d35123cb}
+}]\index{Options\-All@{Options\-All}!Stack\-Walker@{Stack\-Walker}}\index{Stack\-Walker@{Stack\-Walker}!Options\-All@{Options\-All}}\item[{\em 
+\hypertarget{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2a2955cdf5dd2683a3951f89d41d8b9c3c}{Options\-All}\label{class_stack_walker_aa09267d1a2142548625d11131fd9f6d2a2955cdf5dd2683a3951f89d41d8b9c3c}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_stack_walker_a70ca0d3bd1d2b015815fc951ab0442df}{\index{Stack\-Walker@{Stack\-Walker}!Stack\-Walker@{Stack\-Walker}}
+\index{Stack\-Walker@{Stack\-Walker}!StackWalker@{Stack\-Walker}}
+\subsubsection[{Stack\-Walker}]{\setlength{\rightskip}{0pt plus 5cm}Stack\-Walker\-::\-Stack\-Walker (
+\begin{DoxyParamCaption}
+\item[{int}]{options = {\ttfamily {\bf Options\-All}}, }
+\item[{L\-P\-C\-S\-T\-R}]{sz\-Sym\-Path = {\ttfamily NULL}, }
+\item[{D\-W\-O\-R\-D}]{dw\-Process\-Id = {\ttfamily GetCurrentProcessId()}, }
+\item[{H\-A\-N\-D\-L\-E}]{h\-Process = {\ttfamily GetCurrentProcess()}}
+\end{DoxyParamCaption}
+)}}\label{class_stack_walker_a70ca0d3bd1d2b015815fc951ab0442df}
+\hypertarget{class_stack_walker_af36f5f0c916b2f350363c7ec8a8de15a}{\index{Stack\-Walker@{Stack\-Walker}!Stack\-Walker@{Stack\-Walker}}
+\index{Stack\-Walker@{Stack\-Walker}!StackWalker@{Stack\-Walker}}
+\subsubsection[{Stack\-Walker}]{\setlength{\rightskip}{0pt plus 5cm}Stack\-Walker\-::\-Stack\-Walker (
+\begin{DoxyParamCaption}
+\item[{D\-W\-O\-R\-D}]{dw\-Process\-Id, }
+\item[{H\-A\-N\-D\-L\-E}]{h\-Process}
+\end{DoxyParamCaption}
+)}}\label{class_stack_walker_af36f5f0c916b2f350363c7ec8a8de15a}
+\hypertarget{class_stack_walker_ae208af01c973541f335e5391677f2492}{\index{Stack\-Walker@{Stack\-Walker}!$\sim$\-Stack\-Walker@{$\sim$\-Stack\-Walker}}
+\index{$\sim$\-Stack\-Walker@{$\sim$\-Stack\-Walker}!StackWalker@{Stack\-Walker}}
+\subsubsection[{$\sim$\-Stack\-Walker}]{\setlength{\rightskip}{0pt plus 5cm}Stack\-Walker\-::$\sim$\-Stack\-Walker (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_stack_walker_ae208af01c973541f335e5391677f2492}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_stack_walker_a3e0e7f1329f594d89362309bf8fe2b21}{\index{Stack\-Walker@{Stack\-Walker}!Load\-Modules@{Load\-Modules}}
+\index{Load\-Modules@{Load\-Modules}!StackWalker@{Stack\-Walker}}
+\subsubsection[{Load\-Modules}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Stack\-Walker\-::\-Load\-Modules (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_stack_walker_a3e0e7f1329f594d89362309bf8fe2b21}
+\hypertarget{class_stack_walker_a3428311b98b8e8366419e9e5467c294d}{\index{Stack\-Walker@{Stack\-Walker}!my\-Read\-Proc\-Mem@{my\-Read\-Proc\-Mem}}
+\index{my\-Read\-Proc\-Mem@{my\-Read\-Proc\-Mem}!StackWalker@{Stack\-Walker}}
+\subsubsection[{my\-Read\-Proc\-Mem}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L \-\_\-\-\_\-stdcall Stack\-Walker\-::my\-Read\-Proc\-Mem (
+\begin{DoxyParamCaption}
+\item[{H\-A\-N\-D\-L\-E}]{h\-Process, }
+\item[{{\bf D\-W\-O\-R\-D64}}]{qw\-Base\-Address, }
+\item[{P\-V\-O\-I\-D}]{lp\-Buffer, }
+\item[{D\-W\-O\-R\-D}]{n\-Size, }
+\item[{L\-P\-D\-W\-O\-R\-D}]{lp\-Number\-Of\-Bytes\-Read}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_stack_walker_a3428311b98b8e8366419e9e5467c294d}
+\hypertarget{class_stack_walker_a0fbb480cd30e9ff437a4baf9a18c2372}{\index{Stack\-Walker@{Stack\-Walker}!On\-Callstack\-Entry@{On\-Callstack\-Entry}}
+\index{On\-Callstack\-Entry@{On\-Callstack\-Entry}!StackWalker@{Stack\-Walker}}
+\subsubsection[{On\-Callstack\-Entry}]{\setlength{\rightskip}{0pt plus 5cm}void Stack\-Walker\-::\-On\-Callstack\-Entry (
+\begin{DoxyParamCaption}
+\item[{{\bf Callstack\-Entry\-Type}}]{e\-Type, }
+\item[{{\bf Callstack\-Entry} \&}]{entry}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_stack_walker_a0fbb480cd30e9ff437a4baf9a18c2372}
+\hypertarget{class_stack_walker_ab2220ae2084e72d2f0f005784c21e8dc}{\index{Stack\-Walker@{Stack\-Walker}!On\-Dbg\-Help\-Err@{On\-Dbg\-Help\-Err}}
+\index{On\-Dbg\-Help\-Err@{On\-Dbg\-Help\-Err}!StackWalker@{Stack\-Walker}}
+\subsubsection[{On\-Dbg\-Help\-Err}]{\setlength{\rightskip}{0pt plus 5cm}void Stack\-Walker\-::\-On\-Dbg\-Help\-Err (
+\begin{DoxyParamCaption}
+\item[{L\-P\-C\-S\-T\-R}]{sz\-Func\-Name, }
+\item[{D\-W\-O\-R\-D}]{gle, }
+\item[{{\bf D\-W\-O\-R\-D64}}]{addr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_stack_walker_ab2220ae2084e72d2f0f005784c21e8dc}
+\hypertarget{class_stack_walker_a64c6c648aee9a33e881f449aecd51912}{\index{Stack\-Walker@{Stack\-Walker}!On\-Load\-Module@{On\-Load\-Module}}
+\index{On\-Load\-Module@{On\-Load\-Module}!StackWalker@{Stack\-Walker}}
+\subsubsection[{On\-Load\-Module}]{\setlength{\rightskip}{0pt plus 5cm}void Stack\-Walker\-::\-On\-Load\-Module (
+\begin{DoxyParamCaption}
+\item[{L\-P\-C\-S\-T\-R}]{img, }
+\item[{L\-P\-C\-S\-T\-R}]{mod, }
+\item[{{\bf D\-W\-O\-R\-D64}}]{base\-Addr, }
+\item[{D\-W\-O\-R\-D}]{size, }
+\item[{D\-W\-O\-R\-D}]{result, }
+\item[{L\-P\-C\-S\-T\-R}]{sym\-Type, }
+\item[{L\-P\-C\-S\-T\-R}]{pdb\-Name, }
+\item[{U\-L\-O\-N\-G\-L\-O\-N\-G}]{file\-Version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_stack_walker_a64c6c648aee9a33e881f449aecd51912}
+\hypertarget{class_stack_walker_a20ec3b0a1ba7723e113889135989ea6b}{\index{Stack\-Walker@{Stack\-Walker}!On\-Output@{On\-Output}}
+\index{On\-Output@{On\-Output}!StackWalker@{Stack\-Walker}}
+\subsubsection[{On\-Output}]{\setlength{\rightskip}{0pt plus 5cm}void Stack\-Walker\-::\-On\-Output (
+\begin{DoxyParamCaption}
+\item[{L\-P\-C\-S\-T\-R}]{sz\-Text}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_stack_walker_a20ec3b0a1ba7723e113889135989ea6b}
+\hypertarget{class_stack_walker_a7feaf96c40d81dcbd0bfcd34f78eaa30}{\index{Stack\-Walker@{Stack\-Walker}!On\-Sym\-Init@{On\-Sym\-Init}}
+\index{On\-Sym\-Init@{On\-Sym\-Init}!StackWalker@{Stack\-Walker}}
+\subsubsection[{On\-Sym\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void Stack\-Walker\-::\-On\-Sym\-Init (
+\begin{DoxyParamCaption}
+\item[{L\-P\-C\-S\-T\-R}]{sz\-Search\-Path, }
+\item[{D\-W\-O\-R\-D}]{sym\-Options, }
+\item[{L\-P\-C\-S\-T\-R}]{sz\-User\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_stack_walker_a7feaf96c40d81dcbd0bfcd34f78eaa30}
+\hypertarget{class_stack_walker_a26bacb66734ee2d1de20d51070b825ba}{\index{Stack\-Walker@{Stack\-Walker}!Show\-Callstack@{Show\-Callstack}}
+\index{Show\-Callstack@{Show\-Callstack}!StackWalker@{Stack\-Walker}}
+\subsubsection[{Show\-Callstack}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Stack\-Walker\-::\-Show\-Callstack (
+\begin{DoxyParamCaption}
+\item[{H\-A\-N\-D\-L\-E}]{h\-Thread = {\ttfamily GetCurrentThread()}, }
+\item[{const C\-O\-N\-T\-E\-X\-T $\ast$}]{context = {\ttfamily NULL}, }
+\item[{{\bf P\-Read\-Process\-Memory\-Routine}}]{read\-Memory\-Function = {\ttfamily NULL}, }
+\item[{L\-P\-V\-O\-I\-D}]{p\-User\-Data = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)}}\label{class_stack_walker_a26bacb66734ee2d1de20d51070b825ba}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_stack_walker_adf8bda5434856605a470d42c3db49b38}{\index{Stack\-Walker@{Stack\-Walker}!m\-\_\-dw\-Process\-Id@{m\-\_\-dw\-Process\-Id}}
+\index{m\-\_\-dw\-Process\-Id@{m\-\_\-dw\-Process\-Id}!StackWalker@{Stack\-Walker}}
+\subsubsection[{m\-\_\-dw\-Process\-Id}]{\setlength{\rightskip}{0pt plus 5cm}D\-W\-O\-R\-D Stack\-Walker\-::m\-\_\-dw\-Process\-Id\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_stack_walker_adf8bda5434856605a470d42c3db49b38}
+\hypertarget{class_stack_walker_a7db892daef90d499084f5e9dd5294ab9}{\index{Stack\-Walker@{Stack\-Walker}!m\-\_\-h\-Process@{m\-\_\-h\-Process}}
+\index{m\-\_\-h\-Process@{m\-\_\-h\-Process}!StackWalker@{Stack\-Walker}}
+\subsubsection[{m\-\_\-h\-Process}]{\setlength{\rightskip}{0pt plus 5cm}H\-A\-N\-D\-L\-E Stack\-Walker\-::m\-\_\-h\-Process\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_stack_walker_a7db892daef90d499084f5e9dd5294ab9}
+\hypertarget{class_stack_walker_acc7320865d2e5ce2d33536e94208c1f0}{\index{Stack\-Walker@{Stack\-Walker}!m\-\_\-\-Max\-Recursion\-Count@{m\-\_\-\-Max\-Recursion\-Count}}
+\index{m\-\_\-\-Max\-Recursion\-Count@{m\-\_\-\-Max\-Recursion\-Count}!StackWalker@{Stack\-Walker}}
+\subsubsection[{m\-\_\-\-Max\-Recursion\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int Stack\-Walker\-::m\-\_\-\-Max\-Recursion\-Count\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_stack_walker_acc7320865d2e5ce2d33536e94208c1f0}
+\hypertarget{class_stack_walker_a20279e66ed48886369111d47dee4762f}{\index{Stack\-Walker@{Stack\-Walker}!m\-\_\-modules\-Loaded@{m\-\_\-modules\-Loaded}}
+\index{m\-\_\-modules\-Loaded@{m\-\_\-modules\-Loaded}!StackWalker@{Stack\-Walker}}
+\subsubsection[{m\-\_\-modules\-Loaded}]{\setlength{\rightskip}{0pt plus 5cm}B\-O\-O\-L Stack\-Walker\-::m\-\_\-modules\-Loaded\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_stack_walker_a20279e66ed48886369111d47dee4762f}
+\hypertarget{class_stack_walker_a3534033da2986b16d5f15f0b4feefa54}{\index{Stack\-Walker@{Stack\-Walker}!m\-\_\-options@{m\-\_\-options}}
+\index{m\-\_\-options@{m\-\_\-options}!StackWalker@{Stack\-Walker}}
+\subsubsection[{m\-\_\-options}]{\setlength{\rightskip}{0pt plus 5cm}int Stack\-Walker\-::m\-\_\-options\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_stack_walker_a3534033da2986b16d5f15f0b4feefa54}
+\hypertarget{class_stack_walker_a13524e6f4cd89a8b3a3fd378e3cd3f55}{\index{Stack\-Walker@{Stack\-Walker}!m\-\_\-sw@{m\-\_\-sw}}
+\index{m\-\_\-sw@{m\-\_\-sw}!StackWalker@{Stack\-Walker}}
+\subsubsection[{m\-\_\-sw}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stack\-Walker\-Internal}$\ast$ Stack\-Walker\-::m\-\_\-sw\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_stack_walker_a13524e6f4cd89a8b3a3fd378e3cd3f55}
+\hypertarget{class_stack_walker_aff1b39f2ea31f24b4a693928cdf5549d}{\index{Stack\-Walker@{Stack\-Walker}!m\-\_\-sz\-Sym\-Path@{m\-\_\-sz\-Sym\-Path}}
+\index{m\-\_\-sz\-Sym\-Path@{m\-\_\-sz\-Sym\-Path}!StackWalker@{Stack\-Walker}}
+\subsubsection[{m\-\_\-sz\-Sym\-Path}]{\setlength{\rightskip}{0pt plus 5cm}L\-P\-S\-T\-R Stack\-Walker\-::m\-\_\-sz\-Sym\-Path\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_stack_walker_aff1b39f2ea31f24b4a693928cdf5549d}
+\hypertarget{class_stack_walker_ab0d4fa92227f651635d04da2947b873a}{\index{Stack\-Walker@{Stack\-Walker}!Stack\-Walker\-Internal@{Stack\-Walker\-Internal}}
+\index{Stack\-Walker\-Internal@{Stack\-Walker\-Internal}!StackWalker@{Stack\-Walker}}
+\subsubsection[{Stack\-Walker\-Internal}]{\setlength{\rightskip}{0pt plus 5cm}friend Stack\-Walker\-::\-Stack\-Walker\-Internal\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_stack_walker_ab0d4fa92227f651635d04da2947b873a}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+G\-:/\-Programming/\-Digital\-Knob/\-Libs/digitalknob/\hyperlink{_stack_walker_8h}{Stack\-Walker.\-h}\item 
+G\-:/\-Programming/\-Digital\-Knob/\-Libs/digitalknob/\hyperlink{_stack_walker_8cpp}{Stack\-Walker.\-cpp}\end{DoxyCompactItemize}

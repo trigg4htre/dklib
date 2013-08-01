@@ -1,0 +1,232 @@
+\hypertarget{class_context_hashtable_base}{\section{Context\-Hashtable\-Base$<$ H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y $>$ Class Template Reference}
+\label{class_context_hashtable_base}\index{Context\-Hashtable\-Base$<$ H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y $>$@{Context\-Hashtable\-Base$<$ H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y $>$}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_context_hashtable_base_a0a538df8bb2ae548013d6868fbe04c92}{Context\-Hashtable\-Base} (\hyperlink{_stack_walker_8h_abf8e46e57d5b85295601cefa33de3b7a}{S\-I\-Z\-E\-\_\-\-T} size\-Of\-Hastable, L\-P\-C\-S\-T\-R finder\-Name)
+\item 
+V\-O\-I\-D \hyperlink{class_context_hashtable_base_abc2e1cf9c00303123157645db7f8e68f}{Insert} (H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y \&key, C\-O\-N\-T\-E\-X\-T \&context, \hyperlink{_stack_walker_8h_abf8e46e57d5b85295601cefa33de3b7a}{S\-I\-Z\-E\-\_\-\-T} n\-Data\-Size)
+\item 
+B\-O\-O\-L \hyperlink{class_context_hashtable_base_a0c6f7b1edcfb0f19ade90ec828d943cc}{Remove} (H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y \&key)
+\item 
+Alloc\-Hash\-Entry\-Type $\ast$ \hyperlink{class_context_hashtable_base_a9680426ebc8a38c85428268b54950bc5}{Find} (H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y \&key)
+\item 
+V\-O\-I\-D \hyperlink{class_context_hashtable_base_addc9bb91f1c91acbea34e166e0e51cc1}{Show\-Leaks} (Leak\-Finder\-Output \&leak\-Finder\-Output)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static B\-O\-O\-L C\-A\-L\-L\-B\-A\-C\-K \hyperlink{class_context_hashtable_base_a1648c610f37afca3fe16cd55e70b602e}{Read\-Process\-Memory\-From\-Hash\-Entry64} (H\-A\-N\-D\-L\-E h\-Process, \hyperlink{_stack_walker_8h_a97fb241c597b99bcb965858f53cacac4}{D\-W\-O\-R\-D64} lp\-Base\-Address, P\-V\-O\-I\-D lp\-Buffer, D\-W\-O\-R\-D n\-Size, L\-P\-D\-W\-O\-R\-D lp\-Number\-Of\-Bytes\-Read, L\-P\-V\-O\-I\-D p\-User\-Data)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Alloc\-Hash\-Entry\-Type $\ast$ \hyperlink{class_context_hashtable_base_a22aba6b9cc816a9c69820dae9e06e5e2}{p\-Alloc\-Hash\-Table}
+\item 
+\hyperlink{_stack_walker_8h_abf8e46e57d5b85295601cefa33de3b7a}{S\-I\-Z\-E\-\_\-\-T} \hyperlink{class_context_hashtable_base_acf5c9250de4fab9142480d651f0cd421}{s\-Alloc\-Entries}
+\item 
+H\-A\-N\-D\-L\-E \hyperlink{class_context_hashtable_base_abd63115983bd666ee0cb09bc684ada65}{m\-\_\-h\-Heap}
+\item 
+L\-P\-S\-T\-R \hyperlink{class_context_hashtable_base_ab01c5068209ba7f43ee1f8670f79c837}{m\-\_\-finder\-Name}
+\item 
+bool \hyperlink{class_context_hashtable_base_a5cfe6a5ef2651d399a5b5a9b7d4f2b3d}{m\-\_\-b\-Supress\-Useless\-Lines}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{class_context_hashtable_base_a7b3d376e96ee4db9dc5d35bc53fa3a94}{$\sim$\-Context\-Hashtable\-Base} ()
+\item 
+\-\_\-\-\_\-inline L\-P\-V\-O\-I\-D \hyperlink{class_context_hashtable_base_a1f82999889f8daf4685defcb07aa9682}{own\-\_\-malloc} (\hyperlink{_stack_walker_8h_abf8e46e57d5b85295601cefa33de3b7a}{S\-I\-Z\-E\-\_\-\-T} size)
+\item 
+\-\_\-\-\_\-inline V\-O\-I\-D \hyperlink{class_context_hashtable_base_a5baa1e1b3ef680e766d9c7e09ea4072d}{own\-\_\-free} (L\-P\-V\-O\-I\-D memblock)
+\item 
+\-\_\-\-\_\-inline C\-H\-A\-R $\ast$ \hyperlink{class_context_hashtable_base_a8ed2fe1de11ddc14166561fa8daa672b}{own\-\_\-strdup} (const char $\ast$str)
+\item 
+virtual L\-O\-N\-G \hyperlink{class_context_hashtable_base_adaa530038082c99bfd626839e7acb432}{Disable} ()=0
+\item 
+virtual L\-O\-N\-G \hyperlink{class_context_hashtable_base_aab087f34a336804de3d6a52d039925da}{Enable} ()=0
+\item 
+virtual \hyperlink{_stack_walker_8h_abf8e46e57d5b85295601cefa33de3b7a}{S\-I\-Z\-E\-\_\-\-T} \hyperlink{class_context_hashtable_base_a46644ec231bde25eb5ba65273238378a}{Hash\-Function} (H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y \&key)=0
+\item 
+virtual B\-O\-O\-L \hyperlink{class_context_hashtable_base_ae9be16961cfd34d36c8fd1fb92383ff6}{Is\-Key\-Empty} (H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y \&key)=0
+\item 
+virtual V\-O\-I\-D \hyperlink{class_context_hashtable_base_adec5d46fd137c9d770538fa843a79cba}{Set\-Empty\-Key} (H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y \&key)=0
+\item 
+virtual V\-O\-I\-D \hyperlink{class_context_hashtable_base_a343e78471bc33fbed729a083cbed6663}{Get\-Key\-As\-String} (H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y \&key, C\-H\-A\-R $\ast$sz\-Name, \hyperlink{_stack_walker_8h_abf8e46e57d5b85295601cefa33de3b7a}{S\-I\-Z\-E\-\_\-\-T} n\-Buffer\-Len)=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_context_hashtable_base_a0a538df8bb2ae548013d6868fbe04c92}{\index{Context\-Hashtable\-Base@{Context\-Hashtable\-Base}!Context\-Hashtable\-Base@{Context\-Hashtable\-Base}}
+\index{Context\-Hashtable\-Base@{Context\-Hashtable\-Base}!ContextHashtableBase@{Context\-Hashtable\-Base}}
+\subsubsection[{Context\-Hashtable\-Base}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y$>$ {\bf Context\-Hashtable\-Base}$<$ H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y $>$\-::{\bf Context\-Hashtable\-Base} (
+\begin{DoxyParamCaption}
+\item[{{\bf S\-I\-Z\-E\-\_\-\-T}}]{size\-Of\-Hastable, }
+\item[{L\-P\-C\-S\-T\-R}]{finder\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_context_hashtable_base_a0a538df8bb2ae548013d6868fbe04c92}
+\hypertarget{class_context_hashtable_base_a7b3d376e96ee4db9dc5d35bc53fa3a94}{\index{Context\-Hashtable\-Base@{Context\-Hashtable\-Base}!$\sim$\-Context\-Hashtable\-Base@{$\sim$\-Context\-Hashtable\-Base}}
+\index{$\sim$\-Context\-Hashtable\-Base@{$\sim$\-Context\-Hashtable\-Base}!ContextHashtableBase@{Context\-Hashtable\-Base}}
+\subsubsection[{$\sim$\-Context\-Hashtable\-Base}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y$>$ virtual {\bf Context\-Hashtable\-Base}$<$ H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y $>$\-::$\sim${\bf Context\-Hashtable\-Base} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_context_hashtable_base_a7b3d376e96ee4db9dc5d35bc53fa3a94}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_context_hashtable_base_adaa530038082c99bfd626839e7acb432}{\index{Context\-Hashtable\-Base@{Context\-Hashtable\-Base}!Disable@{Disable}}
+\index{Disable@{Disable}!ContextHashtableBase@{Context\-Hashtable\-Base}}
+\subsubsection[{Disable}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y$>$ virtual L\-O\-N\-G {\bf Context\-Hashtable\-Base}$<$ H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y $>$\-::Disable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{class_context_hashtable_base_adaa530038082c99bfd626839e7acb432}
+
+
+Implemented in \hyperlink{class_c_o_m_table_a884eb78e6e7193ca819476915662d209}{C\-O\-M\-Table}.
+
+\hypertarget{class_context_hashtable_base_aab087f34a336804de3d6a52d039925da}{\index{Context\-Hashtable\-Base@{Context\-Hashtable\-Base}!Enable@{Enable}}
+\index{Enable@{Enable}!ContextHashtableBase@{Context\-Hashtable\-Base}}
+\subsubsection[{Enable}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y$>$ virtual L\-O\-N\-G {\bf Context\-Hashtable\-Base}$<$ H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y $>$\-::Enable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{class_context_hashtable_base_aab087f34a336804de3d6a52d039925da}
+
+
+Implemented in \hyperlink{class_c_o_m_table_a4a112a1da2bf8ccb3401b8d4d5e39f17}{C\-O\-M\-Table}.
+
+\hypertarget{class_context_hashtable_base_a9680426ebc8a38c85428268b54950bc5}{\index{Context\-Hashtable\-Base@{Context\-Hashtable\-Base}!Find@{Find}}
+\index{Find@{Find}!ContextHashtableBase@{Context\-Hashtable\-Base}}
+\subsubsection[{Find}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y$>$ Alloc\-Hash\-Entry\-Type$\ast$ {\bf Context\-Hashtable\-Base}$<$ H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y $>$\-::Find (
+\begin{DoxyParamCaption}
+\item[{H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y \&}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_context_hashtable_base_a9680426ebc8a38c85428268b54950bc5}
+\hypertarget{class_context_hashtable_base_a343e78471bc33fbed729a083cbed6663}{\index{Context\-Hashtable\-Base@{Context\-Hashtable\-Base}!Get\-Key\-As\-String@{Get\-Key\-As\-String}}
+\index{Get\-Key\-As\-String@{Get\-Key\-As\-String}!ContextHashtableBase@{Context\-Hashtable\-Base}}
+\subsubsection[{Get\-Key\-As\-String}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y$>$ virtual V\-O\-I\-D {\bf Context\-Hashtable\-Base}$<$ H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y $>$\-::Get\-Key\-As\-String (
+\begin{DoxyParamCaption}
+\item[{H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y \&}]{key, }
+\item[{C\-H\-A\-R $\ast$}]{sz\-Name, }
+\item[{{\bf S\-I\-Z\-E\-\_\-\-T}}]{n\-Buffer\-Len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{class_context_hashtable_base_a343e78471bc33fbed729a083cbed6663}
+
+
+Implemented in \hyperlink{class_c_o_m_table_ab8ffe1624f74c203be66d988483be7ed}{C\-O\-M\-Table}.
+
+\hypertarget{class_context_hashtable_base_a46644ec231bde25eb5ba65273238378a}{\index{Context\-Hashtable\-Base@{Context\-Hashtable\-Base}!Hash\-Function@{Hash\-Function}}
+\index{Hash\-Function@{Hash\-Function}!ContextHashtableBase@{Context\-Hashtable\-Base}}
+\subsubsection[{Hash\-Function}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y$>$ virtual {\bf S\-I\-Z\-E\-\_\-\-T} {\bf Context\-Hashtable\-Base}$<$ H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y $>$\-::Hash\-Function (
+\begin{DoxyParamCaption}
+\item[{H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y \&}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{class_context_hashtable_base_a46644ec231bde25eb5ba65273238378a}
+
+
+Implemented in \hyperlink{class_c_o_m_table_aade63cce0c610906eab6beced9743456}{C\-O\-M\-Table}.
+
+\hypertarget{class_context_hashtable_base_abc2e1cf9c00303123157645db7f8e68f}{\index{Context\-Hashtable\-Base@{Context\-Hashtable\-Base}!Insert@{Insert}}
+\index{Insert@{Insert}!ContextHashtableBase@{Context\-Hashtable\-Base}}
+\subsubsection[{Insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y$>$ V\-O\-I\-D {\bf Context\-Hashtable\-Base}$<$ H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y $>$\-::Insert (
+\begin{DoxyParamCaption}
+\item[{H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y \&}]{key, }
+\item[{C\-O\-N\-T\-E\-X\-T \&}]{context, }
+\item[{{\bf S\-I\-Z\-E\-\_\-\-T}}]{n\-Data\-Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_context_hashtable_base_abc2e1cf9c00303123157645db7f8e68f}
+\hypertarget{class_context_hashtable_base_ae9be16961cfd34d36c8fd1fb92383ff6}{\index{Context\-Hashtable\-Base@{Context\-Hashtable\-Base}!Is\-Key\-Empty@{Is\-Key\-Empty}}
+\index{Is\-Key\-Empty@{Is\-Key\-Empty}!ContextHashtableBase@{Context\-Hashtable\-Base}}
+\subsubsection[{Is\-Key\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y$>$ virtual B\-O\-O\-L {\bf Context\-Hashtable\-Base}$<$ H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y $>$\-::Is\-Key\-Empty (
+\begin{DoxyParamCaption}
+\item[{H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y \&}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{class_context_hashtable_base_ae9be16961cfd34d36c8fd1fb92383ff6}
+
+
+Implemented in \hyperlink{class_c_o_m_table_a27314e7b3e7a31dca666e1eede8224a7}{C\-O\-M\-Table}.
+
+\hypertarget{class_context_hashtable_base_a5baa1e1b3ef680e766d9c7e09ea4072d}{\index{Context\-Hashtable\-Base@{Context\-Hashtable\-Base}!own\-\_\-free@{own\-\_\-free}}
+\index{own\-\_\-free@{own\-\_\-free}!ContextHashtableBase@{Context\-Hashtable\-Base}}
+\subsubsection[{own\-\_\-free}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y$>$ \-\_\-\-\_\-inline V\-O\-I\-D {\bf Context\-Hashtable\-Base}$<$ H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y $>$\-::own\-\_\-free (
+\begin{DoxyParamCaption}
+\item[{L\-P\-V\-O\-I\-D}]{memblock}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_context_hashtable_base_a5baa1e1b3ef680e766d9c7e09ea4072d}
+\hypertarget{class_context_hashtable_base_a1f82999889f8daf4685defcb07aa9682}{\index{Context\-Hashtable\-Base@{Context\-Hashtable\-Base}!own\-\_\-malloc@{own\-\_\-malloc}}
+\index{own\-\_\-malloc@{own\-\_\-malloc}!ContextHashtableBase@{Context\-Hashtable\-Base}}
+\subsubsection[{own\-\_\-malloc}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y$>$ \-\_\-\-\_\-inline L\-P\-V\-O\-I\-D {\bf Context\-Hashtable\-Base}$<$ H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y $>$\-::own\-\_\-malloc (
+\begin{DoxyParamCaption}
+\item[{{\bf S\-I\-Z\-E\-\_\-\-T}}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_context_hashtable_base_a1f82999889f8daf4685defcb07aa9682}
+\hypertarget{class_context_hashtable_base_a8ed2fe1de11ddc14166561fa8daa672b}{\index{Context\-Hashtable\-Base@{Context\-Hashtable\-Base}!own\-\_\-strdup@{own\-\_\-strdup}}
+\index{own\-\_\-strdup@{own\-\_\-strdup}!ContextHashtableBase@{Context\-Hashtable\-Base}}
+\subsubsection[{own\-\_\-strdup}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y$>$ \-\_\-\-\_\-inline C\-H\-A\-R$\ast$ {\bf Context\-Hashtable\-Base}$<$ H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y $>$\-::own\-\_\-strdup (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{class_context_hashtable_base_a8ed2fe1de11ddc14166561fa8daa672b}
+\hypertarget{class_context_hashtable_base_a1648c610f37afca3fe16cd55e70b602e}{\index{Context\-Hashtable\-Base@{Context\-Hashtable\-Base}!Read\-Process\-Memory\-From\-Hash\-Entry64@{Read\-Process\-Memory\-From\-Hash\-Entry64}}
+\index{Read\-Process\-Memory\-From\-Hash\-Entry64@{Read\-Process\-Memory\-From\-Hash\-Entry64}!ContextHashtableBase@{Context\-Hashtable\-Base}}
+\subsubsection[{Read\-Process\-Memory\-From\-Hash\-Entry64}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y$>$ static B\-O\-O\-L C\-A\-L\-L\-B\-A\-C\-K {\bf Context\-Hashtable\-Base}$<$ H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y $>$\-::Read\-Process\-Memory\-From\-Hash\-Entry64 (
+\begin{DoxyParamCaption}
+\item[{H\-A\-N\-D\-L\-E}]{h\-Process, }
+\item[{{\bf D\-W\-O\-R\-D64}}]{lp\-Base\-Address, }
+\item[{P\-V\-O\-I\-D}]{lp\-Buffer, }
+\item[{D\-W\-O\-R\-D}]{n\-Size, }
+\item[{L\-P\-D\-W\-O\-R\-D}]{lp\-Number\-Of\-Bytes\-Read, }
+\item[{L\-P\-V\-O\-I\-D}]{p\-User\-Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_context_hashtable_base_a1648c610f37afca3fe16cd55e70b602e}
+\hypertarget{class_context_hashtable_base_a0c6f7b1edcfb0f19ade90ec828d943cc}{\index{Context\-Hashtable\-Base@{Context\-Hashtable\-Base}!Remove@{Remove}}
+\index{Remove@{Remove}!ContextHashtableBase@{Context\-Hashtable\-Base}}
+\subsubsection[{Remove}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y$>$ B\-O\-O\-L {\bf Context\-Hashtable\-Base}$<$ H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y $>$\-::Remove (
+\begin{DoxyParamCaption}
+\item[{H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y \&}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_context_hashtable_base_a0c6f7b1edcfb0f19ade90ec828d943cc}
+\hypertarget{class_context_hashtable_base_adec5d46fd137c9d770538fa843a79cba}{\index{Context\-Hashtable\-Base@{Context\-Hashtable\-Base}!Set\-Empty\-Key@{Set\-Empty\-Key}}
+\index{Set\-Empty\-Key@{Set\-Empty\-Key}!ContextHashtableBase@{Context\-Hashtable\-Base}}
+\subsubsection[{Set\-Empty\-Key}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y$>$ virtual V\-O\-I\-D {\bf Context\-Hashtable\-Base}$<$ H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y $>$\-::Set\-Empty\-Key (
+\begin{DoxyParamCaption}
+\item[{H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y \&}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{class_context_hashtable_base_adec5d46fd137c9d770538fa843a79cba}
+
+
+Implemented in \hyperlink{class_c_o_m_table_adc5f2622f44f301d57506077232abc5d}{C\-O\-M\-Table}.
+
+\hypertarget{class_context_hashtable_base_addc9bb91f1c91acbea34e166e0e51cc1}{\index{Context\-Hashtable\-Base@{Context\-Hashtable\-Base}!Show\-Leaks@{Show\-Leaks}}
+\index{Show\-Leaks@{Show\-Leaks}!ContextHashtableBase@{Context\-Hashtable\-Base}}
+\subsubsection[{Show\-Leaks}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y$>$ V\-O\-I\-D {\bf Context\-Hashtable\-Base}$<$ H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y $>$\-::Show\-Leaks (
+\begin{DoxyParamCaption}
+\item[{Leak\-Finder\-Output \&}]{leak\-Finder\-Output}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_context_hashtable_base_addc9bb91f1c91acbea34e166e0e51cc1}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_context_hashtable_base_a5cfe6a5ef2651d399a5b5a9b7d4f2b3d}{\index{Context\-Hashtable\-Base@{Context\-Hashtable\-Base}!m\-\_\-b\-Supress\-Useless\-Lines@{m\-\_\-b\-Supress\-Useless\-Lines}}
+\index{m\-\_\-b\-Supress\-Useless\-Lines@{m\-\_\-b\-Supress\-Useless\-Lines}!ContextHashtableBase@{Context\-Hashtable\-Base}}
+\subsubsection[{m\-\_\-b\-Supress\-Useless\-Lines}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y$>$ bool {\bf Context\-Hashtable\-Base}$<$ H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y $>$\-::m\-\_\-b\-Supress\-Useless\-Lines}}\label{class_context_hashtable_base_a5cfe6a5ef2651d399a5b5a9b7d4f2b3d}
+\hypertarget{class_context_hashtable_base_ab01c5068209ba7f43ee1f8670f79c837}{\index{Context\-Hashtable\-Base@{Context\-Hashtable\-Base}!m\-\_\-finder\-Name@{m\-\_\-finder\-Name}}
+\index{m\-\_\-finder\-Name@{m\-\_\-finder\-Name}!ContextHashtableBase@{Context\-Hashtable\-Base}}
+\subsubsection[{m\-\_\-finder\-Name}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y$>$ L\-P\-S\-T\-R {\bf Context\-Hashtable\-Base}$<$ H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y $>$\-::m\-\_\-finder\-Name}}\label{class_context_hashtable_base_ab01c5068209ba7f43ee1f8670f79c837}
+\hypertarget{class_context_hashtable_base_abd63115983bd666ee0cb09bc684ada65}{\index{Context\-Hashtable\-Base@{Context\-Hashtable\-Base}!m\-\_\-h\-Heap@{m\-\_\-h\-Heap}}
+\index{m\-\_\-h\-Heap@{m\-\_\-h\-Heap}!ContextHashtableBase@{Context\-Hashtable\-Base}}
+\subsubsection[{m\-\_\-h\-Heap}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y$>$ H\-A\-N\-D\-L\-E {\bf Context\-Hashtable\-Base}$<$ H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y $>$\-::m\-\_\-h\-Heap}}\label{class_context_hashtable_base_abd63115983bd666ee0cb09bc684ada65}
+\hypertarget{class_context_hashtable_base_a22aba6b9cc816a9c69820dae9e06e5e2}{\index{Context\-Hashtable\-Base@{Context\-Hashtable\-Base}!p\-Alloc\-Hash\-Table@{p\-Alloc\-Hash\-Table}}
+\index{p\-Alloc\-Hash\-Table@{p\-Alloc\-Hash\-Table}!ContextHashtableBase@{Context\-Hashtable\-Base}}
+\subsubsection[{p\-Alloc\-Hash\-Table}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y$>$ Alloc\-Hash\-Entry\-Type$\ast$ {\bf Context\-Hashtable\-Base}$<$ H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y $>$\-::p\-Alloc\-Hash\-Table}}\label{class_context_hashtable_base_a22aba6b9cc816a9c69820dae9e06e5e2}
+\hypertarget{class_context_hashtable_base_acf5c9250de4fab9142480d651f0cd421}{\index{Context\-Hashtable\-Base@{Context\-Hashtable\-Base}!s\-Alloc\-Entries@{s\-Alloc\-Entries}}
+\index{s\-Alloc\-Entries@{s\-Alloc\-Entries}!ContextHashtableBase@{Context\-Hashtable\-Base}}
+\subsubsection[{s\-Alloc\-Entries}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y$>$ {\bf S\-I\-Z\-E\-\_\-\-T} {\bf Context\-Hashtable\-Base}$<$ H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y $>$\-::s\-Alloc\-Entries}}\label{class_context_hashtable_base_acf5c9250de4fab9142480d651f0cd421}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+G\-:/\-Programming/\-Digital\-Knob/\-Libs/digitalknob/\hyperlink{_leak_finder_8cpp}{Leak\-Finder.\-cpp}\end{DoxyCompactItemize}

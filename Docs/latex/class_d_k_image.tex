@@ -1,0 +1,244 @@
+\hypertarget{class_d_k_image}{\section{D\-K\-Image Class Reference}
+\label{class_d_k_image}\index{D\-K\-Image@{D\-K\-Image}}
+}
+
+
+{\ttfamily \#include $<$D\-K\-Image.\-h$>$}
+
+Inheritance diagram for D\-K\-Image\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_d_k_image}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_d_k_image_a0fb6472b1f681b473283a8be666a0e2f}{D\-K\-Image} ()
+\item 
+\hyperlink{class_d_k_image_a147d427988ba89b193b6acaf8694736a}{D\-K\-Image} (\hyperlink{class_d_k_object}{D\-K\-Object} $\ast$parent, \hyperlink{_d_k_axis_8h_a0ca1f005fbb936f8e7a7f2433591f418}{D\-K\-Point} pos, \hyperlink{_d_k_string_8h_ac168e8555ceba18e1a2919b21976bc84}{D\-K\-String} file)
+\item 
+\hyperlink{class_d_k_image_a6f1b063e5b37891cfe02f9992f80530d}{D\-K\-Image} (\hyperlink{class_d_k_object}{D\-K\-Object} $\ast$parent, \hyperlink{_d_k_axis_8h_a0ca1f005fbb936f8e7a7f2433591f418}{D\-K\-Point} pos, const char $\ast$const $\ast$xpm)
+\item 
+void \hyperlink{class_d_k_image_ab1df6c38356b653eeb4b7a89ce8ec892}{Create} (\hyperlink{class_d_k_object}{D\-K\-Object} $\ast$parent, \hyperlink{_d_k_axis_8h_a0ca1f005fbb936f8e7a7f2433591f418}{D\-K\-Point} pos, \hyperlink{_d_k_string_8h_ac168e8555ceba18e1a2919b21976bc84}{D\-K\-String} file)
+\item 
+void \hyperlink{class_d_k_image_a81e8c9d2373dead3bad61efef0925474}{Create} (\hyperlink{class_d_k_object}{D\-K\-Object} $\ast$parent, \hyperlink{_d_k_axis_8h_a0ca1f005fbb936f8e7a7f2433591f418}{D\-K\-Point} pos, const char $\ast$const $\ast$xpm)
+\item 
+\hyperlink{class_d_k_image_ab922d6fe31fac055ff778aacf2fcecce}{$\sim$\-D\-K\-Image} ()
+\item 
+void \hyperlink{class_d_k_image_af82fafde49cf8d49b03962d0b41cfbf7}{Set\-File} (\hyperlink{_d_k_string_8h_ac168e8555ceba18e1a2919b21976bc84}{D\-K\-String} file)
+\item 
+void \hyperlink{class_d_k_image_a7c9c2aa6bbefd1c48fabeafe12ec0254}{Set\-Position} (\hyperlink{_d_k_axis_8h_a0ca1f005fbb936f8e7a7f2433591f418}{D\-K\-Point} pos)
+\item 
+void \hyperlink{class_d_k_image_a7b30ab85d56c3b8fb54d1b8f2fa1062c}{Set\-Size} (\hyperlink{_d_k_axis_8h_aaa25a8c7cbf504fffdb8a4208ff7a731}{D\-K\-Size} siz)
+\item 
+void \hyperlink{class_d_k_image_a5712863a7b7b597a5827742c2f66dce9}{Set\-Color} (\hyperlink{class_d_k_color}{D\-K\-Color} rgba)
+\item 
+int \hyperlink{class_d_k_image_ae7939dbf96346daac998ab5ce0db4f3c}{Power\-Of\-Two} (int input)
+\item 
+void \hyperlink{class_d_k_image_a3ae996ddfd220f76f6f1085746d2f315}{Recalculate} ()
+\item 
+void \hyperlink{class_d_k_image_aaf2f3e1a44b0b80faee7169cdddd8bec}{Reload} ()
+\item 
+void \hyperlink{class_d_k_image_a4f9b9a36c0ec826fb6ca9d483b14d9e0}{Display} ()
+\item 
+Uint32 \hyperlink{class_d_k_image_a88ebda1c5841e9141b5d12e1c85099e8}{Get\-Pixel} (int x, int y)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+G\-Luint \hyperlink{class_d_k_image_ac6a91aafc8bd16854d644186b2c3497b}{image}
+\item 
+\hyperlink{_d_k_string_8h_ac168e8555ceba18e1a2919b21976bc84}{D\-K\-String} \hyperlink{class_d_k_image_a12b6108f0fee5230984fd2275c24a8ae}{filename}
+\item 
+char $\ast$$\ast$ \hyperlink{class_d_k_image_a5552759919ce7e0ad63c542838e19fbe}{xpm\-\_\-image}
+\item 
+G\-Lfloat \hyperlink{class_d_k_image_a83ea3b25f68ec8d02b6a5b4daf18a2d5}{texture} \mbox{[}8\mbox{]}
+\item 
+G\-Lfloat \hyperlink{class_d_k_image_a7b0cb338893f6327718b19c92ffef3d4}{square} \mbox{[}12\mbox{]}
+\item 
+G\-Lfloat \hyperlink{class_d_k_image_ae6c9b9d773b56e6be7bc6fd3d299eb47}{t\-\_\-color} \mbox{[}16\mbox{]}
+\item 
+S\-D\-L\-\_\-\-Surface $\ast$ \hyperlink{class_d_k_image_ab8cc39cd81a6f73beca7392f6cb67abe}{surface}
+\item 
+int \hyperlink{class_d_k_image_a3df23f7ab223f3d7e6e2654395ef6fe1}{pot\-\_\-w}
+\item 
+int \hyperlink{class_d_k_image_ae9cdd848d1f31c486d4433b3739363a2}{pot\-\_\-h}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_d_k_image_a0fb6472b1f681b473283a8be666a0e2f}{\index{D\-K\-Image@{D\-K\-Image}!D\-K\-Image@{D\-K\-Image}}
+\index{D\-K\-Image@{D\-K\-Image}!DKImage@{D\-K\-Image}}
+\subsubsection[{D\-K\-Image}]{\setlength{\rightskip}{0pt plus 5cm}D\-K\-Image\-::\-D\-K\-Image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_d_k_image_a0fb6472b1f681b473283a8be666a0e2f}
+\hypertarget{class_d_k_image_a147d427988ba89b193b6acaf8694736a}{\index{D\-K\-Image@{D\-K\-Image}!D\-K\-Image@{D\-K\-Image}}
+\index{D\-K\-Image@{D\-K\-Image}!DKImage@{D\-K\-Image}}
+\subsubsection[{D\-K\-Image}]{\setlength{\rightskip}{0pt plus 5cm}D\-K\-Image\-::\-D\-K\-Image (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-K\-Object} $\ast$}]{parent, }
+\item[{{\bf D\-K\-Point}}]{pos, }
+\item[{{\bf D\-K\-String}}]{file}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_image_a147d427988ba89b193b6acaf8694736a}
+\hypertarget{class_d_k_image_a6f1b063e5b37891cfe02f9992f80530d}{\index{D\-K\-Image@{D\-K\-Image}!D\-K\-Image@{D\-K\-Image}}
+\index{D\-K\-Image@{D\-K\-Image}!DKImage@{D\-K\-Image}}
+\subsubsection[{D\-K\-Image}]{\setlength{\rightskip}{0pt plus 5cm}D\-K\-Image\-::\-D\-K\-Image (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-K\-Object} $\ast$}]{parent, }
+\item[{{\bf D\-K\-Point}}]{pos, }
+\item[{const char $\ast$const $\ast$}]{xpm}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_image_a6f1b063e5b37891cfe02f9992f80530d}
+\hypertarget{class_d_k_image_ab922d6fe31fac055ff778aacf2fcecce}{\index{D\-K\-Image@{D\-K\-Image}!$\sim$\-D\-K\-Image@{$\sim$\-D\-K\-Image}}
+\index{$\sim$\-D\-K\-Image@{$\sim$\-D\-K\-Image}!DKImage@{D\-K\-Image}}
+\subsubsection[{$\sim$\-D\-K\-Image}]{\setlength{\rightskip}{0pt plus 5cm}D\-K\-Image\-::$\sim$\-D\-K\-Image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_image_ab922d6fe31fac055ff778aacf2fcecce}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_d_k_image_ab1df6c38356b653eeb4b7a89ce8ec892}{\index{D\-K\-Image@{D\-K\-Image}!Create@{Create}}
+\index{Create@{Create}!DKImage@{D\-K\-Image}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Image\-::\-Create (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-K\-Object} $\ast$}]{parent, }
+\item[{{\bf D\-K\-Point}}]{pos, }
+\item[{{\bf D\-K\-String}}]{file}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_image_ab1df6c38356b653eeb4b7a89ce8ec892}
+\hypertarget{class_d_k_image_a81e8c9d2373dead3bad61efef0925474}{\index{D\-K\-Image@{D\-K\-Image}!Create@{Create}}
+\index{Create@{Create}!DKImage@{D\-K\-Image}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Image\-::\-Create (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-K\-Object} $\ast$}]{parent, }
+\item[{{\bf D\-K\-Point}}]{pos, }
+\item[{const char $\ast$const $\ast$}]{xpm}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_image_a81e8c9d2373dead3bad61efef0925474}
+\hypertarget{class_d_k_image_a4f9b9a36c0ec826fb6ca9d483b14d9e0}{\index{D\-K\-Image@{D\-K\-Image}!Display@{Display}}
+\index{Display@{Display}!DKImage@{D\-K\-Image}}
+\subsubsection[{Display}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Image\-::\-Display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_k_image_a4f9b9a36c0ec826fb6ca9d483b14d9e0}
+
+
+Reimplemented from \hyperlink{class_d_k_object_a6c7afb48b29a473ecf68f2af29f17ca9}{D\-K\-Object}.
+
+\hypertarget{class_d_k_image_a88ebda1c5841e9141b5d12e1c85099e8}{\index{D\-K\-Image@{D\-K\-Image}!Get\-Pixel@{Get\-Pixel}}
+\index{Get\-Pixel@{Get\-Pixel}!DKImage@{D\-K\-Image}}
+\subsubsection[{Get\-Pixel}]{\setlength{\rightskip}{0pt plus 5cm}Uint32 D\-K\-Image\-::\-Get\-Pixel (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_image_a88ebda1c5841e9141b5d12e1c85099e8}
+\hypertarget{class_d_k_image_ae7939dbf96346daac998ab5ce0db4f3c}{\index{D\-K\-Image@{D\-K\-Image}!Power\-Of\-Two@{Power\-Of\-Two}}
+\index{Power\-Of\-Two@{Power\-Of\-Two}!DKImage@{D\-K\-Image}}
+\subsubsection[{Power\-Of\-Two}]{\setlength{\rightskip}{0pt plus 5cm}int D\-K\-Image\-::\-Power\-Of\-Two (
+\begin{DoxyParamCaption}
+\item[{int}]{input}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_image_ae7939dbf96346daac998ab5ce0db4f3c}
+\hypertarget{class_d_k_image_a3ae996ddfd220f76f6f1085746d2f315}{\index{D\-K\-Image@{D\-K\-Image}!Recalculate@{Recalculate}}
+\index{Recalculate@{Recalculate}!DKImage@{D\-K\-Image}}
+\subsubsection[{Recalculate}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Image\-::\-Recalculate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_image_a3ae996ddfd220f76f6f1085746d2f315}
+\hypertarget{class_d_k_image_aaf2f3e1a44b0b80faee7169cdddd8bec}{\index{D\-K\-Image@{D\-K\-Image}!Reload@{Reload}}
+\index{Reload@{Reload}!DKImage@{D\-K\-Image}}
+\subsubsection[{Reload}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Image\-::\-Reload (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_k_image_aaf2f3e1a44b0b80faee7169cdddd8bec}
+
+
+Reimplemented from \hyperlink{class_d_k_object_a02180120e4f6bdcb3d3e736ec48a52f5}{D\-K\-Object}.
+
+\hypertarget{class_d_k_image_a5712863a7b7b597a5827742c2f66dce9}{\index{D\-K\-Image@{D\-K\-Image}!Set\-Color@{Set\-Color}}
+\index{Set\-Color@{Set\-Color}!DKImage@{D\-K\-Image}}
+\subsubsection[{Set\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Image\-::\-Set\-Color (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-K\-Color}}]{rgba}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_k_image_a5712863a7b7b597a5827742c2f66dce9}
+
+
+Reimplemented from \hyperlink{class_d_k_object_ad7efc4ece83aad0ab6798e77b73cc33e}{D\-K\-Object}.
+
+\hypertarget{class_d_k_image_af82fafde49cf8d49b03962d0b41cfbf7}{\index{D\-K\-Image@{D\-K\-Image}!Set\-File@{Set\-File}}
+\index{Set\-File@{Set\-File}!DKImage@{D\-K\-Image}}
+\subsubsection[{Set\-File}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Image\-::\-Set\-File (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-K\-String}}]{file}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_image_af82fafde49cf8d49b03962d0b41cfbf7}
+\hypertarget{class_d_k_image_a7c9c2aa6bbefd1c48fabeafe12ec0254}{\index{D\-K\-Image@{D\-K\-Image}!Set\-Position@{Set\-Position}}
+\index{Set\-Position@{Set\-Position}!DKImage@{D\-K\-Image}}
+\subsubsection[{Set\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Image\-::\-Set\-Position (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-K\-Point}}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_k_image_a7c9c2aa6bbefd1c48fabeafe12ec0254}
+
+
+Reimplemented from \hyperlink{class_d_k_object_afe058d7da128d03e09339f6e5a342456}{D\-K\-Object}.
+
+\hypertarget{class_d_k_image_a7b30ab85d56c3b8fb54d1b8f2fa1062c}{\index{D\-K\-Image@{D\-K\-Image}!Set\-Size@{Set\-Size}}
+\index{Set\-Size@{Set\-Size}!DKImage@{D\-K\-Image}}
+\subsubsection[{Set\-Size}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Image\-::\-Set\-Size (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-K\-Size}}]{siz}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_k_image_a7b30ab85d56c3b8fb54d1b8f2fa1062c}
+
+
+Reimplemented from \hyperlink{class_d_k_object_a3b7ce9102fdf1d8e3404d73e79be8901}{D\-K\-Object}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_d_k_image_a12b6108f0fee5230984fd2275c24a8ae}{\index{D\-K\-Image@{D\-K\-Image}!filename@{filename}}
+\index{filename@{filename}!DKImage@{D\-K\-Image}}
+\subsubsection[{filename}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-K\-String} D\-K\-Image\-::filename}}\label{class_d_k_image_a12b6108f0fee5230984fd2275c24a8ae}
+\hypertarget{class_d_k_image_ac6a91aafc8bd16854d644186b2c3497b}{\index{D\-K\-Image@{D\-K\-Image}!image@{image}}
+\index{image@{image}!DKImage@{D\-K\-Image}}
+\subsubsection[{image}]{\setlength{\rightskip}{0pt plus 5cm}G\-Luint D\-K\-Image\-::image}}\label{class_d_k_image_ac6a91aafc8bd16854d644186b2c3497b}
+\hypertarget{class_d_k_image_ae9cdd848d1f31c486d4433b3739363a2}{\index{D\-K\-Image@{D\-K\-Image}!pot\-\_\-h@{pot\-\_\-h}}
+\index{pot\-\_\-h@{pot\-\_\-h}!DKImage@{D\-K\-Image}}
+\subsubsection[{pot\-\_\-h}]{\setlength{\rightskip}{0pt plus 5cm}int D\-K\-Image\-::pot\-\_\-h}}\label{class_d_k_image_ae9cdd848d1f31c486d4433b3739363a2}
+\hypertarget{class_d_k_image_a3df23f7ab223f3d7e6e2654395ef6fe1}{\index{D\-K\-Image@{D\-K\-Image}!pot\-\_\-w@{pot\-\_\-w}}
+\index{pot\-\_\-w@{pot\-\_\-w}!DKImage@{D\-K\-Image}}
+\subsubsection[{pot\-\_\-w}]{\setlength{\rightskip}{0pt plus 5cm}int D\-K\-Image\-::pot\-\_\-w}}\label{class_d_k_image_a3df23f7ab223f3d7e6e2654395ef6fe1}
+\hypertarget{class_d_k_image_a7b0cb338893f6327718b19c92ffef3d4}{\index{D\-K\-Image@{D\-K\-Image}!square@{square}}
+\index{square@{square}!DKImage@{D\-K\-Image}}
+\subsubsection[{square}]{\setlength{\rightskip}{0pt plus 5cm}G\-Lfloat D\-K\-Image\-::square\mbox{[}12\mbox{]}}}\label{class_d_k_image_a7b0cb338893f6327718b19c92ffef3d4}
+\hypertarget{class_d_k_image_ab8cc39cd81a6f73beca7392f6cb67abe}{\index{D\-K\-Image@{D\-K\-Image}!surface@{surface}}
+\index{surface@{surface}!DKImage@{D\-K\-Image}}
+\subsubsection[{surface}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Surface$\ast$ D\-K\-Image\-::surface}}\label{class_d_k_image_ab8cc39cd81a6f73beca7392f6cb67abe}
+\hypertarget{class_d_k_image_ae6c9b9d773b56e6be7bc6fd3d299eb47}{\index{D\-K\-Image@{D\-K\-Image}!t\-\_\-color@{t\-\_\-color}}
+\index{t\-\_\-color@{t\-\_\-color}!DKImage@{D\-K\-Image}}
+\subsubsection[{t\-\_\-color}]{\setlength{\rightskip}{0pt plus 5cm}G\-Lfloat D\-K\-Image\-::t\-\_\-color\mbox{[}16\mbox{]}}}\label{class_d_k_image_ae6c9b9d773b56e6be7bc6fd3d299eb47}
+\hypertarget{class_d_k_image_a83ea3b25f68ec8d02b6a5b4daf18a2d5}{\index{D\-K\-Image@{D\-K\-Image}!texture@{texture}}
+\index{texture@{texture}!DKImage@{D\-K\-Image}}
+\subsubsection[{texture}]{\setlength{\rightskip}{0pt plus 5cm}G\-Lfloat D\-K\-Image\-::texture\mbox{[}8\mbox{]}}}\label{class_d_k_image_a83ea3b25f68ec8d02b6a5b4daf18a2d5}
+\hypertarget{class_d_k_image_a5552759919ce7e0ad63c542838e19fbe}{\index{D\-K\-Image@{D\-K\-Image}!xpm\-\_\-image@{xpm\-\_\-image}}
+\index{xpm\-\_\-image@{xpm\-\_\-image}!DKImage@{D\-K\-Image}}
+\subsubsection[{xpm\-\_\-image}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$$\ast$ D\-K\-Image\-::xpm\-\_\-image}}\label{class_d_k_image_a5552759919ce7e0ad63c542838e19fbe}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+G\-:/\-Programming/\-Digital\-Knob/\-Libs/digitalknob/\hyperlink{_d_k_image_8h}{D\-K\-Image.\-h}\item 
+G\-:/\-Programming/\-Digital\-Knob/\-Libs/digitalknob/\hyperlink{_d_k_image_8cpp}{D\-K\-Image.\-cpp}\end{DoxyCompactItemize}

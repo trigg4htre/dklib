@@ -1,0 +1,185 @@
+\hypertarget{class_d_k_file_dialog}{\section{D\-K\-File\-Dialog Class Reference}
+\label{class_d_k_file_dialog}\index{D\-K\-File\-Dialog@{D\-K\-File\-Dialog}}
+}
+
+
+{\ttfamily \#include $<$D\-K\-File\-Dialog.\-h$>$}
+
+Inheritance diagram for D\-K\-File\-Dialog\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_d_k_file_dialog}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_d_k_file_dialog_ab93796c73c2f217c24e8b781aa9271e7}{D\-K\-File\-Dialog} ()
+\item 
+\hyperlink{class_d_k_file_dialog_ad42b4e58e53b1bb14146a428a979367f}{D\-K\-File\-Dialog} (\hyperlink{class_d_k_object}{D\-K\-Object} $\ast$parent)
+\item 
+void \hyperlink{class_d_k_file_dialog_a5251d3e811238a2a93f63c4929c42ced}{Create} (\hyperlink{class_d_k_object}{D\-K\-Object} $\ast$parent)
+\item 
+\hyperlink{class_d_k_file_dialog_a938fef792db617cc6962082b77aa65dd}{$\sim$\-D\-K\-File\-Dialog} ()
+\item 
+void \hyperlink{class_d_k_file_dialog_a7816e7b2b4f39e5be944788b369a6549}{On\-Window\-Close} (S\-D\-L\-\_\-\-Event $\ast$\hyperlink{class_d_k_event_a3deebb932ed734363c4ece87971bc45f}{event})
+\item 
+void \hyperlink{class_d_k_file_dialog_a184a2ca236cb75179066dd6d674bfcaf}{On\-List\-Box} (\hyperlink{class_d_k_event}{D\-K\-Event} $\ast$\hyperlink{class_d_k_event_a3deebb932ed734363c4ece87971bc45f}{event})
+\item 
+void \hyperlink{class_d_k_file_dialog_a7aca5321ad7f1ab61b6a9c79d578781f}{On\-Text\-Button} (\hyperlink{class_d_k_event}{D\-K\-Event} $\ast$\hyperlink{class_d_k_event_a3deebb932ed734363c4ece87971bc45f}{event})
+\item 
+void \hyperlink{class_d_k_file_dialog_a6ff258933cd23adad22adb9347f5a77c}{Link\-File\-Dialog\-Event} (void($\ast$\hyperlink{class_d_k_event_a15e926f6b44f003c75930d4f2b5fb988}{File\-Dialog\-Event})(void $\ast$, \hyperlink{class_d_k_event}{D\-K\-Event} $\ast$), void $\ast$arg, int \hyperlink{class_d_k_event_a46877918e12fcb3b2c8988379b6fa6fa}{id})
+\item 
+void \hyperlink{class_d_k_file_dialog_aa3c81773b8c333de616b54c2f04a3089}{Update\-Files\-Panel} (\hyperlink{_d_k_string_8h_ac168e8555ceba18e1a2919b21976bc84}{D\-K\-String} path)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+void($\ast$ \hyperlink{class_d_k_file_dialog_ac32768df68e6cd883697ec2ee38e3aa1}{On\-File\-Dialog} )(void $\ast$, \hyperlink{class_d_k_event}{D\-K\-Event} $\ast$)
+\item 
+void $\ast$ \hyperlink{class_d_k_file_dialog_a464acd6ab35aefc96d018cb2b78adf96}{m\-\_\-arg}
+\item 
+\hyperlink{_d_k_string_8h_ac168e8555ceba18e1a2919b21976bc84}{D\-K\-String} \hyperlink{class_d_k_file_dialog_acc5d715fec68bffde3a6d884c0f9ebef}{selected\-\_\-drive}
+\item 
+\hyperlink{_d_k_string_8h_ac168e8555ceba18e1a2919b21976bc84}{D\-K\-String} \hyperlink{class_d_k_file_dialog_a9fd97e695f47289399f95322f19bd457}{full\-\_\-path}
+\item 
+\hyperlink{class_d_k_font}{D\-K\-Font} \hyperlink{class_d_k_file_dialog_aebe78c2fd6444d16df89031a94a7d155}{font}
+\item 
+\hyperlink{class_d_k_text}{D\-K\-Text} \hyperlink{class_d_k_file_dialog_ab0539d16c59186286391d99c9195f6d2}{path\-\_\-string}
+\item 
+\hyperlink{class_d_k_panel}{D\-K\-Panel} \hyperlink{class_d_k_file_dialog_af20ef313d8c2cc9d34da481145e59cde}{drives\-\_\-panel}
+\item 
+\hyperlink{class_d_k_list_box}{D\-K\-List\-Box} \hyperlink{class_d_k_file_dialog_a4cbafeb900b8ad329e5cd8a6b5851a03}{drives\-\_\-list}
+\item 
+\hyperlink{class_d_k_scroll_panel}{D\-K\-Scroll\-Panel} \hyperlink{class_d_k_file_dialog_a0a10f27ef6994acfddcfc7304220fa1a}{files\-\_\-panel}
+\item 
+\hyperlink{class_d_k_list_box}{D\-K\-List\-Box} \hyperlink{class_d_k_file_dialog_a0e3005f1d9ce634d24cd8704fdcd411e}{files\-\_\-list}
+\item 
+\hyperlink{class_d_k_text_button}{D\-K\-Text\-Button} \hyperlink{class_d_k_file_dialog_aaf1214e298f4f755e667fa59a2f5d3e5}{ok}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_d_k_file_dialog_ab93796c73c2f217c24e8b781aa9271e7}{\index{D\-K\-File\-Dialog@{D\-K\-File\-Dialog}!D\-K\-File\-Dialog@{D\-K\-File\-Dialog}}
+\index{D\-K\-File\-Dialog@{D\-K\-File\-Dialog}!DKFileDialog@{D\-K\-File\-Dialog}}
+\subsubsection[{D\-K\-File\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}D\-K\-File\-Dialog\-::\-D\-K\-File\-Dialog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_d_k_file_dialog_ab93796c73c2f217c24e8b781aa9271e7}
+\hypertarget{class_d_k_file_dialog_ad42b4e58e53b1bb14146a428a979367f}{\index{D\-K\-File\-Dialog@{D\-K\-File\-Dialog}!D\-K\-File\-Dialog@{D\-K\-File\-Dialog}}
+\index{D\-K\-File\-Dialog@{D\-K\-File\-Dialog}!DKFileDialog@{D\-K\-File\-Dialog}}
+\subsubsection[{D\-K\-File\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}D\-K\-File\-Dialog\-::\-D\-K\-File\-Dialog (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-K\-Object} $\ast$}]{parent}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_file_dialog_ad42b4e58e53b1bb14146a428a979367f}
+\hypertarget{class_d_k_file_dialog_a938fef792db617cc6962082b77aa65dd}{\index{D\-K\-File\-Dialog@{D\-K\-File\-Dialog}!$\sim$\-D\-K\-File\-Dialog@{$\sim$\-D\-K\-File\-Dialog}}
+\index{$\sim$\-D\-K\-File\-Dialog@{$\sim$\-D\-K\-File\-Dialog}!DKFileDialog@{D\-K\-File\-Dialog}}
+\subsubsection[{$\sim$\-D\-K\-File\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}D\-K\-File\-Dialog\-::$\sim$\-D\-K\-File\-Dialog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_d_k_file_dialog_a938fef792db617cc6962082b77aa65dd}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_d_k_file_dialog_a5251d3e811238a2a93f63c4929c42ced}{\index{D\-K\-File\-Dialog@{D\-K\-File\-Dialog}!Create@{Create}}
+\index{Create@{Create}!DKFileDialog@{D\-K\-File\-Dialog}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-File\-Dialog\-::\-Create (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-K\-Object} $\ast$}]{parent}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_file_dialog_a5251d3e811238a2a93f63c4929c42ced}
+\hypertarget{class_d_k_file_dialog_a6ff258933cd23adad22adb9347f5a77c}{\index{D\-K\-File\-Dialog@{D\-K\-File\-Dialog}!Link\-File\-Dialog\-Event@{Link\-File\-Dialog\-Event}}
+\index{Link\-File\-Dialog\-Event@{Link\-File\-Dialog\-Event}!DKFileDialog@{D\-K\-File\-Dialog}}
+\subsubsection[{Link\-File\-Dialog\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-File\-Dialog\-::\-Link\-File\-Dialog\-Event (
+\begin{DoxyParamCaption}
+\item[{void($\ast$)(void $\ast$, {\bf D\-K\-Event} $\ast$)}]{File\-Dialog\-Event, }
+\item[{void $\ast$}]{arg, }
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_file_dialog_a6ff258933cd23adad22adb9347f5a77c}
+\hypertarget{class_d_k_file_dialog_a184a2ca236cb75179066dd6d674bfcaf}{\index{D\-K\-File\-Dialog@{D\-K\-File\-Dialog}!On\-List\-Box@{On\-List\-Box}}
+\index{On\-List\-Box@{On\-List\-Box}!DKFileDialog@{D\-K\-File\-Dialog}}
+\subsubsection[{On\-List\-Box}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-File\-Dialog\-::\-On\-List\-Box (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-K\-Event} $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_k_file_dialog_a184a2ca236cb75179066dd6d674bfcaf}
+
+
+Reimplemented from \hyperlink{class_d_k_event_a1034aa177fd66f2548b15cc88f07982b}{D\-K\-Event}.
+
+\hypertarget{class_d_k_file_dialog_a7aca5321ad7f1ab61b6a9c79d578781f}{\index{D\-K\-File\-Dialog@{D\-K\-File\-Dialog}!On\-Text\-Button@{On\-Text\-Button}}
+\index{On\-Text\-Button@{On\-Text\-Button}!DKFileDialog@{D\-K\-File\-Dialog}}
+\subsubsection[{On\-Text\-Button}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-File\-Dialog\-::\-On\-Text\-Button (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-K\-Event} $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_k_file_dialog_a7aca5321ad7f1ab61b6a9c79d578781f}
+
+
+Reimplemented from \hyperlink{class_d_k_event_abce060932c2e6306209987a60b2886fe}{D\-K\-Event}.
+
+\hypertarget{class_d_k_file_dialog_a7816e7b2b4f39e5be944788b369a6549}{\index{D\-K\-File\-Dialog@{D\-K\-File\-Dialog}!On\-Window\-Close@{On\-Window\-Close}}
+\index{On\-Window\-Close@{On\-Window\-Close}!DKFileDialog@{D\-K\-File\-Dialog}}
+\subsubsection[{On\-Window\-Close}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-File\-Dialog\-::\-On\-Window\-Close (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_k_file_dialog_a7816e7b2b4f39e5be944788b369a6549}
+
+
+Reimplemented from \hyperlink{class_d_k_event_a6161540936445623e8a208c01686bcc6}{D\-K\-Event}.
+
+\hypertarget{class_d_k_file_dialog_aa3c81773b8c333de616b54c2f04a3089}{\index{D\-K\-File\-Dialog@{D\-K\-File\-Dialog}!Update\-Files\-Panel@{Update\-Files\-Panel}}
+\index{Update\-Files\-Panel@{Update\-Files\-Panel}!DKFileDialog@{D\-K\-File\-Dialog}}
+\subsubsection[{Update\-Files\-Panel}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-File\-Dialog\-::\-Update\-Files\-Panel (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-K\-String}}]{path}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_file_dialog_aa3c81773b8c333de616b54c2f04a3089}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_d_k_file_dialog_a4cbafeb900b8ad329e5cd8a6b5851a03}{\index{D\-K\-File\-Dialog@{D\-K\-File\-Dialog}!drives\-\_\-list@{drives\-\_\-list}}
+\index{drives\-\_\-list@{drives\-\_\-list}!DKFileDialog@{D\-K\-File\-Dialog}}
+\subsubsection[{drives\-\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-K\-List\-Box} D\-K\-File\-Dialog\-::drives\-\_\-list}}\label{class_d_k_file_dialog_a4cbafeb900b8ad329e5cd8a6b5851a03}
+\hypertarget{class_d_k_file_dialog_af20ef313d8c2cc9d34da481145e59cde}{\index{D\-K\-File\-Dialog@{D\-K\-File\-Dialog}!drives\-\_\-panel@{drives\-\_\-panel}}
+\index{drives\-\_\-panel@{drives\-\_\-panel}!DKFileDialog@{D\-K\-File\-Dialog}}
+\subsubsection[{drives\-\_\-panel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-K\-Panel} D\-K\-File\-Dialog\-::drives\-\_\-panel}}\label{class_d_k_file_dialog_af20ef313d8c2cc9d34da481145e59cde}
+\hypertarget{class_d_k_file_dialog_a0e3005f1d9ce634d24cd8704fdcd411e}{\index{D\-K\-File\-Dialog@{D\-K\-File\-Dialog}!files\-\_\-list@{files\-\_\-list}}
+\index{files\-\_\-list@{files\-\_\-list}!DKFileDialog@{D\-K\-File\-Dialog}}
+\subsubsection[{files\-\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-K\-List\-Box} D\-K\-File\-Dialog\-::files\-\_\-list}}\label{class_d_k_file_dialog_a0e3005f1d9ce634d24cd8704fdcd411e}
+\hypertarget{class_d_k_file_dialog_a0a10f27ef6994acfddcfc7304220fa1a}{\index{D\-K\-File\-Dialog@{D\-K\-File\-Dialog}!files\-\_\-panel@{files\-\_\-panel}}
+\index{files\-\_\-panel@{files\-\_\-panel}!DKFileDialog@{D\-K\-File\-Dialog}}
+\subsubsection[{files\-\_\-panel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-K\-Scroll\-Panel} D\-K\-File\-Dialog\-::files\-\_\-panel}}\label{class_d_k_file_dialog_a0a10f27ef6994acfddcfc7304220fa1a}
+\hypertarget{class_d_k_file_dialog_aebe78c2fd6444d16df89031a94a7d155}{\index{D\-K\-File\-Dialog@{D\-K\-File\-Dialog}!font@{font}}
+\index{font@{font}!DKFileDialog@{D\-K\-File\-Dialog}}
+\subsubsection[{font}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-K\-Font} D\-K\-File\-Dialog\-::font}}\label{class_d_k_file_dialog_aebe78c2fd6444d16df89031a94a7d155}
+\hypertarget{class_d_k_file_dialog_a9fd97e695f47289399f95322f19bd457}{\index{D\-K\-File\-Dialog@{D\-K\-File\-Dialog}!full\-\_\-path@{full\-\_\-path}}
+\index{full\-\_\-path@{full\-\_\-path}!DKFileDialog@{D\-K\-File\-Dialog}}
+\subsubsection[{full\-\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-K\-String} D\-K\-File\-Dialog\-::full\-\_\-path}}\label{class_d_k_file_dialog_a9fd97e695f47289399f95322f19bd457}
+\hypertarget{class_d_k_file_dialog_a464acd6ab35aefc96d018cb2b78adf96}{\index{D\-K\-File\-Dialog@{D\-K\-File\-Dialog}!m\-\_\-arg@{m\-\_\-arg}}
+\index{m\-\_\-arg@{m\-\_\-arg}!DKFileDialog@{D\-K\-File\-Dialog}}
+\subsubsection[{m\-\_\-arg}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ D\-K\-File\-Dialog\-::m\-\_\-arg}}\label{class_d_k_file_dialog_a464acd6ab35aefc96d018cb2b78adf96}
+\hypertarget{class_d_k_file_dialog_aaf1214e298f4f755e667fa59a2f5d3e5}{\index{D\-K\-File\-Dialog@{D\-K\-File\-Dialog}!ok@{ok}}
+\index{ok@{ok}!DKFileDialog@{D\-K\-File\-Dialog}}
+\subsubsection[{ok}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-K\-Text\-Button} D\-K\-File\-Dialog\-::ok}}\label{class_d_k_file_dialog_aaf1214e298f4f755e667fa59a2f5d3e5}
+\hypertarget{class_d_k_file_dialog_ac32768df68e6cd883697ec2ee38e3aa1}{\index{D\-K\-File\-Dialog@{D\-K\-File\-Dialog}!On\-File\-Dialog@{On\-File\-Dialog}}
+\index{On\-File\-Dialog@{On\-File\-Dialog}!DKFileDialog@{D\-K\-File\-Dialog}}
+\subsubsection[{On\-File\-Dialog}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ D\-K\-File\-Dialog\-::\-On\-File\-Dialog)(void $\ast$, {\bf D\-K\-Event} $\ast$)}}\label{class_d_k_file_dialog_ac32768df68e6cd883697ec2ee38e3aa1}
+\hypertarget{class_d_k_file_dialog_ab0539d16c59186286391d99c9195f6d2}{\index{D\-K\-File\-Dialog@{D\-K\-File\-Dialog}!path\-\_\-string@{path\-\_\-string}}
+\index{path\-\_\-string@{path\-\_\-string}!DKFileDialog@{D\-K\-File\-Dialog}}
+\subsubsection[{path\-\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-K\-Text} D\-K\-File\-Dialog\-::path\-\_\-string}}\label{class_d_k_file_dialog_ab0539d16c59186286391d99c9195f6d2}
+\hypertarget{class_d_k_file_dialog_acc5d715fec68bffde3a6d884c0f9ebef}{\index{D\-K\-File\-Dialog@{D\-K\-File\-Dialog}!selected\-\_\-drive@{selected\-\_\-drive}}
+\index{selected\-\_\-drive@{selected\-\_\-drive}!DKFileDialog@{D\-K\-File\-Dialog}}
+\subsubsection[{selected\-\_\-drive}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-K\-String} D\-K\-File\-Dialog\-::selected\-\_\-drive}}\label{class_d_k_file_dialog_acc5d715fec68bffde3a6d884c0f9ebef}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+G\-:/\-Programming/\-Digital\-Knob/\-Libs/digitalknob/\hyperlink{_d_k_file_dialog_8h}{D\-K\-File\-Dialog.\-h}\item 
+G\-:/\-Programming/\-Digital\-Knob/\-Libs/digitalknob/\hyperlink{_d_k_file_dialog_8cpp}{D\-K\-File\-Dialog.\-cpp}\end{DoxyCompactItemize}

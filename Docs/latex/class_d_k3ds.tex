@@ -1,0 +1,157 @@
+\hypertarget{class_d_k3ds}{\section{D\-K3ds Class Reference}
+\label{class_d_k3ds}\index{D\-K3ds@{D\-K3ds}}
+}
+
+
+{\ttfamily \#include $<$D\-K3ds.\-h$>$}
+
+Inheritance diagram for D\-K3ds\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_d_k3ds}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_d_k3ds_a3fa5c7306fffeaaef7482ff7f5d2e786}{D\-K3ds} ()
+\item 
+\hyperlink{class_d_k3ds_a09d97dbfa0f403572793a847313d374e}{D\-K3ds} (\hyperlink{class_d_k_object}{D\-K\-Object} $\ast$parent, \hyperlink{_d_k_string_8h_ac168e8555ceba18e1a2919b21976bc84}{D\-K\-String} file, \hyperlink{_d_k_axis_8h_a0ca1f005fbb936f8e7a7f2433591f418}{D\-K\-Point} pos)
+\item 
+void \hyperlink{class_d_k3ds_a022bcd3888298e789c808b1dc13c18d3}{Create} (\hyperlink{class_d_k_object}{D\-K\-Object} $\ast$parent, \hyperlink{_d_k_string_8h_ac168e8555ceba18e1a2919b21976bc84}{D\-K\-String} file, \hyperlink{_d_k_axis_8h_a0ca1f005fbb936f8e7a7f2433591f418}{D\-K\-Point} pos)
+\item 
+\hyperlink{class_d_k3ds_a4388863acdd64c1fcb3a6a77689b7700}{$\sim$\-D\-K3ds} ()
+\item 
+void \hyperlink{class_d_k3ds_ab914c6d249f79cb19e99ebd7cb477067}{Display} ()
+\item 
+void \hyperlink{class_d_k3ds_a1fbf931413b0346cb344d53d41b544ae}{render\-\_\-node} (Lib3ds\-Node $\ast$node)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Lib3ds\-File $\ast$ \hyperlink{class_d_k3ds_a29b89506bbbb2c3e7fe7819c60a421a3}{model}
+\item 
+float \hyperlink{class_d_k3ds_a545a26a1da5a9657ea733b3c68c5e47d}{bmin} \mbox{[}3\mbox{]}
+\item 
+float \hyperlink{class_d_k3ds_a48005a2684ba7baf584f7eba430405b0}{bmax} \mbox{[}3\mbox{]}
+\item 
+float \hyperlink{class_d_k3ds_a5cdfe11fe1f186a4658f53ea87212d91}{sx}
+\item 
+float \hyperlink{class_d_k3ds_ab47839ed130f6ca5cc997a1dd89ddf39}{sy}
+\item 
+float \hyperlink{class_d_k3ds_aea27dedf0d069c6bfce3ed166ab5370c}{sz}
+\item 
+float \hyperlink{class_d_k3ds_a5ec0d86a7237b2cc00298287cfd89403}{size}
+\item 
+float \hyperlink{class_d_k3ds_add34cbc487ae2726b6a4758c58178026}{cx}
+\item 
+float \hyperlink{class_d_k3ds_a786f24ce0f7bd9e98ebadd87e2ba3985}{cy}
+\item 
+float \hyperlink{class_d_k3ds_a155aa1b4cfeeb5a1c76ca516f737b138}{cz}
+\item 
+\hyperlink{_d_k_string_8h_ac168e8555ceba18e1a2919b21976bc84}{D\-K\-String} \hyperlink{class_d_k3ds_a990ac6faa0219928544e5327ea7f8e65}{camera}
+\item 
+char \hyperlink{class_d_k3ds_a11931ab3ae1f6ec845642b6ce7b1193b}{datapath} \mbox{[}256\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_d_k3ds_a3fa5c7306fffeaaef7482ff7f5d2e786}{\index{D\-K3ds@{D\-K3ds}!D\-K3ds@{D\-K3ds}}
+\index{D\-K3ds@{D\-K3ds}!DK3ds@{D\-K3ds}}
+\subsubsection[{D\-K3ds}]{\setlength{\rightskip}{0pt plus 5cm}D\-K3ds\-::\-D\-K3ds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_d_k3ds_a3fa5c7306fffeaaef7482ff7f5d2e786}
+\hypertarget{class_d_k3ds_a09d97dbfa0f403572793a847313d374e}{\index{D\-K3ds@{D\-K3ds}!D\-K3ds@{D\-K3ds}}
+\index{D\-K3ds@{D\-K3ds}!DK3ds@{D\-K3ds}}
+\subsubsection[{D\-K3ds}]{\setlength{\rightskip}{0pt plus 5cm}D\-K3ds\-::\-D\-K3ds (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-K\-Object} $\ast$}]{parent, }
+\item[{{\bf D\-K\-String}}]{file, }
+\item[{{\bf D\-K\-Point}}]{pos}
+\end{DoxyParamCaption}
+)}}\label{class_d_k3ds_a09d97dbfa0f403572793a847313d374e}
+\hypertarget{class_d_k3ds_a4388863acdd64c1fcb3a6a77689b7700}{\index{D\-K3ds@{D\-K3ds}!$\sim$\-D\-K3ds@{$\sim$\-D\-K3ds}}
+\index{$\sim$\-D\-K3ds@{$\sim$\-D\-K3ds}!DK3ds@{D\-K3ds}}
+\subsubsection[{$\sim$\-D\-K3ds}]{\setlength{\rightskip}{0pt plus 5cm}D\-K3ds\-::$\sim$\-D\-K3ds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_d_k3ds_a4388863acdd64c1fcb3a6a77689b7700}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_d_k3ds_a022bcd3888298e789c808b1dc13c18d3}{\index{D\-K3ds@{D\-K3ds}!Create@{Create}}
+\index{Create@{Create}!DK3ds@{D\-K3ds}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K3ds\-::\-Create (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-K\-Object} $\ast$}]{parent, }
+\item[{{\bf D\-K\-String}}]{file, }
+\item[{{\bf D\-K\-Point}}]{pos}
+\end{DoxyParamCaption}
+)}}\label{class_d_k3ds_a022bcd3888298e789c808b1dc13c18d3}
+\hypertarget{class_d_k3ds_ab914c6d249f79cb19e99ebd7cb477067}{\index{D\-K3ds@{D\-K3ds}!Display@{Display}}
+\index{Display@{Display}!DK3ds@{D\-K3ds}}
+\subsubsection[{Display}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K3ds\-::\-Display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_k3ds_ab914c6d249f79cb19e99ebd7cb477067}
+
+
+Reimplemented from \hyperlink{class_d_k_object_a6c7afb48b29a473ecf68f2af29f17ca9}{D\-K\-Object}.
+
+\hypertarget{class_d_k3ds_a1fbf931413b0346cb344d53d41b544ae}{\index{D\-K3ds@{D\-K3ds}!render\-\_\-node@{render\-\_\-node}}
+\index{render\-\_\-node@{render\-\_\-node}!DK3ds@{D\-K3ds}}
+\subsubsection[{render\-\_\-node}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K3ds\-::render\-\_\-node (
+\begin{DoxyParamCaption}
+\item[{Lib3ds\-Node $\ast$}]{node}
+\end{DoxyParamCaption}
+)}}\label{class_d_k3ds_a1fbf931413b0346cb344d53d41b544ae}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_d_k3ds_a48005a2684ba7baf584f7eba430405b0}{\index{D\-K3ds@{D\-K3ds}!bmax@{bmax}}
+\index{bmax@{bmax}!DK3ds@{D\-K3ds}}
+\subsubsection[{bmax}]{\setlength{\rightskip}{0pt plus 5cm}float D\-K3ds\-::bmax\mbox{[}3\mbox{]}}}\label{class_d_k3ds_a48005a2684ba7baf584f7eba430405b0}
+\hypertarget{class_d_k3ds_a545a26a1da5a9657ea733b3c68c5e47d}{\index{D\-K3ds@{D\-K3ds}!bmin@{bmin}}
+\index{bmin@{bmin}!DK3ds@{D\-K3ds}}
+\subsubsection[{bmin}]{\setlength{\rightskip}{0pt plus 5cm}float D\-K3ds\-::bmin\mbox{[}3\mbox{]}}}\label{class_d_k3ds_a545a26a1da5a9657ea733b3c68c5e47d}
+\hypertarget{class_d_k3ds_a990ac6faa0219928544e5327ea7f8e65}{\index{D\-K3ds@{D\-K3ds}!camera@{camera}}
+\index{camera@{camera}!DK3ds@{D\-K3ds}}
+\subsubsection[{camera}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-K\-String} D\-K3ds\-::camera}}\label{class_d_k3ds_a990ac6faa0219928544e5327ea7f8e65}
+\hypertarget{class_d_k3ds_add34cbc487ae2726b6a4758c58178026}{\index{D\-K3ds@{D\-K3ds}!cx@{cx}}
+\index{cx@{cx}!DK3ds@{D\-K3ds}}
+\subsubsection[{cx}]{\setlength{\rightskip}{0pt plus 5cm}float D\-K3ds\-::cx}}\label{class_d_k3ds_add34cbc487ae2726b6a4758c58178026}
+\hypertarget{class_d_k3ds_a786f24ce0f7bd9e98ebadd87e2ba3985}{\index{D\-K3ds@{D\-K3ds}!cy@{cy}}
+\index{cy@{cy}!DK3ds@{D\-K3ds}}
+\subsubsection[{cy}]{\setlength{\rightskip}{0pt plus 5cm}float D\-K3ds\-::cy}}\label{class_d_k3ds_a786f24ce0f7bd9e98ebadd87e2ba3985}
+\hypertarget{class_d_k3ds_a155aa1b4cfeeb5a1c76ca516f737b138}{\index{D\-K3ds@{D\-K3ds}!cz@{cz}}
+\index{cz@{cz}!DK3ds@{D\-K3ds}}
+\subsubsection[{cz}]{\setlength{\rightskip}{0pt plus 5cm}float D\-K3ds\-::cz}}\label{class_d_k3ds_a155aa1b4cfeeb5a1c76ca516f737b138}
+\hypertarget{class_d_k3ds_a11931ab3ae1f6ec845642b6ce7b1193b}{\index{D\-K3ds@{D\-K3ds}!datapath@{datapath}}
+\index{datapath@{datapath}!DK3ds@{D\-K3ds}}
+\subsubsection[{datapath}]{\setlength{\rightskip}{0pt plus 5cm}char D\-K3ds\-::datapath\mbox{[}256\mbox{]}}}\label{class_d_k3ds_a11931ab3ae1f6ec845642b6ce7b1193b}
+\hypertarget{class_d_k3ds_a29b89506bbbb2c3e7fe7819c60a421a3}{\index{D\-K3ds@{D\-K3ds}!model@{model}}
+\index{model@{model}!DK3ds@{D\-K3ds}}
+\subsubsection[{model}]{\setlength{\rightskip}{0pt plus 5cm}Lib3ds\-File$\ast$ D\-K3ds\-::model}}\label{class_d_k3ds_a29b89506bbbb2c3e7fe7819c60a421a3}
+\hypertarget{class_d_k3ds_a5ec0d86a7237b2cc00298287cfd89403}{\index{D\-K3ds@{D\-K3ds}!size@{size}}
+\index{size@{size}!DK3ds@{D\-K3ds}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}float D\-K3ds\-::size}}\label{class_d_k3ds_a5ec0d86a7237b2cc00298287cfd89403}
+\hypertarget{class_d_k3ds_a5cdfe11fe1f186a4658f53ea87212d91}{\index{D\-K3ds@{D\-K3ds}!sx@{sx}}
+\index{sx@{sx}!DK3ds@{D\-K3ds}}
+\subsubsection[{sx}]{\setlength{\rightskip}{0pt plus 5cm}float D\-K3ds\-::sx}}\label{class_d_k3ds_a5cdfe11fe1f186a4658f53ea87212d91}
+\hypertarget{class_d_k3ds_ab47839ed130f6ca5cc997a1dd89ddf39}{\index{D\-K3ds@{D\-K3ds}!sy@{sy}}
+\index{sy@{sy}!DK3ds@{D\-K3ds}}
+\subsubsection[{sy}]{\setlength{\rightskip}{0pt plus 5cm}float D\-K3ds\-::sy}}\label{class_d_k3ds_ab47839ed130f6ca5cc997a1dd89ddf39}
+\hypertarget{class_d_k3ds_aea27dedf0d069c6bfce3ed166ab5370c}{\index{D\-K3ds@{D\-K3ds}!sz@{sz}}
+\index{sz@{sz}!DK3ds@{D\-K3ds}}
+\subsubsection[{sz}]{\setlength{\rightskip}{0pt plus 5cm}float D\-K3ds\-::sz}}\label{class_d_k3ds_aea27dedf0d069c6bfce3ed166ab5370c}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+G\-:/\-Programming/\-Digital\-Knob/\-Libs/digitalknob/\hyperlink{_d_k3ds_8h}{D\-K3ds.\-h}\item 
+G\-:/\-Programming/\-Digital\-Knob/\-Libs/digitalknob/\hyperlink{_d_k3ds_8cpp}{D\-K3ds.\-cpp}\end{DoxyCompactItemize}

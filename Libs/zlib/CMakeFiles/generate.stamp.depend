@@ -1,0 +1,28 @@
+# CMake generation dependency list for this directory.
+C:/DigitalKnob/lib/zlib/CMakeLists.txt
+C:/DigitalKnob/lib/zlib/CMakeFiles/CMakeSystem.cmake
+C:/DigitalKnob/lib/zlib/CMakeFiles/CMakeCCompiler.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/Platform/Windows.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/Platform/Windows-cl.cmake
+C:/DigitalKnob/lib/zlib/CMakeFiles/CMakeCPlatform.cmake
+C:/DigitalKnob/lib/zlib/CMakeFiles/CMakeCXXPlatform.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/Platform/cl.cmake
+C:/DigitalKnob/lib/zlib/CMakeFiles/CMakeRCCompiler.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CMakeExpandImportedTargets.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CMakeParseArguments.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CMakeExpandImportedTargets.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CMakeParseArguments.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CMakeExpandImportedTargets.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CMakeParseArguments.cmake
+C:/DigitalKnob/lib/zlib/zconf.h.cmakein
