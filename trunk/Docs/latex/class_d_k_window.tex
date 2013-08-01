@@ -1,0 +1,184 @@
+\hypertarget{class_d_k_window}{\section{D\-K\-Window Class Reference}
+\label{class_d_k_window}\index{D\-K\-Window@{D\-K\-Window}}
+}
+
+
+{\ttfamily \#include $<$D\-K\-Window.\-h$>$}
+
+Inheritance diagram for D\-K\-Window\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_d_k_window}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_d_k_window_a06fed38d62c24d718200dd2cb42c9af7}{D\-K\-Window} ()
+\item 
+\hyperlink{class_d_k_window_a010b151d874f6bb4986fbdac520f5fd1}{D\-K\-Window} (\hyperlink{class_d_k_object}{D\-K\-Object} $\ast$parent, \hyperlink{_d_k_string_8h_ac168e8555ceba18e1a2919b21976bc84}{D\-K\-String} caption, \hyperlink{_d_k_axis_8h_a0ca1f005fbb936f8e7a7f2433591f418}{D\-K\-Point} pos, \hyperlink{_d_k_axis_8h_aaa25a8c7cbf504fffdb8a4208ff7a731}{D\-K\-Size} siz)
+\item 
+void \hyperlink{class_d_k_window_a3231d55cad7019df746c14f9a337017a}{Create} (\hyperlink{class_d_k_object}{D\-K\-Object} $\ast$parent, \hyperlink{_d_k_string_8h_ac168e8555ceba18e1a2919b21976bc84}{D\-K\-String} caption, \hyperlink{_d_k_axis_8h_a0ca1f005fbb936f8e7a7f2433591f418}{D\-K\-Point} pos, \hyperlink{_d_k_axis_8h_aaa25a8c7cbf504fffdb8a4208ff7a731}{D\-K\-Size} siz)
+\item 
+\hyperlink{class_d_k_window_aa088eb13ff41881edde5ab88d63668e5}{$\sim$\-D\-K\-Window} ()
+\item 
+void \hyperlink{class_d_k_window_aad23d7482a3a4fc19374211b702c720a}{On\-Window\-Resized} (S\-D\-L\-\_\-\-Event $\ast$\hyperlink{class_d_k_event_a3deebb932ed734363c4ece87971bc45f}{event})
+\item 
+virtual void \hyperlink{class_d_k_window_abdf86d93190b7ba0ec1702421e3c653a}{On\-Mouse\-Button\-Down} (S\-D\-L\-\_\-\-Event $\ast$\hyperlink{class_d_k_event_a3deebb932ed734363c4ece87971bc45f}{event})
+\item 
+void \hyperlink{class_d_k_window_afe21acd61f1c5af92659f20b3ade3437}{On\-Mouse\-Button\-Up} (S\-D\-L\-\_\-\-Event $\ast$\hyperlink{class_d_k_event_a3deebb932ed734363c4ece87971bc45f}{event})
+\item 
+void \hyperlink{class_d_k_window_a40aaa561983c88929e4215c1527f456b}{On\-Mouse\-Motion} (S\-D\-L\-\_\-\-Event $\ast$\hyperlink{class_d_k_event_a3deebb932ed734363c4ece87971bc45f}{event})
+\item 
+void \hyperlink{class_d_k_window_ad1a86a9ae5184d7b7202ba4df8cc6742}{Set\-Color} (\hyperlink{class_d_k_color}{D\-K\-Color} rgba)
+\item 
+void \hyperlink{class_d_k_window_ae99e263895f48fb458828336eeeecdb7}{Display} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_d_k_window_a11d05eb7b6f266118231fa6c502d56d4}{is\-\_\-frame}
+\item 
+bool \hyperlink{class_d_k_window_a9c3b07e8f9e9f7b5a2fdfeb5413190b6}{dragging}
+\item 
+int \hyperlink{class_d_k_window_a7ab30185d7d22f7caea63b8f84e0e6b1}{drag\-\_\-x}
+\item 
+int \hyperlink{class_d_k_window_a40f644b725e4169a5efc17ec3345ca73}{drag\-\_\-y}
+\item 
+\hyperlink{class_d_k_square}{D\-K\-Square} \hyperlink{class_d_k_window_a89bde6d6cdc0d740daf6c4b5967f9b5f}{bar}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_d_k_window_a06fed38d62c24d718200dd2cb42c9af7}{\index{D\-K\-Window@{D\-K\-Window}!D\-K\-Window@{D\-K\-Window}}
+\index{D\-K\-Window@{D\-K\-Window}!DKWindow@{D\-K\-Window}}
+\subsubsection[{D\-K\-Window}]{\setlength{\rightskip}{0pt plus 5cm}D\-K\-Window\-::\-D\-K\-Window (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_d_k_window_a06fed38d62c24d718200dd2cb42c9af7}
+\hypertarget{class_d_k_window_a010b151d874f6bb4986fbdac520f5fd1}{\index{D\-K\-Window@{D\-K\-Window}!D\-K\-Window@{D\-K\-Window}}
+\index{D\-K\-Window@{D\-K\-Window}!DKWindow@{D\-K\-Window}}
+\subsubsection[{D\-K\-Window}]{\setlength{\rightskip}{0pt plus 5cm}D\-K\-Window\-::\-D\-K\-Window (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-K\-Object} $\ast$}]{parent, }
+\item[{{\bf D\-K\-String}}]{caption, }
+\item[{{\bf D\-K\-Point}}]{pos, }
+\item[{{\bf D\-K\-Size}}]{siz}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_window_a010b151d874f6bb4986fbdac520f5fd1}
+\hypertarget{class_d_k_window_aa088eb13ff41881edde5ab88d63668e5}{\index{D\-K\-Window@{D\-K\-Window}!$\sim$\-D\-K\-Window@{$\sim$\-D\-K\-Window}}
+\index{$\sim$\-D\-K\-Window@{$\sim$\-D\-K\-Window}!DKWindow@{D\-K\-Window}}
+\subsubsection[{$\sim$\-D\-K\-Window}]{\setlength{\rightskip}{0pt plus 5cm}D\-K\-Window\-::$\sim$\-D\-K\-Window (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_window_aa088eb13ff41881edde5ab88d63668e5}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_d_k_window_a3231d55cad7019df746c14f9a337017a}{\index{D\-K\-Window@{D\-K\-Window}!Create@{Create}}
+\index{Create@{Create}!DKWindow@{D\-K\-Window}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Window\-::\-Create (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-K\-Object} $\ast$}]{parent, }
+\item[{{\bf D\-K\-String}}]{caption, }
+\item[{{\bf D\-K\-Point}}]{pos, }
+\item[{{\bf D\-K\-Size}}]{siz}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_window_a3231d55cad7019df746c14f9a337017a}
+\hypertarget{class_d_k_window_ae99e263895f48fb458828336eeeecdb7}{\index{D\-K\-Window@{D\-K\-Window}!Display@{Display}}
+\index{Display@{Display}!DKWindow@{D\-K\-Window}}
+\subsubsection[{Display}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Window\-::\-Display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_k_window_ae99e263895f48fb458828336eeeecdb7}
+
+
+Reimplemented from \hyperlink{class_d_k_panel_ae254b9bdde5b46f508c539d7a9090c3d}{D\-K\-Panel}.
+
+\hypertarget{class_d_k_window_abdf86d93190b7ba0ec1702421e3c653a}{\index{D\-K\-Window@{D\-K\-Window}!On\-Mouse\-Button\-Down@{On\-Mouse\-Button\-Down}}
+\index{On\-Mouse\-Button\-Down@{On\-Mouse\-Button\-Down}!DKWindow@{D\-K\-Window}}
+\subsubsection[{On\-Mouse\-Button\-Down}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Window\-::\-On\-Mouse\-Button\-Down (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_k_window_abdf86d93190b7ba0ec1702421e3c653a}
+
+
+Reimplemented from \hyperlink{class_d_k_event_a0428b81f313a78d9fd29b768c82b0ae9}{D\-K\-Event}.
+
+
+
+Reimplemented in \hyperlink{class_d_k_color_picker_a3eb4d359074376e302943f239722a299}{D\-K\-Color\-Picker}.
+
+\hypertarget{class_d_k_window_afe21acd61f1c5af92659f20b3ade3437}{\index{D\-K\-Window@{D\-K\-Window}!On\-Mouse\-Button\-Up@{On\-Mouse\-Button\-Up}}
+\index{On\-Mouse\-Button\-Up@{On\-Mouse\-Button\-Up}!DKWindow@{D\-K\-Window}}
+\subsubsection[{On\-Mouse\-Button\-Up}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Window\-::\-On\-Mouse\-Button\-Up (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_k_window_afe21acd61f1c5af92659f20b3ade3437}
+
+
+Reimplemented from \hyperlink{class_d_k_event_a7add2973c846d6eef70cb56a26843e0e}{D\-K\-Event}.
+
+\hypertarget{class_d_k_window_a40aaa561983c88929e4215c1527f456b}{\index{D\-K\-Window@{D\-K\-Window}!On\-Mouse\-Motion@{On\-Mouse\-Motion}}
+\index{On\-Mouse\-Motion@{On\-Mouse\-Motion}!DKWindow@{D\-K\-Window}}
+\subsubsection[{On\-Mouse\-Motion}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Window\-::\-On\-Mouse\-Motion (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_k_window_a40aaa561983c88929e4215c1527f456b}
+
+
+Reimplemented from \hyperlink{class_d_k_event_a8082934ad6166b2a493851c633a78708}{D\-K\-Event}.
+
+\hypertarget{class_d_k_window_aad23d7482a3a4fc19374211b702c720a}{\index{D\-K\-Window@{D\-K\-Window}!On\-Window\-Resized@{On\-Window\-Resized}}
+\index{On\-Window\-Resized@{On\-Window\-Resized}!DKWindow@{D\-K\-Window}}
+\subsubsection[{On\-Window\-Resized}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Window\-::\-On\-Window\-Resized (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_k_window_aad23d7482a3a4fc19374211b702c720a}
+
+
+Reimplemented from \hyperlink{class_d_k_event_a6510a3c6f4357617709af58043d9a834}{D\-K\-Event}.
+
+\hypertarget{class_d_k_window_ad1a86a9ae5184d7b7202ba4df8cc6742}{\index{D\-K\-Window@{D\-K\-Window}!Set\-Color@{Set\-Color}}
+\index{Set\-Color@{Set\-Color}!DKWindow@{D\-K\-Window}}
+\subsubsection[{Set\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Window\-::\-Set\-Color (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-K\-Color}}]{rgba}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_k_window_ad1a86a9ae5184d7b7202ba4df8cc6742}
+
+
+Reimplemented from \hyperlink{class_d_k_panel_a9e564424f3fbc9d57a00c4d3eea2dded}{D\-K\-Panel}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_d_k_window_a89bde6d6cdc0d740daf6c4b5967f9b5f}{\index{D\-K\-Window@{D\-K\-Window}!bar@{bar}}
+\index{bar@{bar}!DKWindow@{D\-K\-Window}}
+\subsubsection[{bar}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-K\-Square} D\-K\-Window\-::bar}}\label{class_d_k_window_a89bde6d6cdc0d740daf6c4b5967f9b5f}
+\hypertarget{class_d_k_window_a7ab30185d7d22f7caea63b8f84e0e6b1}{\index{D\-K\-Window@{D\-K\-Window}!drag\-\_\-x@{drag\-\_\-x}}
+\index{drag\-\_\-x@{drag\-\_\-x}!DKWindow@{D\-K\-Window}}
+\subsubsection[{drag\-\_\-x}]{\setlength{\rightskip}{0pt plus 5cm}int D\-K\-Window\-::drag\-\_\-x}}\label{class_d_k_window_a7ab30185d7d22f7caea63b8f84e0e6b1}
+\hypertarget{class_d_k_window_a40f644b725e4169a5efc17ec3345ca73}{\index{D\-K\-Window@{D\-K\-Window}!drag\-\_\-y@{drag\-\_\-y}}
+\index{drag\-\_\-y@{drag\-\_\-y}!DKWindow@{D\-K\-Window}}
+\subsubsection[{drag\-\_\-y}]{\setlength{\rightskip}{0pt plus 5cm}int D\-K\-Window\-::drag\-\_\-y}}\label{class_d_k_window_a40f644b725e4169a5efc17ec3345ca73}
+\hypertarget{class_d_k_window_a9c3b07e8f9e9f7b5a2fdfeb5413190b6}{\index{D\-K\-Window@{D\-K\-Window}!dragging@{dragging}}
+\index{dragging@{dragging}!DKWindow@{D\-K\-Window}}
+\subsubsection[{dragging}]{\setlength{\rightskip}{0pt plus 5cm}bool D\-K\-Window\-::dragging}}\label{class_d_k_window_a9c3b07e8f9e9f7b5a2fdfeb5413190b6}
+\hypertarget{class_d_k_window_a11d05eb7b6f266118231fa6c502d56d4}{\index{D\-K\-Window@{D\-K\-Window}!is\-\_\-frame@{is\-\_\-frame}}
+\index{is\-\_\-frame@{is\-\_\-frame}!DKWindow@{D\-K\-Window}}
+\subsubsection[{is\-\_\-frame}]{\setlength{\rightskip}{0pt plus 5cm}bool D\-K\-Window\-::is\-\_\-frame}}\label{class_d_k_window_a11d05eb7b6f266118231fa6c502d56d4}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+G\-:/\-Programming/\-Digital\-Knob/\-Libs/digitalknob/\hyperlink{_d_k_window_8h}{D\-K\-Window.\-h}\item 
+G\-:/\-Programming/\-Digital\-Knob/\-Libs/digitalknob/\hyperlink{_d_k_window_8cpp}{D\-K\-Window.\-cpp}\end{DoxyCompactItemize}

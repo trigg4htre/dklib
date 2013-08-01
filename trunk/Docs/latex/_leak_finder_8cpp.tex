@@ -1,0 +1,106 @@
+\hypertarget{_leak_finder_8cpp}{\section{G\-:/\-Programming/\-Digital\-Knob/\-Libs/digitalknob/\-Leak\-Finder.cpp File Reference}
+\label{_leak_finder_8cpp}\index{G\-:/\-Programming/\-Digital\-Knob/\-Libs/digitalknob/\-Leak\-Finder.\-cpp@{G\-:/\-Programming/\-Digital\-Knob/\-Libs/digitalknob/\-Leak\-Finder.\-cpp}}
+}
+{\ttfamily \#include $<$windows.\-h$>$}\\*
+{\ttfamily \#include $<$objidl.\-h$>$}\\*
+{\ttfamily \#include $<$tchar.\-h$>$}\\*
+{\ttfamily \#include $<$crtdbg.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include \char`\"{}Leak\-Finder.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_context_hashtable_base}{Context\-Hashtable\-Base$<$ H\-A\-S\-H\-T\-A\-B\-L\-E\-\_\-\-K\-E\-Y $>$}
+\item 
+class \hyperlink{class_c_malloc_spy}{C\-Malloc\-Spy}
+\item 
+class \hyperlink{class_c_o_m_table}{C\-O\-M\-Table}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_leak_finder_8cpp_ae066e11ad04b6618c931389f24e9189c}{M\-A\-X\-\_\-\-C\-A\-L\-L\-S\-T\-A\-C\-K\-\_\-\-L\-E\-N\-\_\-\-B\-U\-F}~0x2000
+\item 
+\#define \hyperlink{_leak_finder_8cpp_a18daca55c5f170296eb4bd9cd39049f7}{I\-G\-N\-O\-R\-E\-\_\-\-C\-R\-T\-\_\-\-A\-L\-L\-O\-C}
+\item 
+\#define \hyperlink{_leak_finder_8cpp_ae994dd392bda6a00605b25091938078f}{\-\_\-snprintf\-\_\-s}~\-\_\-snprintf
+\item 
+\#define \hyperlink{_leak_finder_8cpp_a74aa63848798b6e70c393b283b9ec6d7}{\-\_\-tcscat\-\_\-s}~\-\_\-tcscat
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_leak_finder_8cpp_afe5337187527c3425e476f4022df47dc}{S\-T\-D\-M\-E\-T\-H\-O\-D\-I\-M\-P\-\_\-} (U\-L\-O\-N\-G) \hyperlink{class_c_malloc_spy}{C\-Malloc\-Spy}
+\item 
+\hyperlink{_leak_finder_8cpp_a13231c492310fe4a68e47a23473e7788}{S\-T\-D\-M\-E\-T\-H\-O\-D\-I\-M\-P\-\_\-} (\hyperlink{_stack_walker_8h_abf8e46e57d5b85295601cefa33de3b7a}{S\-I\-Z\-E\-\_\-\-T}) \hyperlink{class_c_malloc_spy}{C\-Malloc\-Spy}
+\item 
+\hyperlink{_leak_finder_8cpp_abf9ae0061edfbb8e51de4a0f46589051}{S\-T\-D\-M\-E\-T\-H\-O\-D\-I\-M\-P\-\_\-} (void $\ast$) \hyperlink{class_c_malloc_spy}{C\-Malloc\-Spy}
+\item 
+H\-R\-E\-S\-U\-L\-T \hyperlink{_leak_finder_8cpp_adb6340145cdd41ee6602adfa294c7248}{Init\-Leak\-Finder} ()
+\item 
+void \hyperlink{_leak_finder_8cpp_a7ef39b791bcb501714adbc01b935b5a8}{Deinit\-Leak\-Finder} (Leak\-Finder\-Output $\ast$output)
+\item 
+void \hyperlink{_leak_finder_8cpp_a72d4c5ece4ae7593d5577a0991eba62c}{Deinit\-Leak\-Finder} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_leak_finder_8cpp_ae994dd392bda6a00605b25091938078f}{\index{Leak\-Finder.\-cpp@{Leak\-Finder.\-cpp}!\-\_\-snprintf\-\_\-s@{\-\_\-snprintf\-\_\-s}}
+\index{\-\_\-snprintf\-\_\-s@{\-\_\-snprintf\-\_\-s}!LeakFinder.cpp@{Leak\-Finder.\-cpp}}
+\subsubsection[{\-\_\-snprintf\-\_\-s}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-\_\-snprintf\-\_\-s~\-\_\-snprintf}}\label{_leak_finder_8cpp_ae994dd392bda6a00605b25091938078f}
+\hypertarget{_leak_finder_8cpp_a74aa63848798b6e70c393b283b9ec6d7}{\index{Leak\-Finder.\-cpp@{Leak\-Finder.\-cpp}!\-\_\-tcscat\-\_\-s@{\-\_\-tcscat\-\_\-s}}
+\index{\-\_\-tcscat\-\_\-s@{\-\_\-tcscat\-\_\-s}!LeakFinder.cpp@{Leak\-Finder.\-cpp}}
+\subsubsection[{\-\_\-tcscat\-\_\-s}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-\_\-tcscat\-\_\-s~\-\_\-tcscat}}\label{_leak_finder_8cpp_a74aa63848798b6e70c393b283b9ec6d7}
+\hypertarget{_leak_finder_8cpp_a18daca55c5f170296eb4bd9cd39049f7}{\index{Leak\-Finder.\-cpp@{Leak\-Finder.\-cpp}!I\-G\-N\-O\-R\-E\-\_\-\-C\-R\-T\-\_\-\-A\-L\-L\-O\-C@{I\-G\-N\-O\-R\-E\-\_\-\-C\-R\-T\-\_\-\-A\-L\-L\-O\-C}}
+\index{I\-G\-N\-O\-R\-E\-\_\-\-C\-R\-T\-\_\-\-A\-L\-L\-O\-C@{I\-G\-N\-O\-R\-E\-\_\-\-C\-R\-T\-\_\-\-A\-L\-L\-O\-C}!LeakFinder.cpp@{Leak\-Finder.\-cpp}}
+\subsubsection[{I\-G\-N\-O\-R\-E\-\_\-\-C\-R\-T\-\_\-\-A\-L\-L\-O\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-G\-N\-O\-R\-E\-\_\-\-C\-R\-T\-\_\-\-A\-L\-L\-O\-C}}\label{_leak_finder_8cpp_a18daca55c5f170296eb4bd9cd39049f7}
+\hypertarget{_leak_finder_8cpp_ae066e11ad04b6618c931389f24e9189c}{\index{Leak\-Finder.\-cpp@{Leak\-Finder.\-cpp}!M\-A\-X\-\_\-\-C\-A\-L\-L\-S\-T\-A\-C\-K\-\_\-\-L\-E\-N\-\_\-\-B\-U\-F@{M\-A\-X\-\_\-\-C\-A\-L\-L\-S\-T\-A\-C\-K\-\_\-\-L\-E\-N\-\_\-\-B\-U\-F}}
+\index{M\-A\-X\-\_\-\-C\-A\-L\-L\-S\-T\-A\-C\-K\-\_\-\-L\-E\-N\-\_\-\-B\-U\-F@{M\-A\-X\-\_\-\-C\-A\-L\-L\-S\-T\-A\-C\-K\-\_\-\-L\-E\-N\-\_\-\-B\-U\-F}!LeakFinder.cpp@{Leak\-Finder.\-cpp}}
+\subsubsection[{M\-A\-X\-\_\-\-C\-A\-L\-L\-S\-T\-A\-C\-K\-\_\-\-L\-E\-N\-\_\-\-B\-U\-F}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-A\-X\-\_\-\-C\-A\-L\-L\-S\-T\-A\-C\-K\-\_\-\-L\-E\-N\-\_\-\-B\-U\-F~0x2000}}\label{_leak_finder_8cpp_ae066e11ad04b6618c931389f24e9189c}
+
+
+\subsection{Function Documentation}
+\hypertarget{_leak_finder_8cpp_a7ef39b791bcb501714adbc01b935b5a8}{\index{Leak\-Finder.\-cpp@{Leak\-Finder.\-cpp}!Deinit\-Leak\-Finder@{Deinit\-Leak\-Finder}}
+\index{Deinit\-Leak\-Finder@{Deinit\-Leak\-Finder}!LeakFinder.cpp@{Leak\-Finder.\-cpp}}
+\subsubsection[{Deinit\-Leak\-Finder}]{\setlength{\rightskip}{0pt plus 5cm}void Deinit\-Leak\-Finder (
+\begin{DoxyParamCaption}
+\item[{Leak\-Finder\-Output $\ast$}]{output}
+\end{DoxyParamCaption}
+)}}\label{_leak_finder_8cpp_a7ef39b791bcb501714adbc01b935b5a8}
+\hypertarget{_leak_finder_8cpp_a72d4c5ece4ae7593d5577a0991eba62c}{\index{Leak\-Finder.\-cpp@{Leak\-Finder.\-cpp}!Deinit\-Leak\-Finder@{Deinit\-Leak\-Finder}}
+\index{Deinit\-Leak\-Finder@{Deinit\-Leak\-Finder}!LeakFinder.cpp@{Leak\-Finder.\-cpp}}
+\subsubsection[{Deinit\-Leak\-Finder}]{\setlength{\rightskip}{0pt plus 5cm}void Deinit\-Leak\-Finder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_leak_finder_8cpp_a72d4c5ece4ae7593d5577a0991eba62c}
+\hypertarget{_leak_finder_8cpp_adb6340145cdd41ee6602adfa294c7248}{\index{Leak\-Finder.\-cpp@{Leak\-Finder.\-cpp}!Init\-Leak\-Finder@{Init\-Leak\-Finder}}
+\index{Init\-Leak\-Finder@{Init\-Leak\-Finder}!LeakFinder.cpp@{Leak\-Finder.\-cpp}}
+\subsubsection[{Init\-Leak\-Finder}]{\setlength{\rightskip}{0pt plus 5cm}H\-R\-E\-S\-U\-L\-T Init\-Leak\-Finder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{_leak_finder_8cpp_adb6340145cdd41ee6602adfa294c7248}
+\hypertarget{_leak_finder_8cpp_afe5337187527c3425e476f4022df47dc}{\index{Leak\-Finder.\-cpp@{Leak\-Finder.\-cpp}!S\-T\-D\-M\-E\-T\-H\-O\-D\-I\-M\-P\-\_\-@{S\-T\-D\-M\-E\-T\-H\-O\-D\-I\-M\-P\-\_\-}}
+\index{S\-T\-D\-M\-E\-T\-H\-O\-D\-I\-M\-P\-\_\-@{S\-T\-D\-M\-E\-T\-H\-O\-D\-I\-M\-P\-\_\-}!LeakFinder.cpp@{Leak\-Finder.\-cpp}}
+\subsubsection[{S\-T\-D\-M\-E\-T\-H\-O\-D\-I\-M\-P\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}S\-T\-D\-M\-E\-T\-H\-O\-D\-I\-M\-P\-\_\- (
+\begin{DoxyParamCaption}
+\item[{U\-L\-O\-N\-G}]{}
+\end{DoxyParamCaption}
+)}}\label{_leak_finder_8cpp_afe5337187527c3425e476f4022df47dc}
+\hypertarget{_leak_finder_8cpp_a13231c492310fe4a68e47a23473e7788}{\index{Leak\-Finder.\-cpp@{Leak\-Finder.\-cpp}!S\-T\-D\-M\-E\-T\-H\-O\-D\-I\-M\-P\-\_\-@{S\-T\-D\-M\-E\-T\-H\-O\-D\-I\-M\-P\-\_\-}}
+\index{S\-T\-D\-M\-E\-T\-H\-O\-D\-I\-M\-P\-\_\-@{S\-T\-D\-M\-E\-T\-H\-O\-D\-I\-M\-P\-\_\-}!LeakFinder.cpp@{Leak\-Finder.\-cpp}}
+\subsubsection[{S\-T\-D\-M\-E\-T\-H\-O\-D\-I\-M\-P\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}S\-T\-D\-M\-E\-T\-H\-O\-D\-I\-M\-P\-\_\- (
+\begin{DoxyParamCaption}
+\item[{{\bf S\-I\-Z\-E\-\_\-\-T}}]{}
+\end{DoxyParamCaption}
+)}}\label{_leak_finder_8cpp_a13231c492310fe4a68e47a23473e7788}
+\hypertarget{_leak_finder_8cpp_abf9ae0061edfbb8e51de4a0f46589051}{\index{Leak\-Finder.\-cpp@{Leak\-Finder.\-cpp}!S\-T\-D\-M\-E\-T\-H\-O\-D\-I\-M\-P\-\_\-@{S\-T\-D\-M\-E\-T\-H\-O\-D\-I\-M\-P\-\_\-}}
+\index{S\-T\-D\-M\-E\-T\-H\-O\-D\-I\-M\-P\-\_\-@{S\-T\-D\-M\-E\-T\-H\-O\-D\-I\-M\-P\-\_\-}!LeakFinder.cpp@{Leak\-Finder.\-cpp}}
+\subsubsection[{S\-T\-D\-M\-E\-T\-H\-O\-D\-I\-M\-P\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}S\-T\-D\-M\-E\-T\-H\-O\-D\-I\-M\-P\-\_\- (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{_leak_finder_8cpp_abf9ae0061edfbb8e51de4a0f46589051}

@@ -1,0 +1,351 @@
+\hypertarget{_stack_walker_8cpp}{\section{G\-:/\-Programming/\-Digital\-Knob/\-Libs/digitalknob/\-Stack\-Walker.cpp File Reference}
+\label{_stack_walker_8cpp}\index{G\-:/\-Programming/\-Digital\-Knob/\-Libs/digitalknob/\-Stack\-Walker.\-cpp@{G\-:/\-Programming/\-Digital\-Knob/\-Libs/digitalknob/\-Stack\-Walker.\-cpp}}
+}
+{\ttfamily \#include $<$windows.\-h$>$}\\*
+{\ttfamily \#include $<$tchar.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}Stack\-Walker.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct___i_m_a_g_e_h_l_p___l_i_n_e64}{\-\_\-\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-L\-I\-N\-E64}
+\item 
+struct \hyperlink{struct___i_m_a_g_e_h_l_p___m_o_d_u_l_e64}{\-\_\-\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-M\-O\-D\-U\-L\-E64}
+\item 
+struct \hyperlink{struct___i_m_a_g_e_h_l_p___s_y_m_b_o_l64}{\-\_\-\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-S\-Y\-M\-B\-O\-L64}
+\item 
+struct \hyperlink{struct__tag_a_d_d_r_e_s_s64}{\-\_\-tag\-A\-D\-D\-R\-E\-S\-S64}
+\item 
+struct \hyperlink{struct___k_d_h_e_l_p64}{\-\_\-\-K\-D\-H\-E\-L\-P64}
+\item 
+struct \hyperlink{struct__tag_s_t_a_c_k_f_r_a_m_e64}{\-\_\-tag\-S\-T\-A\-C\-K\-F\-R\-A\-M\-E64}
+\item 
+class \hyperlink{class_stack_walker_internal}{Stack\-Walker\-Internal}
+\item 
+struct \hyperlink{struct_stack_walker_internal_1_1_i_m_a_g_e_h_l_p___m_o_d_u_l_e64___v2}{Stack\-Walker\-Internal\-::\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-M\-O\-D\-U\-L\-E64\-\_\-\-V2}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_stack_walker_8cpp_ae2f4a8f62adf648570943bf323ff345b}{S\-Y\-M\-O\-P\-T\-\_\-\-C\-A\-S\-E\-\_\-\-I\-N\-S\-E\-N\-S\-I\-T\-I\-V\-E}~0x00000001
+\item 
+\#define \hyperlink{_stack_walker_8cpp_ac68c0eb319f915f37122d00b95197f4f}{S\-Y\-M\-O\-P\-T\-\_\-\-U\-N\-D\-N\-A\-M\-E}~0x00000002
+\item 
+\#define \hyperlink{_stack_walker_8cpp_ac332a55a84d352665335fad30e32f249}{S\-Y\-M\-O\-P\-T\-\_\-\-D\-E\-F\-E\-R\-R\-E\-D\-\_\-\-L\-O\-A\-D\-S}~0x00000004
+\item 
+\#define \hyperlink{_stack_walker_8cpp_ab755b820f80c5025c61abb69a7574a09}{S\-Y\-M\-O\-P\-T\-\_\-\-N\-O\-\_\-\-C\-P\-P}~0x00000008
+\item 
+\#define \hyperlink{_stack_walker_8cpp_a802169607e746191de919806a9729479}{S\-Y\-M\-O\-P\-T\-\_\-\-L\-O\-A\-D\-\_\-\-L\-I\-N\-E\-S}~0x00000010
+\item 
+\#define \hyperlink{_stack_walker_8cpp_a1c69e00094a650aec566815f2823ce3a}{S\-Y\-M\-O\-P\-T\-\_\-\-O\-M\-A\-P\-\_\-\-F\-I\-N\-D\-\_\-\-N\-E\-A\-R\-E\-S\-T}~0x00000020
+\item 
+\#define \hyperlink{_stack_walker_8cpp_ac3022251f6a8e5b7f0b10c819ba48aa7}{S\-Y\-M\-O\-P\-T\-\_\-\-L\-O\-A\-D\-\_\-\-A\-N\-Y\-T\-H\-I\-N\-G}~0x00000040
+\item 
+\#define \hyperlink{_stack_walker_8cpp_ae3f655599c63267ee864fc47274f468f}{S\-Y\-M\-O\-P\-T\-\_\-\-I\-G\-N\-O\-R\-E\-\_\-\-C\-V\-R\-E\-C}~0x00000080
+\item 
+\#define \hyperlink{_stack_walker_8cpp_ab37e023dfc43c44282555899eb82e8e0}{S\-Y\-M\-O\-P\-T\-\_\-\-N\-O\-\_\-\-U\-N\-Q\-U\-A\-L\-I\-F\-I\-E\-D\-\_\-\-L\-O\-A\-D\-S}~0x00000100
+\item 
+\#define \hyperlink{_stack_walker_8cpp_ac7fdd2a82930c372f89dc33de5a30aed}{S\-Y\-M\-O\-P\-T\-\_\-\-F\-A\-I\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-E\-R\-R\-O\-R\-S}~0x00000200
+\item 
+\#define \hyperlink{_stack_walker_8cpp_ac072cb06accd3c79edc3929ae94cb3bc}{S\-Y\-M\-O\-P\-T\-\_\-\-E\-X\-A\-C\-T\-\_\-\-S\-Y\-M\-B\-O\-L\-S}~0x00000400
+\item 
+\#define \hyperlink{_stack_walker_8cpp_a192e91fd9720299933e49d1cff0156e6}{S\-Y\-M\-O\-P\-T\-\_\-\-A\-L\-L\-O\-W\-\_\-\-A\-B\-S\-O\-L\-U\-T\-E\-\_\-\-S\-Y\-M\-B\-O\-L\-S}~0x00000800
+\item 
+\#define \hyperlink{_stack_walker_8cpp_ae021e460c299adb1a9598593542734e0}{S\-Y\-M\-O\-P\-T\-\_\-\-I\-G\-N\-O\-R\-E\-\_\-\-N\-T\-\_\-\-S\-Y\-M\-P\-A\-T\-H}~0x00001000
+\item 
+\#define \hyperlink{_stack_walker_8cpp_ae17afadb72b5564dc1f1b78f7eb1402b}{S\-Y\-M\-O\-P\-T\-\_\-\-I\-N\-C\-L\-U\-D\-E\-\_\-32\-B\-I\-T\-\_\-\-M\-O\-D\-U\-L\-E\-S}~0x00002000
+\item 
+\#define \hyperlink{_stack_walker_8cpp_a80c373faf87e34edb26943b18920cfb3}{S\-Y\-M\-O\-P\-T\-\_\-\-P\-U\-B\-L\-I\-C\-S\-\_\-\-O\-N\-L\-Y}~0x00004000
+\item 
+\#define \hyperlink{_stack_walker_8cpp_a2b31320a21625f30dff892aa2292a086}{S\-Y\-M\-O\-P\-T\-\_\-\-N\-O\-\_\-\-P\-U\-B\-L\-I\-C\-S}~0x00008000
+\item 
+\#define \hyperlink{_stack_walker_8cpp_a57124c5735b4f87ca3d6ffbcba5e15f7}{S\-Y\-M\-O\-P\-T\-\_\-\-A\-U\-T\-O\-\_\-\-P\-U\-B\-L\-I\-C\-S}~0x00010000
+\item 
+\#define \hyperlink{_stack_walker_8cpp_a9c3f5d82cfeed2f08bb78867b42e92e7}{S\-Y\-M\-O\-P\-T\-\_\-\-N\-O\-\_\-\-I\-M\-A\-G\-E\-\_\-\-S\-E\-A\-R\-C\-H}~0x00020000
+\item 
+\#define \hyperlink{_stack_walker_8cpp_aad0857e56bdc16c137c55039c1bf58f9}{S\-Y\-M\-O\-P\-T\-\_\-\-S\-E\-C\-U\-R\-E}~0x00040000
+\item 
+\#define \hyperlink{_stack_walker_8cpp_a58267cd6828f4911d42e91b32039174c}{S\-Y\-M\-O\-P\-T\-\_\-\-D\-E\-B\-U\-G}~0x80000000
+\item 
+\#define \hyperlink{_stack_walker_8cpp_aa52b773d880c1f43b194a18f9046de21}{U\-N\-D\-N\-A\-M\-E\-\_\-\-C\-O\-M\-P\-L\-E\-T\-E}~(0x0000)
+\item 
+\#define \hyperlink{_stack_walker_8cpp_ab13a8f1e2bfa1461f6610dec0eb5232b}{U\-N\-D\-N\-A\-M\-E\-\_\-\-N\-A\-M\-E\-\_\-\-O\-N\-L\-Y}~(0x1000)
+\item 
+\#define \hyperlink{_stack_walker_8cpp_a5c3e148aed786e7d7edf84c4551ebbb5}{I\-N\-V\-A\-L\-I\-D\-\_\-\-F\-I\-L\-E\-\_\-\-A\-T\-T\-R\-I\-B\-U\-T\-E\-S}~((D\-W\-O\-R\-D)-\/1)
+\item 
+\#define \hyperlink{_stack_walker_8cpp_a916e69ab5c1b4798a8c121268657672a}{strcpy\-\_\-s}~strcpy
+\item 
+\#define \hyperlink{_stack_walker_8cpp_a3a43fd8dc07a9cd449ac42b9a0d51705}{strncpy\-\_\-s}~strncpy
+\item 
+\#define \hyperlink{_stack_walker_8cpp_af3b1bc9cbe618fa10a408361f8c018f6}{strcat\-\_\-s}(dst, len, src)~strcat(dst, src)
+\item 
+\#define \hyperlink{_stack_walker_8cpp_ae994dd392bda6a00605b25091938078f}{\-\_\-snprintf\-\_\-s}~\-\_\-snprintf
+\item 
+\#define \hyperlink{_stack_walker_8cpp_a74aa63848798b6e70c393b283b9ec6d7}{\-\_\-tcscat\-\_\-s}~\-\_\-tcscat
+\item 
+\#define \hyperlink{_stack_walker_8cpp_a2c0e35a3fd831a57ae32b039a0cf6980}{U\-S\-E\-D\-\_\-\-C\-O\-N\-T\-E\-X\-T\-\_\-\-F\-L\-A\-G\-S}~C\-O\-N\-T\-E\-X\-T\-\_\-\-F\-U\-L\-L
+\item 
+\#define \hyperlink{_stack_walker_8cpp_af49cb1543478a8a476fdff338f27e478}{M\-A\-X\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-N\-A\-M\-E32}~255
+\item 
+\#define \hyperlink{_stack_walker_8cpp_a56de912fc80f2e2cb6b8f0e3cf851390}{T\-H32\-C\-S\-\_\-\-S\-N\-A\-P\-M\-O\-D\-U\-L\-E}~0x00000008
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct___i_m_a_g_e_h_l_p___l_i_n_e64}{\-\_\-\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-L\-I\-N\-E64} \hyperlink{_stack_walker_8cpp_a75e1533fce106bfa7ed6f6d257c58c32}{I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-L\-I\-N\-E64}
+\item 
+typedef struct \hyperlink{struct___i_m_a_g_e_h_l_p___l_i_n_e64}{\-\_\-\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-L\-I\-N\-E64} $\ast$ \hyperlink{_stack_walker_8cpp_a02a0106b705d60bd132ba0e1a7e3b87d}{P\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-L\-I\-N\-E64}
+\item 
+typedef struct \hyperlink{struct___i_m_a_g_e_h_l_p___m_o_d_u_l_e64}{\-\_\-\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-M\-O\-D\-U\-L\-E64} \hyperlink{_stack_walker_8cpp_a02dc528603c4c89ba25a8870097f63dd}{I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-M\-O\-D\-U\-L\-E64}
+\item 
+typedef struct \hyperlink{struct___i_m_a_g_e_h_l_p___m_o_d_u_l_e64}{\-\_\-\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-M\-O\-D\-U\-L\-E64} $\ast$ \hyperlink{_stack_walker_8cpp_a383abe824802b2c7b4528651aa5b0996}{P\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-M\-O\-D\-U\-L\-E64}
+\item 
+typedef struct \hyperlink{struct___i_m_a_g_e_h_l_p___s_y_m_b_o_l64}{\-\_\-\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-S\-Y\-M\-B\-O\-L64} \hyperlink{_stack_walker_8cpp_a090e687777462f443d2ddafbeecc49e1}{I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-S\-Y\-M\-B\-O\-L64}
+\item 
+typedef struct \hyperlink{struct___i_m_a_g_e_h_l_p___s_y_m_b_o_l64}{\-\_\-\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-S\-Y\-M\-B\-O\-L64} $\ast$ \hyperlink{_stack_walker_8cpp_a61ba945c2905d16b431a2d66ba569b01}{P\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-S\-Y\-M\-B\-O\-L64}
+\item 
+typedef struct \hyperlink{struct__tag_a_d_d_r_e_s_s64}{\-\_\-tag\-A\-D\-D\-R\-E\-S\-S64} \hyperlink{_stack_walker_8cpp_a1a2de8bf22d3662a667f5aeb85fb6d5e}{A\-D\-D\-R\-E\-S\-S64}
+\item 
+typedef struct \hyperlink{struct__tag_a_d_d_r_e_s_s64}{\-\_\-tag\-A\-D\-D\-R\-E\-S\-S64} $\ast$ \hyperlink{_stack_walker_8cpp_a0a9c850218b1adce868e2a94abcb7ab8}{L\-P\-A\-D\-D\-R\-E\-S\-S64}
+\item 
+typedef struct \hyperlink{struct___k_d_h_e_l_p64}{\-\_\-\-K\-D\-H\-E\-L\-P64} \hyperlink{_stack_walker_8cpp_a6ad1f5acfd6357df080e9f4155b09aff}{K\-D\-H\-E\-L\-P64}
+\item 
+typedef struct \hyperlink{struct___k_d_h_e_l_p64}{\-\_\-\-K\-D\-H\-E\-L\-P64} $\ast$ \hyperlink{_stack_walker_8cpp_abbd9d0eb1f47e53c6c338a1dbf209b94}{P\-K\-D\-H\-E\-L\-P64}
+\item 
+typedef struct \hyperlink{struct__tag_s_t_a_c_k_f_r_a_m_e64}{\-\_\-tag\-S\-T\-A\-C\-K\-F\-R\-A\-M\-E64} \hyperlink{_stack_walker_8cpp_ad052606594ee2aa371b8901f9d3f6f76}{S\-T\-A\-C\-K\-F\-R\-A\-M\-E64}
+\item 
+typedef struct \hyperlink{struct__tag_s_t_a_c_k_f_r_a_m_e64}{\-\_\-tag\-S\-T\-A\-C\-K\-F\-R\-A\-M\-E64} $\ast$ \hyperlink{_stack_walker_8cpp_a1645fb6e1f8e09b5a9eac1b9d5cddaca}{L\-P\-S\-T\-A\-C\-K\-F\-R\-A\-M\-E64}
+\item 
+typedef B\-O\-O\-L(\-\_\-\-\_\-stdcall $\ast$ \hyperlink{_stack_walker_8cpp_a8d21bc6f316637942af2918298f765bd}{P\-R\-E\-A\-D\-\_\-\-P\-R\-O\-C\-E\-S\-S\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-R\-O\-U\-T\-I\-N\-E64} )(H\-A\-N\-D\-L\-E h\-Process, \hyperlink{_stack_walker_8h_a97fb241c597b99bcb965858f53cacac4}{D\-W\-O\-R\-D64} qw\-Base\-Address, P\-V\-O\-I\-D lp\-Buffer, D\-W\-O\-R\-D n\-Size, L\-P\-D\-W\-O\-R\-D lp\-Number\-Of\-Bytes\-Read)
+\item 
+typedef P\-V\-O\-I\-D(\-\_\-\-\_\-stdcall $\ast$ \hyperlink{_stack_walker_8cpp_abb96de57bd95202c410dda2bb7909fe1}{P\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-T\-A\-B\-L\-E\-\_\-\-A\-C\-C\-E\-S\-S\-\_\-\-R\-O\-U\-T\-I\-N\-E64} )(H\-A\-N\-D\-L\-E h\-Process, \hyperlink{_stack_walker_8h_a97fb241c597b99bcb965858f53cacac4}{D\-W\-O\-R\-D64} Addr\-Base)
+\item 
+typedef \hyperlink{_stack_walker_8h_a97fb241c597b99bcb965858f53cacac4}{D\-W\-O\-R\-D64}(\-\_\-\-\_\-stdcall $\ast$ \hyperlink{_stack_walker_8cpp_aa650fcfe6749c5a800ddc172b9424d9a}{P\-G\-E\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-B\-A\-S\-E\-\_\-\-R\-O\-U\-T\-I\-N\-E64} )(H\-A\-N\-D\-L\-E h\-Process, \hyperlink{_stack_walker_8h_a97fb241c597b99bcb965858f53cacac4}{D\-W\-O\-R\-D64} Address)
+\item 
+typedef \hyperlink{_stack_walker_8h_a97fb241c597b99bcb965858f53cacac4}{D\-W\-O\-R\-D64}(\-\_\-\-\_\-stdcall $\ast$ \hyperlink{_stack_walker_8cpp_aa4565ac0aa3072ad7372d9531daa23de}{P\-T\-R\-A\-N\-S\-L\-A\-T\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S\-\_\-\-R\-O\-U\-T\-I\-N\-E64} )(H\-A\-N\-D\-L\-E h\-Process, H\-A\-N\-D\-L\-E h\-Thread, \hyperlink{_stack_walker_8cpp_a0a9c850218b1adce868e2a94abcb7ab8}{L\-P\-A\-D\-D\-R\-E\-S\-S64} lpaddr)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6}{S\-Y\-M\-\_\-\-T\-Y\-P\-E} \{ \\*
+\hyperlink{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6a066b6751ec0756d17fa92f4df73262a1}{Sym\-None} = 0, 
+\hyperlink{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6a5f0157749ab77c4131aec228289710c0}{Sym\-Coff}, 
+\hyperlink{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6a255f1ef0ab9a81f0fc15c4b41630e156}{Sym\-Cv}, 
+\hyperlink{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6ac446237e1e808a6643e9ac75440f63f0}{Sym\-Pdb}, 
+\\*
+\hyperlink{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6a553118f5140199686220cfd0f3b53911}{Sym\-Export}, 
+\hyperlink{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6a496e586970b8165f725ed0e4062c4475}{Sym\-Deferred}, 
+\hyperlink{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6a88eee046e8c2b4d8583ce362bb9ad037}{Sym\-Sym}, 
+\hyperlink{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6a5a655dd6039899e580816b9f0429bf73}{Sym\-Dia}, 
+\\*
+\hyperlink{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6a71047375da6952484d51be8391f52982}{Sym\-Virtual}, 
+\hyperlink{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6a8bc4da898f781d3dc664e3ee78a5d57b}{Num\-Sym\-Types}
+ \}
+\item 
+enum \hyperlink{_stack_walker_8cpp_a7ccaea3b5eded8c0bc63d2f6766a216a}{A\-D\-D\-R\-E\-S\-S\-\_\-\-M\-O\-D\-E} \{ \hyperlink{_stack_walker_8cpp_a7ccaea3b5eded8c0bc63d2f6766a216aadfe55e32377d90c7e3b1eef550ba2ee8}{Addr\-Mode1616}, 
+\hyperlink{_stack_walker_8cpp_a7ccaea3b5eded8c0bc63d2f6766a216aaeb9e880bd582a8c61c3a2b5364f163ea}{Addr\-Mode1632}, 
+\hyperlink{_stack_walker_8cpp_a7ccaea3b5eded8c0bc63d2f6766a216aa030bae688275e38b52b5c7896c1d2ed8}{Addr\-Mode\-Real}, 
+\hyperlink{_stack_walker_8cpp_a7ccaea3b5eded8c0bc63d2f6766a216aaa70f2bbafd673b07ae511f5b5b5985f4}{Addr\-Mode\-Flat}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_stack_walker_8cpp_ae994dd392bda6a00605b25091938078f}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!\-\_\-snprintf\-\_\-s@{\-\_\-snprintf\-\_\-s}}
+\index{\-\_\-snprintf\-\_\-s@{\-\_\-snprintf\-\_\-s}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{\-\_\-snprintf\-\_\-s}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-\_\-snprintf\-\_\-s~\-\_\-snprintf}}\label{_stack_walker_8cpp_ae994dd392bda6a00605b25091938078f}
+\hypertarget{_stack_walker_8cpp_a74aa63848798b6e70c393b283b9ec6d7}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!\-\_\-tcscat\-\_\-s@{\-\_\-tcscat\-\_\-s}}
+\index{\-\_\-tcscat\-\_\-s@{\-\_\-tcscat\-\_\-s}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{\-\_\-tcscat\-\_\-s}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-\_\-tcscat\-\_\-s~\-\_\-tcscat}}\label{_stack_walker_8cpp_a74aa63848798b6e70c393b283b9ec6d7}
+\hypertarget{_stack_walker_8cpp_a5c3e148aed786e7d7edf84c4551ebbb5}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!I\-N\-V\-A\-L\-I\-D\-\_\-\-F\-I\-L\-E\-\_\-\-A\-T\-T\-R\-I\-B\-U\-T\-E\-S@{I\-N\-V\-A\-L\-I\-D\-\_\-\-F\-I\-L\-E\-\_\-\-A\-T\-T\-R\-I\-B\-U\-T\-E\-S}}
+\index{I\-N\-V\-A\-L\-I\-D\-\_\-\-F\-I\-L\-E\-\_\-\-A\-T\-T\-R\-I\-B\-U\-T\-E\-S@{I\-N\-V\-A\-L\-I\-D\-\_\-\-F\-I\-L\-E\-\_\-\-A\-T\-T\-R\-I\-B\-U\-T\-E\-S}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{I\-N\-V\-A\-L\-I\-D\-\_\-\-F\-I\-L\-E\-\_\-\-A\-T\-T\-R\-I\-B\-U\-T\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\-N\-V\-A\-L\-I\-D\-\_\-\-F\-I\-L\-E\-\_\-\-A\-T\-T\-R\-I\-B\-U\-T\-E\-S~((D\-W\-O\-R\-D)-\/1)}}\label{_stack_walker_8cpp_a5c3e148aed786e7d7edf84c4551ebbb5}
+\hypertarget{_stack_walker_8cpp_af49cb1543478a8a476fdff338f27e478}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!M\-A\-X\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-N\-A\-M\-E32@{M\-A\-X\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-N\-A\-M\-E32}}
+\index{M\-A\-X\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-N\-A\-M\-E32@{M\-A\-X\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-N\-A\-M\-E32}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{M\-A\-X\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-N\-A\-M\-E32}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\-A\-X\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-N\-A\-M\-E32~255}}\label{_stack_walker_8cpp_af49cb1543478a8a476fdff338f27e478}
+\hypertarget{_stack_walker_8cpp_af3b1bc9cbe618fa10a408361f8c018f6}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!strcat\-\_\-s@{strcat\-\_\-s}}
+\index{strcat\-\_\-s@{strcat\-\_\-s}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{strcat\-\_\-s}]{\setlength{\rightskip}{0pt plus 5cm}\#define strcat\-\_\-s(
+\begin{DoxyParamCaption}
+\item[{}]{dst, }
+\item[{}]{len, }
+\item[{}]{src}
+\end{DoxyParamCaption}
+)~strcat(dst, src)}}\label{_stack_walker_8cpp_af3b1bc9cbe618fa10a408361f8c018f6}
+\hypertarget{_stack_walker_8cpp_a916e69ab5c1b4798a8c121268657672a}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!strcpy\-\_\-s@{strcpy\-\_\-s}}
+\index{strcpy\-\_\-s@{strcpy\-\_\-s}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{strcpy\-\_\-s}]{\setlength{\rightskip}{0pt plus 5cm}\#define strcpy\-\_\-s~strcpy}}\label{_stack_walker_8cpp_a916e69ab5c1b4798a8c121268657672a}
+\hypertarget{_stack_walker_8cpp_a3a43fd8dc07a9cd449ac42b9a0d51705}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!strncpy\-\_\-s@{strncpy\-\_\-s}}
+\index{strncpy\-\_\-s@{strncpy\-\_\-s}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{strncpy\-\_\-s}]{\setlength{\rightskip}{0pt plus 5cm}\#define strncpy\-\_\-s~strncpy}}\label{_stack_walker_8cpp_a3a43fd8dc07a9cd449ac42b9a0d51705}
+\hypertarget{_stack_walker_8cpp_a192e91fd9720299933e49d1cff0156e6}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!S\-Y\-M\-O\-P\-T\-\_\-\-A\-L\-L\-O\-W\-\_\-\-A\-B\-S\-O\-L\-U\-T\-E\-\_\-\-S\-Y\-M\-B\-O\-L\-S@{S\-Y\-M\-O\-P\-T\-\_\-\-A\-L\-L\-O\-W\-\_\-\-A\-B\-S\-O\-L\-U\-T\-E\-\_\-\-S\-Y\-M\-B\-O\-L\-S}}
+\index{S\-Y\-M\-O\-P\-T\-\_\-\-A\-L\-L\-O\-W\-\_\-\-A\-B\-S\-O\-L\-U\-T\-E\-\_\-\-S\-Y\-M\-B\-O\-L\-S@{S\-Y\-M\-O\-P\-T\-\_\-\-A\-L\-L\-O\-W\-\_\-\-A\-B\-S\-O\-L\-U\-T\-E\-\_\-\-S\-Y\-M\-B\-O\-L\-S}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{S\-Y\-M\-O\-P\-T\-\_\-\-A\-L\-L\-O\-W\-\_\-\-A\-B\-S\-O\-L\-U\-T\-E\-\_\-\-S\-Y\-M\-B\-O\-L\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Y\-M\-O\-P\-T\-\_\-\-A\-L\-L\-O\-W\-\_\-\-A\-B\-S\-O\-L\-U\-T\-E\-\_\-\-S\-Y\-M\-B\-O\-L\-S~0x00000800}}\label{_stack_walker_8cpp_a192e91fd9720299933e49d1cff0156e6}
+\hypertarget{_stack_walker_8cpp_a57124c5735b4f87ca3d6ffbcba5e15f7}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!S\-Y\-M\-O\-P\-T\-\_\-\-A\-U\-T\-O\-\_\-\-P\-U\-B\-L\-I\-C\-S@{S\-Y\-M\-O\-P\-T\-\_\-\-A\-U\-T\-O\-\_\-\-P\-U\-B\-L\-I\-C\-S}}
+\index{S\-Y\-M\-O\-P\-T\-\_\-\-A\-U\-T\-O\-\_\-\-P\-U\-B\-L\-I\-C\-S@{S\-Y\-M\-O\-P\-T\-\_\-\-A\-U\-T\-O\-\_\-\-P\-U\-B\-L\-I\-C\-S}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{S\-Y\-M\-O\-P\-T\-\_\-\-A\-U\-T\-O\-\_\-\-P\-U\-B\-L\-I\-C\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Y\-M\-O\-P\-T\-\_\-\-A\-U\-T\-O\-\_\-\-P\-U\-B\-L\-I\-C\-S~0x00010000}}\label{_stack_walker_8cpp_a57124c5735b4f87ca3d6ffbcba5e15f7}
+\hypertarget{_stack_walker_8cpp_ae2f4a8f62adf648570943bf323ff345b}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!S\-Y\-M\-O\-P\-T\-\_\-\-C\-A\-S\-E\-\_\-\-I\-N\-S\-E\-N\-S\-I\-T\-I\-V\-E@{S\-Y\-M\-O\-P\-T\-\_\-\-C\-A\-S\-E\-\_\-\-I\-N\-S\-E\-N\-S\-I\-T\-I\-V\-E}}
+\index{S\-Y\-M\-O\-P\-T\-\_\-\-C\-A\-S\-E\-\_\-\-I\-N\-S\-E\-N\-S\-I\-T\-I\-V\-E@{S\-Y\-M\-O\-P\-T\-\_\-\-C\-A\-S\-E\-\_\-\-I\-N\-S\-E\-N\-S\-I\-T\-I\-V\-E}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{S\-Y\-M\-O\-P\-T\-\_\-\-C\-A\-S\-E\-\_\-\-I\-N\-S\-E\-N\-S\-I\-T\-I\-V\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Y\-M\-O\-P\-T\-\_\-\-C\-A\-S\-E\-\_\-\-I\-N\-S\-E\-N\-S\-I\-T\-I\-V\-E~0x00000001}}\label{_stack_walker_8cpp_ae2f4a8f62adf648570943bf323ff345b}
+\hypertarget{_stack_walker_8cpp_a58267cd6828f4911d42e91b32039174c}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!S\-Y\-M\-O\-P\-T\-\_\-\-D\-E\-B\-U\-G@{S\-Y\-M\-O\-P\-T\-\_\-\-D\-E\-B\-U\-G}}
+\index{S\-Y\-M\-O\-P\-T\-\_\-\-D\-E\-B\-U\-G@{S\-Y\-M\-O\-P\-T\-\_\-\-D\-E\-B\-U\-G}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{S\-Y\-M\-O\-P\-T\-\_\-\-D\-E\-B\-U\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Y\-M\-O\-P\-T\-\_\-\-D\-E\-B\-U\-G~0x80000000}}\label{_stack_walker_8cpp_a58267cd6828f4911d42e91b32039174c}
+\hypertarget{_stack_walker_8cpp_ac332a55a84d352665335fad30e32f249}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!S\-Y\-M\-O\-P\-T\-\_\-\-D\-E\-F\-E\-R\-R\-E\-D\-\_\-\-L\-O\-A\-D\-S@{S\-Y\-M\-O\-P\-T\-\_\-\-D\-E\-F\-E\-R\-R\-E\-D\-\_\-\-L\-O\-A\-D\-S}}
+\index{S\-Y\-M\-O\-P\-T\-\_\-\-D\-E\-F\-E\-R\-R\-E\-D\-\_\-\-L\-O\-A\-D\-S@{S\-Y\-M\-O\-P\-T\-\_\-\-D\-E\-F\-E\-R\-R\-E\-D\-\_\-\-L\-O\-A\-D\-S}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{S\-Y\-M\-O\-P\-T\-\_\-\-D\-E\-F\-E\-R\-R\-E\-D\-\_\-\-L\-O\-A\-D\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Y\-M\-O\-P\-T\-\_\-\-D\-E\-F\-E\-R\-R\-E\-D\-\_\-\-L\-O\-A\-D\-S~0x00000004}}\label{_stack_walker_8cpp_ac332a55a84d352665335fad30e32f249}
+\hypertarget{_stack_walker_8cpp_ac072cb06accd3c79edc3929ae94cb3bc}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!S\-Y\-M\-O\-P\-T\-\_\-\-E\-X\-A\-C\-T\-\_\-\-S\-Y\-M\-B\-O\-L\-S@{S\-Y\-M\-O\-P\-T\-\_\-\-E\-X\-A\-C\-T\-\_\-\-S\-Y\-M\-B\-O\-L\-S}}
+\index{S\-Y\-M\-O\-P\-T\-\_\-\-E\-X\-A\-C\-T\-\_\-\-S\-Y\-M\-B\-O\-L\-S@{S\-Y\-M\-O\-P\-T\-\_\-\-E\-X\-A\-C\-T\-\_\-\-S\-Y\-M\-B\-O\-L\-S}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{S\-Y\-M\-O\-P\-T\-\_\-\-E\-X\-A\-C\-T\-\_\-\-S\-Y\-M\-B\-O\-L\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Y\-M\-O\-P\-T\-\_\-\-E\-X\-A\-C\-T\-\_\-\-S\-Y\-M\-B\-O\-L\-S~0x00000400}}\label{_stack_walker_8cpp_ac072cb06accd3c79edc3929ae94cb3bc}
+\hypertarget{_stack_walker_8cpp_ac7fdd2a82930c372f89dc33de5a30aed}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!S\-Y\-M\-O\-P\-T\-\_\-\-F\-A\-I\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-E\-R\-R\-O\-R\-S@{S\-Y\-M\-O\-P\-T\-\_\-\-F\-A\-I\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-E\-R\-R\-O\-R\-S}}
+\index{S\-Y\-M\-O\-P\-T\-\_\-\-F\-A\-I\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-E\-R\-R\-O\-R\-S@{S\-Y\-M\-O\-P\-T\-\_\-\-F\-A\-I\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-E\-R\-R\-O\-R\-S}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{S\-Y\-M\-O\-P\-T\-\_\-\-F\-A\-I\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-E\-R\-R\-O\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Y\-M\-O\-P\-T\-\_\-\-F\-A\-I\-L\-\_\-\-C\-R\-I\-T\-I\-C\-A\-L\-\_\-\-E\-R\-R\-O\-R\-S~0x00000200}}\label{_stack_walker_8cpp_ac7fdd2a82930c372f89dc33de5a30aed}
+\hypertarget{_stack_walker_8cpp_ae3f655599c63267ee864fc47274f468f}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!S\-Y\-M\-O\-P\-T\-\_\-\-I\-G\-N\-O\-R\-E\-\_\-\-C\-V\-R\-E\-C@{S\-Y\-M\-O\-P\-T\-\_\-\-I\-G\-N\-O\-R\-E\-\_\-\-C\-V\-R\-E\-C}}
+\index{S\-Y\-M\-O\-P\-T\-\_\-\-I\-G\-N\-O\-R\-E\-\_\-\-C\-V\-R\-E\-C@{S\-Y\-M\-O\-P\-T\-\_\-\-I\-G\-N\-O\-R\-E\-\_\-\-C\-V\-R\-E\-C}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{S\-Y\-M\-O\-P\-T\-\_\-\-I\-G\-N\-O\-R\-E\-\_\-\-C\-V\-R\-E\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Y\-M\-O\-P\-T\-\_\-\-I\-G\-N\-O\-R\-E\-\_\-\-C\-V\-R\-E\-C~0x00000080}}\label{_stack_walker_8cpp_ae3f655599c63267ee864fc47274f468f}
+\hypertarget{_stack_walker_8cpp_ae021e460c299adb1a9598593542734e0}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!S\-Y\-M\-O\-P\-T\-\_\-\-I\-G\-N\-O\-R\-E\-\_\-\-N\-T\-\_\-\-S\-Y\-M\-P\-A\-T\-H@{S\-Y\-M\-O\-P\-T\-\_\-\-I\-G\-N\-O\-R\-E\-\_\-\-N\-T\-\_\-\-S\-Y\-M\-P\-A\-T\-H}}
+\index{S\-Y\-M\-O\-P\-T\-\_\-\-I\-G\-N\-O\-R\-E\-\_\-\-N\-T\-\_\-\-S\-Y\-M\-P\-A\-T\-H@{S\-Y\-M\-O\-P\-T\-\_\-\-I\-G\-N\-O\-R\-E\-\_\-\-N\-T\-\_\-\-S\-Y\-M\-P\-A\-T\-H}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{S\-Y\-M\-O\-P\-T\-\_\-\-I\-G\-N\-O\-R\-E\-\_\-\-N\-T\-\_\-\-S\-Y\-M\-P\-A\-T\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Y\-M\-O\-P\-T\-\_\-\-I\-G\-N\-O\-R\-E\-\_\-\-N\-T\-\_\-\-S\-Y\-M\-P\-A\-T\-H~0x00001000}}\label{_stack_walker_8cpp_ae021e460c299adb1a9598593542734e0}
+\hypertarget{_stack_walker_8cpp_ae17afadb72b5564dc1f1b78f7eb1402b}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!S\-Y\-M\-O\-P\-T\-\_\-\-I\-N\-C\-L\-U\-D\-E\-\_\-32\-B\-I\-T\-\_\-\-M\-O\-D\-U\-L\-E\-S@{S\-Y\-M\-O\-P\-T\-\_\-\-I\-N\-C\-L\-U\-D\-E\-\_\-32\-B\-I\-T\-\_\-\-M\-O\-D\-U\-L\-E\-S}}
+\index{S\-Y\-M\-O\-P\-T\-\_\-\-I\-N\-C\-L\-U\-D\-E\-\_\-32\-B\-I\-T\-\_\-\-M\-O\-D\-U\-L\-E\-S@{S\-Y\-M\-O\-P\-T\-\_\-\-I\-N\-C\-L\-U\-D\-E\-\_\-32\-B\-I\-T\-\_\-\-M\-O\-D\-U\-L\-E\-S}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{S\-Y\-M\-O\-P\-T\-\_\-\-I\-N\-C\-L\-U\-D\-E\-\_\-32\-B\-I\-T\-\_\-\-M\-O\-D\-U\-L\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Y\-M\-O\-P\-T\-\_\-\-I\-N\-C\-L\-U\-D\-E\-\_\-32\-B\-I\-T\-\_\-\-M\-O\-D\-U\-L\-E\-S~0x00002000}}\label{_stack_walker_8cpp_ae17afadb72b5564dc1f1b78f7eb1402b}
+\hypertarget{_stack_walker_8cpp_ac3022251f6a8e5b7f0b10c819ba48aa7}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!S\-Y\-M\-O\-P\-T\-\_\-\-L\-O\-A\-D\-\_\-\-A\-N\-Y\-T\-H\-I\-N\-G@{S\-Y\-M\-O\-P\-T\-\_\-\-L\-O\-A\-D\-\_\-\-A\-N\-Y\-T\-H\-I\-N\-G}}
+\index{S\-Y\-M\-O\-P\-T\-\_\-\-L\-O\-A\-D\-\_\-\-A\-N\-Y\-T\-H\-I\-N\-G@{S\-Y\-M\-O\-P\-T\-\_\-\-L\-O\-A\-D\-\_\-\-A\-N\-Y\-T\-H\-I\-N\-G}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{S\-Y\-M\-O\-P\-T\-\_\-\-L\-O\-A\-D\-\_\-\-A\-N\-Y\-T\-H\-I\-N\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Y\-M\-O\-P\-T\-\_\-\-L\-O\-A\-D\-\_\-\-A\-N\-Y\-T\-H\-I\-N\-G~0x00000040}}\label{_stack_walker_8cpp_ac3022251f6a8e5b7f0b10c819ba48aa7}
+\hypertarget{_stack_walker_8cpp_a802169607e746191de919806a9729479}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!S\-Y\-M\-O\-P\-T\-\_\-\-L\-O\-A\-D\-\_\-\-L\-I\-N\-E\-S@{S\-Y\-M\-O\-P\-T\-\_\-\-L\-O\-A\-D\-\_\-\-L\-I\-N\-E\-S}}
+\index{S\-Y\-M\-O\-P\-T\-\_\-\-L\-O\-A\-D\-\_\-\-L\-I\-N\-E\-S@{S\-Y\-M\-O\-P\-T\-\_\-\-L\-O\-A\-D\-\_\-\-L\-I\-N\-E\-S}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{S\-Y\-M\-O\-P\-T\-\_\-\-L\-O\-A\-D\-\_\-\-L\-I\-N\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Y\-M\-O\-P\-T\-\_\-\-L\-O\-A\-D\-\_\-\-L\-I\-N\-E\-S~0x00000010}}\label{_stack_walker_8cpp_a802169607e746191de919806a9729479}
+\hypertarget{_stack_walker_8cpp_ab755b820f80c5025c61abb69a7574a09}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!S\-Y\-M\-O\-P\-T\-\_\-\-N\-O\-\_\-\-C\-P\-P@{S\-Y\-M\-O\-P\-T\-\_\-\-N\-O\-\_\-\-C\-P\-P}}
+\index{S\-Y\-M\-O\-P\-T\-\_\-\-N\-O\-\_\-\-C\-P\-P@{S\-Y\-M\-O\-P\-T\-\_\-\-N\-O\-\_\-\-C\-P\-P}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{S\-Y\-M\-O\-P\-T\-\_\-\-N\-O\-\_\-\-C\-P\-P}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Y\-M\-O\-P\-T\-\_\-\-N\-O\-\_\-\-C\-P\-P~0x00000008}}\label{_stack_walker_8cpp_ab755b820f80c5025c61abb69a7574a09}
+\hypertarget{_stack_walker_8cpp_a9c3f5d82cfeed2f08bb78867b42e92e7}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!S\-Y\-M\-O\-P\-T\-\_\-\-N\-O\-\_\-\-I\-M\-A\-G\-E\-\_\-\-S\-E\-A\-R\-C\-H@{S\-Y\-M\-O\-P\-T\-\_\-\-N\-O\-\_\-\-I\-M\-A\-G\-E\-\_\-\-S\-E\-A\-R\-C\-H}}
+\index{S\-Y\-M\-O\-P\-T\-\_\-\-N\-O\-\_\-\-I\-M\-A\-G\-E\-\_\-\-S\-E\-A\-R\-C\-H@{S\-Y\-M\-O\-P\-T\-\_\-\-N\-O\-\_\-\-I\-M\-A\-G\-E\-\_\-\-S\-E\-A\-R\-C\-H}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{S\-Y\-M\-O\-P\-T\-\_\-\-N\-O\-\_\-\-I\-M\-A\-G\-E\-\_\-\-S\-E\-A\-R\-C\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Y\-M\-O\-P\-T\-\_\-\-N\-O\-\_\-\-I\-M\-A\-G\-E\-\_\-\-S\-E\-A\-R\-C\-H~0x00020000}}\label{_stack_walker_8cpp_a9c3f5d82cfeed2f08bb78867b42e92e7}
+\hypertarget{_stack_walker_8cpp_a2b31320a21625f30dff892aa2292a086}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!S\-Y\-M\-O\-P\-T\-\_\-\-N\-O\-\_\-\-P\-U\-B\-L\-I\-C\-S@{S\-Y\-M\-O\-P\-T\-\_\-\-N\-O\-\_\-\-P\-U\-B\-L\-I\-C\-S}}
+\index{S\-Y\-M\-O\-P\-T\-\_\-\-N\-O\-\_\-\-P\-U\-B\-L\-I\-C\-S@{S\-Y\-M\-O\-P\-T\-\_\-\-N\-O\-\_\-\-P\-U\-B\-L\-I\-C\-S}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{S\-Y\-M\-O\-P\-T\-\_\-\-N\-O\-\_\-\-P\-U\-B\-L\-I\-C\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Y\-M\-O\-P\-T\-\_\-\-N\-O\-\_\-\-P\-U\-B\-L\-I\-C\-S~0x00008000}}\label{_stack_walker_8cpp_a2b31320a21625f30dff892aa2292a086}
+\hypertarget{_stack_walker_8cpp_ab37e023dfc43c44282555899eb82e8e0}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!S\-Y\-M\-O\-P\-T\-\_\-\-N\-O\-\_\-\-U\-N\-Q\-U\-A\-L\-I\-F\-I\-E\-D\-\_\-\-L\-O\-A\-D\-S@{S\-Y\-M\-O\-P\-T\-\_\-\-N\-O\-\_\-\-U\-N\-Q\-U\-A\-L\-I\-F\-I\-E\-D\-\_\-\-L\-O\-A\-D\-S}}
+\index{S\-Y\-M\-O\-P\-T\-\_\-\-N\-O\-\_\-\-U\-N\-Q\-U\-A\-L\-I\-F\-I\-E\-D\-\_\-\-L\-O\-A\-D\-S@{S\-Y\-M\-O\-P\-T\-\_\-\-N\-O\-\_\-\-U\-N\-Q\-U\-A\-L\-I\-F\-I\-E\-D\-\_\-\-L\-O\-A\-D\-S}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{S\-Y\-M\-O\-P\-T\-\_\-\-N\-O\-\_\-\-U\-N\-Q\-U\-A\-L\-I\-F\-I\-E\-D\-\_\-\-L\-O\-A\-D\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Y\-M\-O\-P\-T\-\_\-\-N\-O\-\_\-\-U\-N\-Q\-U\-A\-L\-I\-F\-I\-E\-D\-\_\-\-L\-O\-A\-D\-S~0x00000100}}\label{_stack_walker_8cpp_ab37e023dfc43c44282555899eb82e8e0}
+\hypertarget{_stack_walker_8cpp_a1c69e00094a650aec566815f2823ce3a}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!S\-Y\-M\-O\-P\-T\-\_\-\-O\-M\-A\-P\-\_\-\-F\-I\-N\-D\-\_\-\-N\-E\-A\-R\-E\-S\-T@{S\-Y\-M\-O\-P\-T\-\_\-\-O\-M\-A\-P\-\_\-\-F\-I\-N\-D\-\_\-\-N\-E\-A\-R\-E\-S\-T}}
+\index{S\-Y\-M\-O\-P\-T\-\_\-\-O\-M\-A\-P\-\_\-\-F\-I\-N\-D\-\_\-\-N\-E\-A\-R\-E\-S\-T@{S\-Y\-M\-O\-P\-T\-\_\-\-O\-M\-A\-P\-\_\-\-F\-I\-N\-D\-\_\-\-N\-E\-A\-R\-E\-S\-T}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{S\-Y\-M\-O\-P\-T\-\_\-\-O\-M\-A\-P\-\_\-\-F\-I\-N\-D\-\_\-\-N\-E\-A\-R\-E\-S\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Y\-M\-O\-P\-T\-\_\-\-O\-M\-A\-P\-\_\-\-F\-I\-N\-D\-\_\-\-N\-E\-A\-R\-E\-S\-T~0x00000020}}\label{_stack_walker_8cpp_a1c69e00094a650aec566815f2823ce3a}
+\hypertarget{_stack_walker_8cpp_a80c373faf87e34edb26943b18920cfb3}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!S\-Y\-M\-O\-P\-T\-\_\-\-P\-U\-B\-L\-I\-C\-S\-\_\-\-O\-N\-L\-Y@{S\-Y\-M\-O\-P\-T\-\_\-\-P\-U\-B\-L\-I\-C\-S\-\_\-\-O\-N\-L\-Y}}
+\index{S\-Y\-M\-O\-P\-T\-\_\-\-P\-U\-B\-L\-I\-C\-S\-\_\-\-O\-N\-L\-Y@{S\-Y\-M\-O\-P\-T\-\_\-\-P\-U\-B\-L\-I\-C\-S\-\_\-\-O\-N\-L\-Y}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{S\-Y\-M\-O\-P\-T\-\_\-\-P\-U\-B\-L\-I\-C\-S\-\_\-\-O\-N\-L\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Y\-M\-O\-P\-T\-\_\-\-P\-U\-B\-L\-I\-C\-S\-\_\-\-O\-N\-L\-Y~0x00004000}}\label{_stack_walker_8cpp_a80c373faf87e34edb26943b18920cfb3}
+\hypertarget{_stack_walker_8cpp_aad0857e56bdc16c137c55039c1bf58f9}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!S\-Y\-M\-O\-P\-T\-\_\-\-S\-E\-C\-U\-R\-E@{S\-Y\-M\-O\-P\-T\-\_\-\-S\-E\-C\-U\-R\-E}}
+\index{S\-Y\-M\-O\-P\-T\-\_\-\-S\-E\-C\-U\-R\-E@{S\-Y\-M\-O\-P\-T\-\_\-\-S\-E\-C\-U\-R\-E}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{S\-Y\-M\-O\-P\-T\-\_\-\-S\-E\-C\-U\-R\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Y\-M\-O\-P\-T\-\_\-\-S\-E\-C\-U\-R\-E~0x00040000}}\label{_stack_walker_8cpp_aad0857e56bdc16c137c55039c1bf58f9}
+\hypertarget{_stack_walker_8cpp_ac68c0eb319f915f37122d00b95197f4f}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!S\-Y\-M\-O\-P\-T\-\_\-\-U\-N\-D\-N\-A\-M\-E@{S\-Y\-M\-O\-P\-T\-\_\-\-U\-N\-D\-N\-A\-M\-E}}
+\index{S\-Y\-M\-O\-P\-T\-\_\-\-U\-N\-D\-N\-A\-M\-E@{S\-Y\-M\-O\-P\-T\-\_\-\-U\-N\-D\-N\-A\-M\-E}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{S\-Y\-M\-O\-P\-T\-\_\-\-U\-N\-D\-N\-A\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-Y\-M\-O\-P\-T\-\_\-\-U\-N\-D\-N\-A\-M\-E~0x00000002}}\label{_stack_walker_8cpp_ac68c0eb319f915f37122d00b95197f4f}
+\hypertarget{_stack_walker_8cpp_a56de912fc80f2e2cb6b8f0e3cf851390}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!T\-H32\-C\-S\-\_\-\-S\-N\-A\-P\-M\-O\-D\-U\-L\-E@{T\-H32\-C\-S\-\_\-\-S\-N\-A\-P\-M\-O\-D\-U\-L\-E}}
+\index{T\-H32\-C\-S\-\_\-\-S\-N\-A\-P\-M\-O\-D\-U\-L\-E@{T\-H32\-C\-S\-\_\-\-S\-N\-A\-P\-M\-O\-D\-U\-L\-E}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{T\-H32\-C\-S\-\_\-\-S\-N\-A\-P\-M\-O\-D\-U\-L\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-H32\-C\-S\-\_\-\-S\-N\-A\-P\-M\-O\-D\-U\-L\-E~0x00000008}}\label{_stack_walker_8cpp_a56de912fc80f2e2cb6b8f0e3cf851390}
+\hypertarget{_stack_walker_8cpp_aa52b773d880c1f43b194a18f9046de21}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!U\-N\-D\-N\-A\-M\-E\-\_\-\-C\-O\-M\-P\-L\-E\-T\-E@{U\-N\-D\-N\-A\-M\-E\-\_\-\-C\-O\-M\-P\-L\-E\-T\-E}}
+\index{U\-N\-D\-N\-A\-M\-E\-\_\-\-C\-O\-M\-P\-L\-E\-T\-E@{U\-N\-D\-N\-A\-M\-E\-\_\-\-C\-O\-M\-P\-L\-E\-T\-E}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{U\-N\-D\-N\-A\-M\-E\-\_\-\-C\-O\-M\-P\-L\-E\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\-N\-D\-N\-A\-M\-E\-\_\-\-C\-O\-M\-P\-L\-E\-T\-E~(0x0000)}}\label{_stack_walker_8cpp_aa52b773d880c1f43b194a18f9046de21}
+\hypertarget{_stack_walker_8cpp_ab13a8f1e2bfa1461f6610dec0eb5232b}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!U\-N\-D\-N\-A\-M\-E\-\_\-\-N\-A\-M\-E\-\_\-\-O\-N\-L\-Y@{U\-N\-D\-N\-A\-M\-E\-\_\-\-N\-A\-M\-E\-\_\-\-O\-N\-L\-Y}}
+\index{U\-N\-D\-N\-A\-M\-E\-\_\-\-N\-A\-M\-E\-\_\-\-O\-N\-L\-Y@{U\-N\-D\-N\-A\-M\-E\-\_\-\-N\-A\-M\-E\-\_\-\-O\-N\-L\-Y}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{U\-N\-D\-N\-A\-M\-E\-\_\-\-N\-A\-M\-E\-\_\-\-O\-N\-L\-Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\-N\-D\-N\-A\-M\-E\-\_\-\-N\-A\-M\-E\-\_\-\-O\-N\-L\-Y~(0x1000)}}\label{_stack_walker_8cpp_ab13a8f1e2bfa1461f6610dec0eb5232b}
+\hypertarget{_stack_walker_8cpp_a2c0e35a3fd831a57ae32b039a0cf6980}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!U\-S\-E\-D\-\_\-\-C\-O\-N\-T\-E\-X\-T\-\_\-\-F\-L\-A\-G\-S@{U\-S\-E\-D\-\_\-\-C\-O\-N\-T\-E\-X\-T\-\_\-\-F\-L\-A\-G\-S}}
+\index{U\-S\-E\-D\-\_\-\-C\-O\-N\-T\-E\-X\-T\-\_\-\-F\-L\-A\-G\-S@{U\-S\-E\-D\-\_\-\-C\-O\-N\-T\-E\-X\-T\-\_\-\-F\-L\-A\-G\-S}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{U\-S\-E\-D\-\_\-\-C\-O\-N\-T\-E\-X\-T\-\_\-\-F\-L\-A\-G\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\-S\-E\-D\-\_\-\-C\-O\-N\-T\-E\-X\-T\-\_\-\-F\-L\-A\-G\-S~C\-O\-N\-T\-E\-X\-T\-\_\-\-F\-U\-L\-L}}\label{_stack_walker_8cpp_a2c0e35a3fd831a57ae32b039a0cf6980}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{_stack_walker_8cpp_a1a2de8bf22d3662a667f5aeb85fb6d5e}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!A\-D\-D\-R\-E\-S\-S64@{A\-D\-D\-R\-E\-S\-S64}}
+\index{A\-D\-D\-R\-E\-S\-S64@{A\-D\-D\-R\-E\-S\-S64}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{A\-D\-D\-R\-E\-S\-S64}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-tag\-A\-D\-D\-R\-E\-S\-S64}  {\bf A\-D\-D\-R\-E\-S\-S64}}}\label{_stack_walker_8cpp_a1a2de8bf22d3662a667f5aeb85fb6d5e}
+\hypertarget{_stack_walker_8cpp_a75e1533fce106bfa7ed6f6d257c58c32}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-L\-I\-N\-E64@{I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-L\-I\-N\-E64}}
+\index{I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-L\-I\-N\-E64@{I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-L\-I\-N\-E64}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-L\-I\-N\-E64}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-L\-I\-N\-E64}  {\bf I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-L\-I\-N\-E64}}}\label{_stack_walker_8cpp_a75e1533fce106bfa7ed6f6d257c58c32}
+\hypertarget{_stack_walker_8cpp_a02dc528603c4c89ba25a8870097f63dd}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-M\-O\-D\-U\-L\-E64@{I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-M\-O\-D\-U\-L\-E64}}
+\index{I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-M\-O\-D\-U\-L\-E64@{I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-M\-O\-D\-U\-L\-E64}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-M\-O\-D\-U\-L\-E64}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-M\-O\-D\-U\-L\-E64}  {\bf I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-M\-O\-D\-U\-L\-E64}}}\label{_stack_walker_8cpp_a02dc528603c4c89ba25a8870097f63dd}
+\hypertarget{_stack_walker_8cpp_a090e687777462f443d2ddafbeecc49e1}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-S\-Y\-M\-B\-O\-L64@{I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-S\-Y\-M\-B\-O\-L64}}
+\index{I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-S\-Y\-M\-B\-O\-L64@{I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-S\-Y\-M\-B\-O\-L64}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-S\-Y\-M\-B\-O\-L64}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-S\-Y\-M\-B\-O\-L64}  {\bf I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-S\-Y\-M\-B\-O\-L64}}}\label{_stack_walker_8cpp_a090e687777462f443d2ddafbeecc49e1}
+\hypertarget{_stack_walker_8cpp_a6ad1f5acfd6357df080e9f4155b09aff}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!K\-D\-H\-E\-L\-P64@{K\-D\-H\-E\-L\-P64}}
+\index{K\-D\-H\-E\-L\-P64@{K\-D\-H\-E\-L\-P64}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{K\-D\-H\-E\-L\-P64}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-K\-D\-H\-E\-L\-P64}  {\bf K\-D\-H\-E\-L\-P64}}}\label{_stack_walker_8cpp_a6ad1f5acfd6357df080e9f4155b09aff}
+\hypertarget{_stack_walker_8cpp_a0a9c850218b1adce868e2a94abcb7ab8}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!L\-P\-A\-D\-D\-R\-E\-S\-S64@{L\-P\-A\-D\-D\-R\-E\-S\-S64}}
+\index{L\-P\-A\-D\-D\-R\-E\-S\-S64@{L\-P\-A\-D\-D\-R\-E\-S\-S64}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{L\-P\-A\-D\-D\-R\-E\-S\-S64}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-tag\-A\-D\-D\-R\-E\-S\-S64} $\ast$ {\bf L\-P\-A\-D\-D\-R\-E\-S\-S64}}}\label{_stack_walker_8cpp_a0a9c850218b1adce868e2a94abcb7ab8}
+\hypertarget{_stack_walker_8cpp_a1645fb6e1f8e09b5a9eac1b9d5cddaca}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!L\-P\-S\-T\-A\-C\-K\-F\-R\-A\-M\-E64@{L\-P\-S\-T\-A\-C\-K\-F\-R\-A\-M\-E64}}
+\index{L\-P\-S\-T\-A\-C\-K\-F\-R\-A\-M\-E64@{L\-P\-S\-T\-A\-C\-K\-F\-R\-A\-M\-E64}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{L\-P\-S\-T\-A\-C\-K\-F\-R\-A\-M\-E64}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-tag\-S\-T\-A\-C\-K\-F\-R\-A\-M\-E64} $\ast$ {\bf L\-P\-S\-T\-A\-C\-K\-F\-R\-A\-M\-E64}}}\label{_stack_walker_8cpp_a1645fb6e1f8e09b5a9eac1b9d5cddaca}
+\hypertarget{_stack_walker_8cpp_abb96de57bd95202c410dda2bb7909fe1}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!P\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-T\-A\-B\-L\-E\-\_\-\-A\-C\-C\-E\-S\-S\-\_\-\-R\-O\-U\-T\-I\-N\-E64@{P\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-T\-A\-B\-L\-E\-\_\-\-A\-C\-C\-E\-S\-S\-\_\-\-R\-O\-U\-T\-I\-N\-E64}}
+\index{P\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-T\-A\-B\-L\-E\-\_\-\-A\-C\-C\-E\-S\-S\-\_\-\-R\-O\-U\-T\-I\-N\-E64@{P\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-T\-A\-B\-L\-E\-\_\-\-A\-C\-C\-E\-S\-S\-\_\-\-R\-O\-U\-T\-I\-N\-E64}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{P\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-T\-A\-B\-L\-E\-\_\-\-A\-C\-C\-E\-S\-S\-\_\-\-R\-O\-U\-T\-I\-N\-E64}]{\setlength{\rightskip}{0pt plus 5cm}typedef P\-V\-O\-I\-D(\-\_\-\-\_\-stdcall $\ast$ P\-F\-U\-N\-C\-T\-I\-O\-N\-\_\-\-T\-A\-B\-L\-E\-\_\-\-A\-C\-C\-E\-S\-S\-\_\-\-R\-O\-U\-T\-I\-N\-E64)(H\-A\-N\-D\-L\-E h\-Process, {\bf D\-W\-O\-R\-D64} Addr\-Base)}}\label{_stack_walker_8cpp_abb96de57bd95202c410dda2bb7909fe1}
+\hypertarget{_stack_walker_8cpp_aa650fcfe6749c5a800ddc172b9424d9a}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!P\-G\-E\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-B\-A\-S\-E\-\_\-\-R\-O\-U\-T\-I\-N\-E64@{P\-G\-E\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-B\-A\-S\-E\-\_\-\-R\-O\-U\-T\-I\-N\-E64}}
+\index{P\-G\-E\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-B\-A\-S\-E\-\_\-\-R\-O\-U\-T\-I\-N\-E64@{P\-G\-E\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-B\-A\-S\-E\-\_\-\-R\-O\-U\-T\-I\-N\-E64}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{P\-G\-E\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-B\-A\-S\-E\-\_\-\-R\-O\-U\-T\-I\-N\-E64}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf D\-W\-O\-R\-D64}(\-\_\-\-\_\-stdcall $\ast$ P\-G\-E\-T\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-B\-A\-S\-E\-\_\-\-R\-O\-U\-T\-I\-N\-E64)(H\-A\-N\-D\-L\-E h\-Process, {\bf D\-W\-O\-R\-D64} Address)}}\label{_stack_walker_8cpp_aa650fcfe6749c5a800ddc172b9424d9a}
+\hypertarget{_stack_walker_8cpp_a02a0106b705d60bd132ba0e1a7e3b87d}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!P\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-L\-I\-N\-E64@{P\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-L\-I\-N\-E64}}
+\index{P\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-L\-I\-N\-E64@{P\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-L\-I\-N\-E64}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{P\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-L\-I\-N\-E64}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-L\-I\-N\-E64} $\ast$ {\bf P\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-L\-I\-N\-E64}}}\label{_stack_walker_8cpp_a02a0106b705d60bd132ba0e1a7e3b87d}
+\hypertarget{_stack_walker_8cpp_a383abe824802b2c7b4528651aa5b0996}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!P\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-M\-O\-D\-U\-L\-E64@{P\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-M\-O\-D\-U\-L\-E64}}
+\index{P\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-M\-O\-D\-U\-L\-E64@{P\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-M\-O\-D\-U\-L\-E64}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{P\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-M\-O\-D\-U\-L\-E64}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-M\-O\-D\-U\-L\-E64} $\ast$ {\bf P\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-M\-O\-D\-U\-L\-E64}}}\label{_stack_walker_8cpp_a383abe824802b2c7b4528651aa5b0996}
+\hypertarget{_stack_walker_8cpp_a61ba945c2905d16b431a2d66ba569b01}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!P\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-S\-Y\-M\-B\-O\-L64@{P\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-S\-Y\-M\-B\-O\-L64}}
+\index{P\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-S\-Y\-M\-B\-O\-L64@{P\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-S\-Y\-M\-B\-O\-L64}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{P\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-S\-Y\-M\-B\-O\-L64}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-S\-Y\-M\-B\-O\-L64} $\ast$ {\bf P\-I\-M\-A\-G\-E\-H\-L\-P\-\_\-\-S\-Y\-M\-B\-O\-L64}}}\label{_stack_walker_8cpp_a61ba945c2905d16b431a2d66ba569b01}
+\hypertarget{_stack_walker_8cpp_abbd9d0eb1f47e53c6c338a1dbf209b94}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!P\-K\-D\-H\-E\-L\-P64@{P\-K\-D\-H\-E\-L\-P64}}
+\index{P\-K\-D\-H\-E\-L\-P64@{P\-K\-D\-H\-E\-L\-P64}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{P\-K\-D\-H\-E\-L\-P64}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-\-K\-D\-H\-E\-L\-P64} $\ast$ {\bf P\-K\-D\-H\-E\-L\-P64}}}\label{_stack_walker_8cpp_abbd9d0eb1f47e53c6c338a1dbf209b94}
+\hypertarget{_stack_walker_8cpp_a8d21bc6f316637942af2918298f765bd}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!P\-R\-E\-A\-D\-\_\-\-P\-R\-O\-C\-E\-S\-S\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-R\-O\-U\-T\-I\-N\-E64@{P\-R\-E\-A\-D\-\_\-\-P\-R\-O\-C\-E\-S\-S\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-R\-O\-U\-T\-I\-N\-E64}}
+\index{P\-R\-E\-A\-D\-\_\-\-P\-R\-O\-C\-E\-S\-S\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-R\-O\-U\-T\-I\-N\-E64@{P\-R\-E\-A\-D\-\_\-\-P\-R\-O\-C\-E\-S\-S\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-R\-O\-U\-T\-I\-N\-E64}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{P\-R\-E\-A\-D\-\_\-\-P\-R\-O\-C\-E\-S\-S\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-R\-O\-U\-T\-I\-N\-E64}]{\setlength{\rightskip}{0pt plus 5cm}typedef B\-O\-O\-L(\-\_\-\-\_\-stdcall $\ast$ P\-R\-E\-A\-D\-\_\-\-P\-R\-O\-C\-E\-S\-S\-\_\-\-M\-E\-M\-O\-R\-Y\-\_\-\-R\-O\-U\-T\-I\-N\-E64)(H\-A\-N\-D\-L\-E h\-Process, {\bf D\-W\-O\-R\-D64} qw\-Base\-Address, P\-V\-O\-I\-D lp\-Buffer, D\-W\-O\-R\-D n\-Size, L\-P\-D\-W\-O\-R\-D lp\-Number\-Of\-Bytes\-Read)}}\label{_stack_walker_8cpp_a8d21bc6f316637942af2918298f765bd}
+\hypertarget{_stack_walker_8cpp_aa4565ac0aa3072ad7372d9531daa23de}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!P\-T\-R\-A\-N\-S\-L\-A\-T\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S\-\_\-\-R\-O\-U\-T\-I\-N\-E64@{P\-T\-R\-A\-N\-S\-L\-A\-T\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S\-\_\-\-R\-O\-U\-T\-I\-N\-E64}}
+\index{P\-T\-R\-A\-N\-S\-L\-A\-T\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S\-\_\-\-R\-O\-U\-T\-I\-N\-E64@{P\-T\-R\-A\-N\-S\-L\-A\-T\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S\-\_\-\-R\-O\-U\-T\-I\-N\-E64}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{P\-T\-R\-A\-N\-S\-L\-A\-T\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S\-\_\-\-R\-O\-U\-T\-I\-N\-E64}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf D\-W\-O\-R\-D64}(\-\_\-\-\_\-stdcall $\ast$ P\-T\-R\-A\-N\-S\-L\-A\-T\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S\-\_\-\-R\-O\-U\-T\-I\-N\-E64)(H\-A\-N\-D\-L\-E h\-Process, H\-A\-N\-D\-L\-E h\-Thread, {\bf L\-P\-A\-D\-D\-R\-E\-S\-S64} lpaddr)}}\label{_stack_walker_8cpp_aa4565ac0aa3072ad7372d9531daa23de}
+\hypertarget{_stack_walker_8cpp_ad052606594ee2aa371b8901f9d3f6f76}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!S\-T\-A\-C\-K\-F\-R\-A\-M\-E64@{S\-T\-A\-C\-K\-F\-R\-A\-M\-E64}}
+\index{S\-T\-A\-C\-K\-F\-R\-A\-M\-E64@{S\-T\-A\-C\-K\-F\-R\-A\-M\-E64}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{S\-T\-A\-C\-K\-F\-R\-A\-M\-E64}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf \-\_\-tag\-S\-T\-A\-C\-K\-F\-R\-A\-M\-E64}  {\bf S\-T\-A\-C\-K\-F\-R\-A\-M\-E64}}}\label{_stack_walker_8cpp_ad052606594ee2aa371b8901f9d3f6f76}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{_stack_walker_8cpp_a7ccaea3b5eded8c0bc63d2f6766a216a}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!A\-D\-D\-R\-E\-S\-S\-\_\-\-M\-O\-D\-E@{A\-D\-D\-R\-E\-S\-S\-\_\-\-M\-O\-D\-E}}
+\index{A\-D\-D\-R\-E\-S\-S\-\_\-\-M\-O\-D\-E@{A\-D\-D\-R\-E\-S\-S\-\_\-\-M\-O\-D\-E}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{A\-D\-D\-R\-E\-S\-S\-\_\-\-M\-O\-D\-E}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf A\-D\-D\-R\-E\-S\-S\-\_\-\-M\-O\-D\-E}}}\label{_stack_walker_8cpp_a7ccaea3b5eded8c0bc63d2f6766a216a}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Addr\-Mode1616@{Addr\-Mode1616}!Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}}\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!Addr\-Mode1616@{Addr\-Mode1616}}\item[{\em 
+\hypertarget{_stack_walker_8cpp_a7ccaea3b5eded8c0bc63d2f6766a216aadfe55e32377d90c7e3b1eef550ba2ee8}{Addr\-Mode1616}\label{_stack_walker_8cpp_a7ccaea3b5eded8c0bc63d2f6766a216aadfe55e32377d90c7e3b1eef550ba2ee8}
+}]\index{Addr\-Mode1632@{Addr\-Mode1632}!Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}}\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!Addr\-Mode1632@{Addr\-Mode1632}}\item[{\em 
+\hypertarget{_stack_walker_8cpp_a7ccaea3b5eded8c0bc63d2f6766a216aaeb9e880bd582a8c61c3a2b5364f163ea}{Addr\-Mode1632}\label{_stack_walker_8cpp_a7ccaea3b5eded8c0bc63d2f6766a216aaeb9e880bd582a8c61c3a2b5364f163ea}
+}]\index{Addr\-Mode\-Real@{Addr\-Mode\-Real}!Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}}\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!Addr\-Mode\-Real@{Addr\-Mode\-Real}}\item[{\em 
+\hypertarget{_stack_walker_8cpp_a7ccaea3b5eded8c0bc63d2f6766a216aa030bae688275e38b52b5c7896c1d2ed8}{Addr\-Mode\-Real}\label{_stack_walker_8cpp_a7ccaea3b5eded8c0bc63d2f6766a216aa030bae688275e38b52b5c7896c1d2ed8}
+}]\index{Addr\-Mode\-Flat@{Addr\-Mode\-Flat}!Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}}\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!Addr\-Mode\-Flat@{Addr\-Mode\-Flat}}\item[{\em 
+\hypertarget{_stack_walker_8cpp_a7ccaea3b5eded8c0bc63d2f6766a216aaa70f2bbafd673b07ae511f5b5b5985f4}{Addr\-Mode\-Flat}\label{_stack_walker_8cpp_a7ccaea3b5eded8c0bc63d2f6766a216aaa70f2bbafd673b07ae511f5b5b5985f4}
+}]\end{description}
+\end{Desc}
+\hypertarget{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6}{\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!S\-Y\-M\-\_\-\-T\-Y\-P\-E@{S\-Y\-M\-\_\-\-T\-Y\-P\-E}}
+\index{S\-Y\-M\-\_\-\-T\-Y\-P\-E@{S\-Y\-M\-\_\-\-T\-Y\-P\-E}!StackWalker.cpp@{Stack\-Walker.\-cpp}}
+\subsubsection[{S\-Y\-M\-\_\-\-T\-Y\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf S\-Y\-M\-\_\-\-T\-Y\-P\-E}}}\label{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Sym\-None@{Sym\-None}!Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}}\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!Sym\-None@{Sym\-None}}\item[{\em 
+\hypertarget{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6a066b6751ec0756d17fa92f4df73262a1}{Sym\-None}\label{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6a066b6751ec0756d17fa92f4df73262a1}
+}]\index{Sym\-Coff@{Sym\-Coff}!Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}}\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!Sym\-Coff@{Sym\-Coff}}\item[{\em 
+\hypertarget{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6a5f0157749ab77c4131aec228289710c0}{Sym\-Coff}\label{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6a5f0157749ab77c4131aec228289710c0}
+}]\index{Sym\-Cv@{Sym\-Cv}!Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}}\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!Sym\-Cv@{Sym\-Cv}}\item[{\em 
+\hypertarget{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6a255f1ef0ab9a81f0fc15c4b41630e156}{Sym\-Cv}\label{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6a255f1ef0ab9a81f0fc15c4b41630e156}
+}]\index{Sym\-Pdb@{Sym\-Pdb}!Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}}\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!Sym\-Pdb@{Sym\-Pdb}}\item[{\em 
+\hypertarget{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6ac446237e1e808a6643e9ac75440f63f0}{Sym\-Pdb}\label{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6ac446237e1e808a6643e9ac75440f63f0}
+}]\index{Sym\-Export@{Sym\-Export}!Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}}\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!Sym\-Export@{Sym\-Export}}\item[{\em 
+\hypertarget{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6a553118f5140199686220cfd0f3b53911}{Sym\-Export}\label{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6a553118f5140199686220cfd0f3b53911}
+}]\index{Sym\-Deferred@{Sym\-Deferred}!Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}}\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!Sym\-Deferred@{Sym\-Deferred}}\item[{\em 
+\hypertarget{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6a496e586970b8165f725ed0e4062c4475}{Sym\-Deferred}\label{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6a496e586970b8165f725ed0e4062c4475}
+}]\index{Sym\-Sym@{Sym\-Sym}!Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}}\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!Sym\-Sym@{Sym\-Sym}}\item[{\em 
+\hypertarget{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6a88eee046e8c2b4d8583ce362bb9ad037}{Sym\-Sym}\label{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6a88eee046e8c2b4d8583ce362bb9ad037}
+}]\index{Sym\-Dia@{Sym\-Dia}!Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}}\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!Sym\-Dia@{Sym\-Dia}}\item[{\em 
+\hypertarget{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6a5a655dd6039899e580816b9f0429bf73}{Sym\-Dia}\label{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6a5a655dd6039899e580816b9f0429bf73}
+}]\index{Sym\-Virtual@{Sym\-Virtual}!Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}}\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!Sym\-Virtual@{Sym\-Virtual}}\item[{\em 
+\hypertarget{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6a71047375da6952484d51be8391f52982}{Sym\-Virtual}\label{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6a71047375da6952484d51be8391f52982}
+}]\index{Num\-Sym\-Types@{Num\-Sym\-Types}!Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}}\index{Stack\-Walker.\-cpp@{Stack\-Walker.\-cpp}!Num\-Sym\-Types@{Num\-Sym\-Types}}\item[{\em 
+\hypertarget{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6a8bc4da898f781d3dc664e3ee78a5d57b}{Num\-Sym\-Types}\label{_stack_walker_8cpp_a3ac18bf070251bbc81b0a6629840f6b6a8bc4da898f781d3dc664e3ee78a5d57b}
+}]\end{description}
+\end{Desc}

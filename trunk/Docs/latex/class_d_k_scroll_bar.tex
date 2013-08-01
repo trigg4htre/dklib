@@ -1,0 +1,219 @@
+\hypertarget{class_d_k_scroll_bar}{\section{D\-K\-Scroll\-Bar Class Reference}
+\label{class_d_k_scroll_bar}\index{D\-K\-Scroll\-Bar@{D\-K\-Scroll\-Bar}}
+}
+
+
+{\ttfamily \#include $<$D\-K\-Scroll\-Bar.\-h$>$}
+
+Inheritance diagram for D\-K\-Scroll\-Bar\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_d_k_scroll_bar}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_d_k_scroll_bar_a56ecab0550b5211248c49cfc24ef149f}{D\-K\-Scroll\-Bar} ()
+\item 
+\hyperlink{class_d_k_scroll_bar_a89dbc744bde81fb727d51272a30bc133}{D\-K\-Scroll\-Bar} (\hyperlink{class_d_k_object}{D\-K\-Object} $\ast$parent, int direction)
+\item 
+void \hyperlink{class_d_k_scroll_bar_ab89f22f91f7aaa48337df6cae2c7ed55}{Create} (\hyperlink{class_d_k_object}{D\-K\-Object} $\ast$parent, int direction)
+\item 
+\hyperlink{class_d_k_scroll_bar_abd9902fa8300c7b5a303871fb30b9f30}{$\sim$\-D\-K\-Scroll\-Bar} ()
+\item 
+void \hyperlink{class_d_k_scroll_bar_a382eec015aeb9fcbefc1fefd0d756c05}{On\-Mouse\-Button\-Down} (S\-D\-L\-\_\-\-Event $\ast$\hyperlink{class_d_k_event_a3deebb932ed734363c4ece87971bc45f}{event})
+\item 
+void \hyperlink{class_d_k_scroll_bar_a02973917e863eccc190351eae44e4585}{On\-Mouse\-Button\-Up} (S\-D\-L\-\_\-\-Event $\ast$\hyperlink{class_d_k_event_a3deebb932ed734363c4ece87971bc45f}{event})
+\item 
+void \hyperlink{class_d_k_scroll_bar_aa8b343daaf38b6b3dc74d930eb7390dd}{On\-Mouse\-Motion} (S\-D\-L\-\_\-\-Event $\ast$\hyperlink{class_d_k_event_a3deebb932ed734363c4ece87971bc45f}{event})
+\item 
+void \hyperlink{class_d_k_scroll_bar_a259c1c2fdbd9de15e5c695de06a02d12}{On\-Button} (\hyperlink{class_d_k_event}{D\-K\-Event} $\ast$\hyperlink{class_d_k_event_a3deebb932ed734363c4ece87971bc45f}{event})
+\item 
+void \hyperlink{class_d_k_scroll_bar_a6a0f64ea1fe8f3794f5d141300e7de9b}{Link\-Scroll\-Bar\-Event} (void($\ast$\hyperlink{class_d_k_event_a87ec7bf5f444b050e71b61d547c44db2}{Scroll\-Bar\-Event})(void $\ast$, \hyperlink{class_d_k_event}{D\-K\-Event} $\ast$), void $\ast$arg, int \hyperlink{class_d_k_event_a46877918e12fcb3b2c8988379b6fa6fa}{id})
+\item 
+void \hyperlink{class_d_k_scroll_bar_ac59ee1adea17cd3b3336273379716cf3}{Update\-Glide} (int diff, int pos)
+\item 
+void \hyperlink{class_d_k_scroll_bar_a4dd77e37e0fb41bb619e151dbdc4e44c}{Display} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+void($\ast$ \hyperlink{class_d_k_scroll_bar_a3745939ebbb0453fbfd01d005ce949a4}{On\-Scroll\-Bar} )(void $\ast$, \hyperlink{class_d_k_event}{D\-K\-Event} $\ast$)
+\item 
+void $\ast$ \hyperlink{class_d_k_scroll_bar_a19e951b1f6fac9961a5b3d04441a2a90}{m\-\_\-arg}
+\item 
+int \hyperlink{class_d_k_scroll_bar_ae87dae10a6c4d78c98f8898cb58a7010}{xy}
+\item 
+\hyperlink{class_d_k_square}{D\-K\-Square} \hyperlink{class_d_k_scroll_bar_ad5f8342dde236d31ae18b721e369fea9}{background}
+\item 
+\hyperlink{class_d_k_button}{D\-K\-Button} \hyperlink{class_d_k_scroll_bar_a3942184400e1a2f34eae1a6a24e56823}{scroll\-\_\-left}
+\item 
+\hyperlink{class_d_k_button}{D\-K\-Button} \hyperlink{class_d_k_scroll_bar_a6ec476e55a0a3d7026067986403e85bf}{scroll\-\_\-right}
+\item 
+\hyperlink{class_d_k_button}{D\-K\-Button} \hyperlink{class_d_k_scroll_bar_a7022e7bc1eafa6f29375229fa93f6b07}{scroll\-\_\-up}
+\item 
+\hyperlink{class_d_k_button}{D\-K\-Button} \hyperlink{class_d_k_scroll_bar_adf1f3b3352b223b0bc149835c7feb6cf}{scroll\-\_\-down}
+\item 
+\hyperlink{class_d_k_square}{D\-K\-Square} \hyperlink{class_d_k_scroll_bar_aac22c304468601bddf50ccaae6d3d07a}{glide}
+\item 
+bool \hyperlink{class_d_k_scroll_bar_ada9b3fa01c8f5abee812d2735171f7a2}{dragging}
+\item 
+int \hyperlink{class_d_k_scroll_bar_abe218ec338a58d1d31abcd9d8e72dce4}{drag\-\_\-x}
+\item 
+int \hyperlink{class_d_k_scroll_bar_aea84ee1a7493f98e142cb0ddfd9997fe}{drag\-\_\-y}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_d_k_scroll_bar_a56ecab0550b5211248c49cfc24ef149f}{\index{D\-K\-Scroll\-Bar@{D\-K\-Scroll\-Bar}!D\-K\-Scroll\-Bar@{D\-K\-Scroll\-Bar}}
+\index{D\-K\-Scroll\-Bar@{D\-K\-Scroll\-Bar}!DKScrollBar@{D\-K\-Scroll\-Bar}}
+\subsubsection[{D\-K\-Scroll\-Bar}]{\setlength{\rightskip}{0pt plus 5cm}D\-K\-Scroll\-Bar\-::\-D\-K\-Scroll\-Bar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_d_k_scroll_bar_a56ecab0550b5211248c49cfc24ef149f}
+\hypertarget{class_d_k_scroll_bar_a89dbc744bde81fb727d51272a30bc133}{\index{D\-K\-Scroll\-Bar@{D\-K\-Scroll\-Bar}!D\-K\-Scroll\-Bar@{D\-K\-Scroll\-Bar}}
+\index{D\-K\-Scroll\-Bar@{D\-K\-Scroll\-Bar}!DKScrollBar@{D\-K\-Scroll\-Bar}}
+\subsubsection[{D\-K\-Scroll\-Bar}]{\setlength{\rightskip}{0pt plus 5cm}D\-K\-Scroll\-Bar\-::\-D\-K\-Scroll\-Bar (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-K\-Object} $\ast$}]{parent, }
+\item[{int}]{direction}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_scroll_bar_a89dbc744bde81fb727d51272a30bc133}
+\hypertarget{class_d_k_scroll_bar_abd9902fa8300c7b5a303871fb30b9f30}{\index{D\-K\-Scroll\-Bar@{D\-K\-Scroll\-Bar}!$\sim$\-D\-K\-Scroll\-Bar@{$\sim$\-D\-K\-Scroll\-Bar}}
+\index{$\sim$\-D\-K\-Scroll\-Bar@{$\sim$\-D\-K\-Scroll\-Bar}!DKScrollBar@{D\-K\-Scroll\-Bar}}
+\subsubsection[{$\sim$\-D\-K\-Scroll\-Bar}]{\setlength{\rightskip}{0pt plus 5cm}D\-K\-Scroll\-Bar\-::$\sim$\-D\-K\-Scroll\-Bar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_scroll_bar_abd9902fa8300c7b5a303871fb30b9f30}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_d_k_scroll_bar_ab89f22f91f7aaa48337df6cae2c7ed55}{\index{D\-K\-Scroll\-Bar@{D\-K\-Scroll\-Bar}!Create@{Create}}
+\index{Create@{Create}!DKScrollBar@{D\-K\-Scroll\-Bar}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Scroll\-Bar\-::\-Create (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-K\-Object} $\ast$}]{parent, }
+\item[{int}]{direction}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_scroll_bar_ab89f22f91f7aaa48337df6cae2c7ed55}
+\hypertarget{class_d_k_scroll_bar_a4dd77e37e0fb41bb619e151dbdc4e44c}{\index{D\-K\-Scroll\-Bar@{D\-K\-Scroll\-Bar}!Display@{Display}}
+\index{Display@{Display}!DKScrollBar@{D\-K\-Scroll\-Bar}}
+\subsubsection[{Display}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Scroll\-Bar\-::\-Display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_k_scroll_bar_a4dd77e37e0fb41bb619e151dbdc4e44c}
+
+
+Reimplemented from \hyperlink{class_d_k_object_a6c7afb48b29a473ecf68f2af29f17ca9}{D\-K\-Object}.
+
+\hypertarget{class_d_k_scroll_bar_a6a0f64ea1fe8f3794f5d141300e7de9b}{\index{D\-K\-Scroll\-Bar@{D\-K\-Scroll\-Bar}!Link\-Scroll\-Bar\-Event@{Link\-Scroll\-Bar\-Event}}
+\index{Link\-Scroll\-Bar\-Event@{Link\-Scroll\-Bar\-Event}!DKScrollBar@{D\-K\-Scroll\-Bar}}
+\subsubsection[{Link\-Scroll\-Bar\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Scroll\-Bar\-::\-Link\-Scroll\-Bar\-Event (
+\begin{DoxyParamCaption}
+\item[{void($\ast$)(void $\ast$, {\bf D\-K\-Event} $\ast$)}]{Scroll\-Bar\-Event, }
+\item[{void $\ast$}]{arg, }
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_scroll_bar_a6a0f64ea1fe8f3794f5d141300e7de9b}
+\hypertarget{class_d_k_scroll_bar_a259c1c2fdbd9de15e5c695de06a02d12}{\index{D\-K\-Scroll\-Bar@{D\-K\-Scroll\-Bar}!On\-Button@{On\-Button}}
+\index{On\-Button@{On\-Button}!DKScrollBar@{D\-K\-Scroll\-Bar}}
+\subsubsection[{On\-Button}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Scroll\-Bar\-::\-On\-Button (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-K\-Event} $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_k_scroll_bar_a259c1c2fdbd9de15e5c695de06a02d12}
+
+
+Reimplemented from \hyperlink{class_d_k_event_a0742f1b6f3bf9b39c00b59b8c0a2af7c}{D\-K\-Event}.
+
+\hypertarget{class_d_k_scroll_bar_a382eec015aeb9fcbefc1fefd0d756c05}{\index{D\-K\-Scroll\-Bar@{D\-K\-Scroll\-Bar}!On\-Mouse\-Button\-Down@{On\-Mouse\-Button\-Down}}
+\index{On\-Mouse\-Button\-Down@{On\-Mouse\-Button\-Down}!DKScrollBar@{D\-K\-Scroll\-Bar}}
+\subsubsection[{On\-Mouse\-Button\-Down}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Scroll\-Bar\-::\-On\-Mouse\-Button\-Down (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_k_scroll_bar_a382eec015aeb9fcbefc1fefd0d756c05}
+
+
+Reimplemented from \hyperlink{class_d_k_event_a0428b81f313a78d9fd29b768c82b0ae9}{D\-K\-Event}.
+
+\hypertarget{class_d_k_scroll_bar_a02973917e863eccc190351eae44e4585}{\index{D\-K\-Scroll\-Bar@{D\-K\-Scroll\-Bar}!On\-Mouse\-Button\-Up@{On\-Mouse\-Button\-Up}}
+\index{On\-Mouse\-Button\-Up@{On\-Mouse\-Button\-Up}!DKScrollBar@{D\-K\-Scroll\-Bar}}
+\subsubsection[{On\-Mouse\-Button\-Up}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Scroll\-Bar\-::\-On\-Mouse\-Button\-Up (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_k_scroll_bar_a02973917e863eccc190351eae44e4585}
+
+
+Reimplemented from \hyperlink{class_d_k_event_a7add2973c846d6eef70cb56a26843e0e}{D\-K\-Event}.
+
+\hypertarget{class_d_k_scroll_bar_aa8b343daaf38b6b3dc74d930eb7390dd}{\index{D\-K\-Scroll\-Bar@{D\-K\-Scroll\-Bar}!On\-Mouse\-Motion@{On\-Mouse\-Motion}}
+\index{On\-Mouse\-Motion@{On\-Mouse\-Motion}!DKScrollBar@{D\-K\-Scroll\-Bar}}
+\subsubsection[{On\-Mouse\-Motion}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Scroll\-Bar\-::\-On\-Mouse\-Motion (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_k_scroll_bar_aa8b343daaf38b6b3dc74d930eb7390dd}
+
+
+Reimplemented from \hyperlink{class_d_k_event_a8082934ad6166b2a493851c633a78708}{D\-K\-Event}.
+
+\hypertarget{class_d_k_scroll_bar_ac59ee1adea17cd3b3336273379716cf3}{\index{D\-K\-Scroll\-Bar@{D\-K\-Scroll\-Bar}!Update\-Glide@{Update\-Glide}}
+\index{Update\-Glide@{Update\-Glide}!DKScrollBar@{D\-K\-Scroll\-Bar}}
+\subsubsection[{Update\-Glide}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-Scroll\-Bar\-::\-Update\-Glide (
+\begin{DoxyParamCaption}
+\item[{int}]{diff, }
+\item[{int}]{pos}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_scroll_bar_ac59ee1adea17cd3b3336273379716cf3}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_d_k_scroll_bar_ad5f8342dde236d31ae18b721e369fea9}{\index{D\-K\-Scroll\-Bar@{D\-K\-Scroll\-Bar}!background@{background}}
+\index{background@{background}!DKScrollBar@{D\-K\-Scroll\-Bar}}
+\subsubsection[{background}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-K\-Square} D\-K\-Scroll\-Bar\-::background}}\label{class_d_k_scroll_bar_ad5f8342dde236d31ae18b721e369fea9}
+\hypertarget{class_d_k_scroll_bar_abe218ec338a58d1d31abcd9d8e72dce4}{\index{D\-K\-Scroll\-Bar@{D\-K\-Scroll\-Bar}!drag\-\_\-x@{drag\-\_\-x}}
+\index{drag\-\_\-x@{drag\-\_\-x}!DKScrollBar@{D\-K\-Scroll\-Bar}}
+\subsubsection[{drag\-\_\-x}]{\setlength{\rightskip}{0pt plus 5cm}int D\-K\-Scroll\-Bar\-::drag\-\_\-x}}\label{class_d_k_scroll_bar_abe218ec338a58d1d31abcd9d8e72dce4}
+\hypertarget{class_d_k_scroll_bar_aea84ee1a7493f98e142cb0ddfd9997fe}{\index{D\-K\-Scroll\-Bar@{D\-K\-Scroll\-Bar}!drag\-\_\-y@{drag\-\_\-y}}
+\index{drag\-\_\-y@{drag\-\_\-y}!DKScrollBar@{D\-K\-Scroll\-Bar}}
+\subsubsection[{drag\-\_\-y}]{\setlength{\rightskip}{0pt plus 5cm}int D\-K\-Scroll\-Bar\-::drag\-\_\-y}}\label{class_d_k_scroll_bar_aea84ee1a7493f98e142cb0ddfd9997fe}
+\hypertarget{class_d_k_scroll_bar_ada9b3fa01c8f5abee812d2735171f7a2}{\index{D\-K\-Scroll\-Bar@{D\-K\-Scroll\-Bar}!dragging@{dragging}}
+\index{dragging@{dragging}!DKScrollBar@{D\-K\-Scroll\-Bar}}
+\subsubsection[{dragging}]{\setlength{\rightskip}{0pt plus 5cm}bool D\-K\-Scroll\-Bar\-::dragging}}\label{class_d_k_scroll_bar_ada9b3fa01c8f5abee812d2735171f7a2}
+\hypertarget{class_d_k_scroll_bar_aac22c304468601bddf50ccaae6d3d07a}{\index{D\-K\-Scroll\-Bar@{D\-K\-Scroll\-Bar}!glide@{glide}}
+\index{glide@{glide}!DKScrollBar@{D\-K\-Scroll\-Bar}}
+\subsubsection[{glide}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-K\-Square} D\-K\-Scroll\-Bar\-::glide}}\label{class_d_k_scroll_bar_aac22c304468601bddf50ccaae6d3d07a}
+\hypertarget{class_d_k_scroll_bar_a19e951b1f6fac9961a5b3d04441a2a90}{\index{D\-K\-Scroll\-Bar@{D\-K\-Scroll\-Bar}!m\-\_\-arg@{m\-\_\-arg}}
+\index{m\-\_\-arg@{m\-\_\-arg}!DKScrollBar@{D\-K\-Scroll\-Bar}}
+\subsubsection[{m\-\_\-arg}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ D\-K\-Scroll\-Bar\-::m\-\_\-arg}}\label{class_d_k_scroll_bar_a19e951b1f6fac9961a5b3d04441a2a90}
+\hypertarget{class_d_k_scroll_bar_a3745939ebbb0453fbfd01d005ce949a4}{\index{D\-K\-Scroll\-Bar@{D\-K\-Scroll\-Bar}!On\-Scroll\-Bar@{On\-Scroll\-Bar}}
+\index{On\-Scroll\-Bar@{On\-Scroll\-Bar}!DKScrollBar@{D\-K\-Scroll\-Bar}}
+\subsubsection[{On\-Scroll\-Bar}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ D\-K\-Scroll\-Bar\-::\-On\-Scroll\-Bar)(void $\ast$, {\bf D\-K\-Event} $\ast$)}}\label{class_d_k_scroll_bar_a3745939ebbb0453fbfd01d005ce949a4}
+\hypertarget{class_d_k_scroll_bar_adf1f3b3352b223b0bc149835c7feb6cf}{\index{D\-K\-Scroll\-Bar@{D\-K\-Scroll\-Bar}!scroll\-\_\-down@{scroll\-\_\-down}}
+\index{scroll\-\_\-down@{scroll\-\_\-down}!DKScrollBar@{D\-K\-Scroll\-Bar}}
+\subsubsection[{scroll\-\_\-down}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-K\-Button} D\-K\-Scroll\-Bar\-::scroll\-\_\-down}}\label{class_d_k_scroll_bar_adf1f3b3352b223b0bc149835c7feb6cf}
+\hypertarget{class_d_k_scroll_bar_a3942184400e1a2f34eae1a6a24e56823}{\index{D\-K\-Scroll\-Bar@{D\-K\-Scroll\-Bar}!scroll\-\_\-left@{scroll\-\_\-left}}
+\index{scroll\-\_\-left@{scroll\-\_\-left}!DKScrollBar@{D\-K\-Scroll\-Bar}}
+\subsubsection[{scroll\-\_\-left}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-K\-Button} D\-K\-Scroll\-Bar\-::scroll\-\_\-left}}\label{class_d_k_scroll_bar_a3942184400e1a2f34eae1a6a24e56823}
+\hypertarget{class_d_k_scroll_bar_a6ec476e55a0a3d7026067986403e85bf}{\index{D\-K\-Scroll\-Bar@{D\-K\-Scroll\-Bar}!scroll\-\_\-right@{scroll\-\_\-right}}
+\index{scroll\-\_\-right@{scroll\-\_\-right}!DKScrollBar@{D\-K\-Scroll\-Bar}}
+\subsubsection[{scroll\-\_\-right}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-K\-Button} D\-K\-Scroll\-Bar\-::scroll\-\_\-right}}\label{class_d_k_scroll_bar_a6ec476e55a0a3d7026067986403e85bf}
+\hypertarget{class_d_k_scroll_bar_a7022e7bc1eafa6f29375229fa93f6b07}{\index{D\-K\-Scroll\-Bar@{D\-K\-Scroll\-Bar}!scroll\-\_\-up@{scroll\-\_\-up}}
+\index{scroll\-\_\-up@{scroll\-\_\-up}!DKScrollBar@{D\-K\-Scroll\-Bar}}
+\subsubsection[{scroll\-\_\-up}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-K\-Button} D\-K\-Scroll\-Bar\-::scroll\-\_\-up}}\label{class_d_k_scroll_bar_a7022e7bc1eafa6f29375229fa93f6b07}
+\hypertarget{class_d_k_scroll_bar_ae87dae10a6c4d78c98f8898cb58a7010}{\index{D\-K\-Scroll\-Bar@{D\-K\-Scroll\-Bar}!xy@{xy}}
+\index{xy@{xy}!DKScrollBar@{D\-K\-Scroll\-Bar}}
+\subsubsection[{xy}]{\setlength{\rightskip}{0pt plus 5cm}int D\-K\-Scroll\-Bar\-::xy}}\label{class_d_k_scroll_bar_ae87dae10a6c4d78c98f8898cb58a7010}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+G\-:/\-Programming/\-Digital\-Knob/\-Libs/digitalknob/\hyperlink{_d_k_scroll_bar_8h}{D\-K\-Scroll\-Bar.\-h}\item 
+G\-:/\-Programming/\-Digital\-Knob/\-Libs/digitalknob/\hyperlink{_d_k_scroll_bar_8cpp}{D\-K\-Scroll\-Bar.\-cpp}\end{DoxyCompactItemize}

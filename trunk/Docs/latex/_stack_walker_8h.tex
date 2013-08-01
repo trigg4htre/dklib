@@ -1,0 +1,61 @@
+\hypertarget{_stack_walker_8h}{\section{G\-:/\-Programming/\-Digital\-Knob/\-Libs/digitalknob/\-Stack\-Walker.h File Reference}
+\label{_stack_walker_8h}\index{G\-:/\-Programming/\-Digital\-Knob/\-Libs/digitalknob/\-Stack\-Walker.\-h@{G\-:/\-Programming/\-Digital\-Knob/\-Libs/digitalknob/\-Stack\-Walker.\-h}}
+}
+{\ttfamily \#include $<$windows.\-h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_stack_walker}{Stack\-Walker}
+\item 
+struct \hyperlink{struct_stack_walker_1_1_callstack_entry}{Stack\-Walker\-::\-Callstack\-Entry}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_stack_walker_8h_a6f2d5a0c6da2afd4dd88ed248731ca22}{G\-E\-T\-\_\-\-C\-U\-R\-R\-E\-N\-T\-\_\-\-C\-O\-N\-T\-E\-X\-T}(c, context\-Flags)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned \-\_\-\-\_\-int64 \hyperlink{_stack_walker_8h_a97fb241c597b99bcb965858f53cacac4}{D\-W\-O\-R\-D64}
+\item 
+typedef unsigned \-\_\-\-\_\-int64 $\ast$ \hyperlink{_stack_walker_8h_aee0d4bfea0b51eb8c099b516e21ad8f8}{P\-D\-W\-O\-R\-D64}
+\item 
+typedef unsigned long \hyperlink{_stack_walker_8h_abf8e46e57d5b85295601cefa33de3b7a}{S\-I\-Z\-E\-\_\-\-T}
+\item 
+typedef unsigned long $\ast$ \hyperlink{_stack_walker_8h_a6ebc86010a9a7e9c506a8020ad4e6689}{P\-S\-I\-Z\-E\-\_\-\-T}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_stack_walker_8h_a6f2d5a0c6da2afd4dd88ed248731ca22}{\index{Stack\-Walker.\-h@{Stack\-Walker.\-h}!G\-E\-T\-\_\-\-C\-U\-R\-R\-E\-N\-T\-\_\-\-C\-O\-N\-T\-E\-X\-T@{G\-E\-T\-\_\-\-C\-U\-R\-R\-E\-N\-T\-\_\-\-C\-O\-N\-T\-E\-X\-T}}
+\index{G\-E\-T\-\_\-\-C\-U\-R\-R\-E\-N\-T\-\_\-\-C\-O\-N\-T\-E\-X\-T@{G\-E\-T\-\_\-\-C\-U\-R\-R\-E\-N\-T\-\_\-\-C\-O\-N\-T\-E\-X\-T}!StackWalker.h@{Stack\-Walker.\-h}}
+\subsubsection[{G\-E\-T\-\_\-\-C\-U\-R\-R\-E\-N\-T\-\_\-\-C\-O\-N\-T\-E\-X\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\-E\-T\-\_\-\-C\-U\-R\-R\-E\-N\-T\-\_\-\-C\-O\-N\-T\-E\-X\-T(
+\begin{DoxyParamCaption}
+\item[{}]{c, }
+\item[{}]{context\-Flags}
+\end{DoxyParamCaption}
+)}}\label{_stack_walker_8h_a6f2d5a0c6da2afd4dd88ed248731ca22}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{ \(\backslash\)
+    memset(&c, 0, \textcolor{keyword}{sizeof}(CONTEXT)); \(\backslash\)
+    c.ContextFlags = contextFlags; \(\backslash\)
+    RtlCaptureContext(&c); \(\backslash\)
+\} \textcolor{keywordflow}{while}(0);
+\end{DoxyCode}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{_stack_walker_8h_a97fb241c597b99bcb965858f53cacac4}{\index{Stack\-Walker.\-h@{Stack\-Walker.\-h}!D\-W\-O\-R\-D64@{D\-W\-O\-R\-D64}}
+\index{D\-W\-O\-R\-D64@{D\-W\-O\-R\-D64}!StackWalker.h@{Stack\-Walker.\-h}}
+\subsubsection[{D\-W\-O\-R\-D64}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned \-\_\-\-\_\-int64 {\bf D\-W\-O\-R\-D64}}}\label{_stack_walker_8h_a97fb241c597b99bcb965858f53cacac4}
+\hypertarget{_stack_walker_8h_aee0d4bfea0b51eb8c099b516e21ad8f8}{\index{Stack\-Walker.\-h@{Stack\-Walker.\-h}!P\-D\-W\-O\-R\-D64@{P\-D\-W\-O\-R\-D64}}
+\index{P\-D\-W\-O\-R\-D64@{P\-D\-W\-O\-R\-D64}!StackWalker.h@{Stack\-Walker.\-h}}
+\subsubsection[{P\-D\-W\-O\-R\-D64}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned \-\_\-\-\_\-int64 $\ast$ {\bf P\-D\-W\-O\-R\-D64}}}\label{_stack_walker_8h_aee0d4bfea0b51eb8c099b516e21ad8f8}
+\hypertarget{_stack_walker_8h_a6ebc86010a9a7e9c506a8020ad4e6689}{\index{Stack\-Walker.\-h@{Stack\-Walker.\-h}!P\-S\-I\-Z\-E\-\_\-\-T@{P\-S\-I\-Z\-E\-\_\-\-T}}
+\index{P\-S\-I\-Z\-E\-\_\-\-T@{P\-S\-I\-Z\-E\-\_\-\-T}!StackWalker.h@{Stack\-Walker.\-h}}
+\subsubsection[{P\-S\-I\-Z\-E\-\_\-\-T}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned long $\ast$ {\bf P\-S\-I\-Z\-E\-\_\-\-T}}}\label{_stack_walker_8h_a6ebc86010a9a7e9c506a8020ad4e6689}
+\hypertarget{_stack_walker_8h_abf8e46e57d5b85295601cefa33de3b7a}{\index{Stack\-Walker.\-h@{Stack\-Walker.\-h}!S\-I\-Z\-E\-\_\-\-T@{S\-I\-Z\-E\-\_\-\-T}}
+\index{S\-I\-Z\-E\-\_\-\-T@{S\-I\-Z\-E\-\_\-\-T}!StackWalker.h@{Stack\-Walker.\-h}}
+\subsubsection[{S\-I\-Z\-E\-\_\-\-T}]{\setlength{\rightskip}{0pt plus 5cm}typedef unsigned long {\bf S\-I\-Z\-E\-\_\-\-T}}}\label{_stack_walker_8h_abf8e46e57d5b85295601cefa33de3b7a}

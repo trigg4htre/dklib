@@ -1,0 +1,197 @@
+\hypertarget{class_d_k_list_box}{\section{D\-K\-List\-Box Class Reference}
+\label{class_d_k_list_box}\index{D\-K\-List\-Box@{D\-K\-List\-Box}}
+}
+
+
+{\ttfamily \#include $<$D\-K\-List\-Box.\-h$>$}
+
+Inheritance diagram for D\-K\-List\-Box\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_d_k_list_box}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_d_k_list_box_a8bb84e66896b2ec9bfc63174bdc8df8d}{D\-K\-List\-Box} ()
+\item 
+\hyperlink{class_d_k_list_box_ab5c1d1c12c48880721fd51295a147708}{D\-K\-List\-Box} (\hyperlink{class_d_k_object}{D\-K\-Object} $\ast$parent, \hyperlink{_d_k_axis_8h_a0ca1f005fbb936f8e7a7f2433591f418}{D\-K\-Point} pos, \hyperlink{_d_k_axis_8h_aaa25a8c7cbf504fffdb8a4208ff7a731}{D\-K\-Size} siz, \hyperlink{class_d_k_font}{D\-K\-Font} $\ast$font)
+\item 
+void \hyperlink{class_d_k_list_box_abe1fc4f32085bf2f20165c3d4c67a689}{Create} (\hyperlink{class_d_k_object}{D\-K\-Object} $\ast$parent, \hyperlink{_d_k_axis_8h_a0ca1f005fbb936f8e7a7f2433591f418}{D\-K\-Point} pos, \hyperlink{_d_k_axis_8h_aaa25a8c7cbf504fffdb8a4208ff7a731}{D\-K\-Size} siz, \hyperlink{class_d_k_font}{D\-K\-Font} $\ast$font)
+\item 
+\hyperlink{class_d_k_list_box_aa2cb0b08d457e648dd611d3dc2d77dc5}{$\sim$\-D\-K\-List\-Box} ()
+\item 
+void \hyperlink{class_d_k_list_box_ac63823764b57c825508ebd8e9288467e}{On\-Text\-Button} (\hyperlink{class_d_k_event}{D\-K\-Event} $\ast$\hyperlink{class_d_k_event_a3deebb932ed734363c4ece87971bc45f}{event})
+\item 
+void \hyperlink{class_d_k_list_box_a9a707abcab18a94da2fa024d6c132b05}{Display} ()
+\item 
+void \hyperlink{class_d_k_list_box_a6593ee4089e5def2a9ea30515fab2c63}{Add\-Selection} (\hyperlink{_d_k_string_8h_ac168e8555ceba18e1a2919b21976bc84}{D\-K\-String} selection)
+\item 
+void \hyperlink{class_d_k_list_box_a124fb64b9b4261f49384bc88e36f28d7}{Add\-Selections} (\hyperlink{_d_k_string_8h_a7eaad67bd9c10af6a5df95c3d7dd44f8}{D\-K\-String\-Array} strings)
+\item 
+void \hyperlink{class_d_k_list_box_a21897ffe0a59bcf6c0f23cf3994a6ce7}{Clear\-Selections} ()
+\item 
+void \hyperlink{class_d_k_list_box_a513086fd2d7f6ddffe895b9cba8a3c3c}{Set\-Position} (\hyperlink{_d_k_axis_8h_a0ca1f005fbb936f8e7a7f2433591f418}{D\-K\-Point} pos)
+\item 
+void \hyperlink{class_d_k_list_box_a58541f57af036c35c9781e986364334b}{Set\-Color} (\hyperlink{class_d_k_color}{D\-K\-Color} rgba)
+\item 
+void \hyperlink{class_d_k_list_box_af4a4ab2ae39b17dff6a5d5fba63e33d2}{Link\-List\-Box\-Event} (void($\ast$\hyperlink{class_d_k_event_aea5143b78f3e3ac487f8913ec3af1749}{List\-Box\-Event})(void $\ast$, \hyperlink{class_d_k_event}{D\-K\-Event} $\ast$), void $\ast$arg, int \hyperlink{class_d_k_event_a46877918e12fcb3b2c8988379b6fa6fa}{id})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+void($\ast$ \hyperlink{class_d_k_list_box_ae6665f42ad516fa0ce5471136a5be0ac}{On\-List\-Box} )(void $\ast$, \hyperlink{class_d_k_event}{D\-K\-Event} $\ast$)
+\item 
+void $\ast$ \hyperlink{class_d_k_list_box_a12ab490712636fff3dce5bbcaf3cc129}{m\-\_\-arg}
+\item 
+\hyperlink{class_d_k_square}{D\-K\-Square} \hyperlink{class_d_k_list_box_acac57a4ff43952d752bb7f7bc03df46c}{square}
+\item 
+\hyperlink{class_d_k_font}{D\-K\-Font} $\ast$ \hyperlink{class_d_k_list_box_a202a56d1285c4c8a54972d174aa06433}{m\-\_\-font}
+\item 
+std\-::vector$<$ \hyperlink{class_d_k_text_button}{D\-K\-Text\-Button} $\ast$ $>$ \hyperlink{class_d_k_list_box_a913eb79de209938ce6ee29ce84112971}{selections}
+\item 
+int \hyperlink{class_d_k_list_box_a5e1637d160e99de9a037db5a2fa01e32}{current\-\_\-selection}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_d_k_list_box_a8bb84e66896b2ec9bfc63174bdc8df8d}{\index{D\-K\-List\-Box@{D\-K\-List\-Box}!D\-K\-List\-Box@{D\-K\-List\-Box}}
+\index{D\-K\-List\-Box@{D\-K\-List\-Box}!DKListBox@{D\-K\-List\-Box}}
+\subsubsection[{D\-K\-List\-Box}]{\setlength{\rightskip}{0pt plus 5cm}D\-K\-List\-Box\-::\-D\-K\-List\-Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_d_k_list_box_a8bb84e66896b2ec9bfc63174bdc8df8d}
+\hypertarget{class_d_k_list_box_ab5c1d1c12c48880721fd51295a147708}{\index{D\-K\-List\-Box@{D\-K\-List\-Box}!D\-K\-List\-Box@{D\-K\-List\-Box}}
+\index{D\-K\-List\-Box@{D\-K\-List\-Box}!DKListBox@{D\-K\-List\-Box}}
+\subsubsection[{D\-K\-List\-Box}]{\setlength{\rightskip}{0pt plus 5cm}D\-K\-List\-Box\-::\-D\-K\-List\-Box (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-K\-Object} $\ast$}]{parent, }
+\item[{{\bf D\-K\-Point}}]{pos, }
+\item[{{\bf D\-K\-Size}}]{siz, }
+\item[{{\bf D\-K\-Font} $\ast$}]{font}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_list_box_ab5c1d1c12c48880721fd51295a147708}
+\hypertarget{class_d_k_list_box_aa2cb0b08d457e648dd611d3dc2d77dc5}{\index{D\-K\-List\-Box@{D\-K\-List\-Box}!$\sim$\-D\-K\-List\-Box@{$\sim$\-D\-K\-List\-Box}}
+\index{$\sim$\-D\-K\-List\-Box@{$\sim$\-D\-K\-List\-Box}!DKListBox@{D\-K\-List\-Box}}
+\subsubsection[{$\sim$\-D\-K\-List\-Box}]{\setlength{\rightskip}{0pt plus 5cm}D\-K\-List\-Box\-::$\sim$\-D\-K\-List\-Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_list_box_aa2cb0b08d457e648dd611d3dc2d77dc5}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_d_k_list_box_a6593ee4089e5def2a9ea30515fab2c63}{\index{D\-K\-List\-Box@{D\-K\-List\-Box}!Add\-Selection@{Add\-Selection}}
+\index{Add\-Selection@{Add\-Selection}!DKListBox@{D\-K\-List\-Box}}
+\subsubsection[{Add\-Selection}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-List\-Box\-::\-Add\-Selection (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-K\-String}}]{selection}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_list_box_a6593ee4089e5def2a9ea30515fab2c63}
+\hypertarget{class_d_k_list_box_a124fb64b9b4261f49384bc88e36f28d7}{\index{D\-K\-List\-Box@{D\-K\-List\-Box}!Add\-Selections@{Add\-Selections}}
+\index{Add\-Selections@{Add\-Selections}!DKListBox@{D\-K\-List\-Box}}
+\subsubsection[{Add\-Selections}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-List\-Box\-::\-Add\-Selections (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-K\-String\-Array}}]{strings}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_list_box_a124fb64b9b4261f49384bc88e36f28d7}
+\hypertarget{class_d_k_list_box_a21897ffe0a59bcf6c0f23cf3994a6ce7}{\index{D\-K\-List\-Box@{D\-K\-List\-Box}!Clear\-Selections@{Clear\-Selections}}
+\index{Clear\-Selections@{Clear\-Selections}!DKListBox@{D\-K\-List\-Box}}
+\subsubsection[{Clear\-Selections}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-List\-Box\-::\-Clear\-Selections (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_list_box_a21897ffe0a59bcf6c0f23cf3994a6ce7}
+\hypertarget{class_d_k_list_box_abe1fc4f32085bf2f20165c3d4c67a689}{\index{D\-K\-List\-Box@{D\-K\-List\-Box}!Create@{Create}}
+\index{Create@{Create}!DKListBox@{D\-K\-List\-Box}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-List\-Box\-::\-Create (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-K\-Object} $\ast$}]{parent, }
+\item[{{\bf D\-K\-Point}}]{pos, }
+\item[{{\bf D\-K\-Size}}]{siz, }
+\item[{{\bf D\-K\-Font} $\ast$}]{font}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_list_box_abe1fc4f32085bf2f20165c3d4c67a689}
+\hypertarget{class_d_k_list_box_a9a707abcab18a94da2fa024d6c132b05}{\index{D\-K\-List\-Box@{D\-K\-List\-Box}!Display@{Display}}
+\index{Display@{Display}!DKListBox@{D\-K\-List\-Box}}
+\subsubsection[{Display}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-List\-Box\-::\-Display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_k_list_box_a9a707abcab18a94da2fa024d6c132b05}
+
+
+Reimplemented from \hyperlink{class_d_k_object_a6c7afb48b29a473ecf68f2af29f17ca9}{D\-K\-Object}.
+
+\hypertarget{class_d_k_list_box_af4a4ab2ae39b17dff6a5d5fba63e33d2}{\index{D\-K\-List\-Box@{D\-K\-List\-Box}!Link\-List\-Box\-Event@{Link\-List\-Box\-Event}}
+\index{Link\-List\-Box\-Event@{Link\-List\-Box\-Event}!DKListBox@{D\-K\-List\-Box}}
+\subsubsection[{Link\-List\-Box\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-List\-Box\-::\-Link\-List\-Box\-Event (
+\begin{DoxyParamCaption}
+\item[{void($\ast$)(void $\ast$, {\bf D\-K\-Event} $\ast$)}]{List\-Box\-Event, }
+\item[{void $\ast$}]{arg, }
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{class_d_k_list_box_af4a4ab2ae39b17dff6a5d5fba63e33d2}
+\hypertarget{class_d_k_list_box_ac63823764b57c825508ebd8e9288467e}{\index{D\-K\-List\-Box@{D\-K\-List\-Box}!On\-Text\-Button@{On\-Text\-Button}}
+\index{On\-Text\-Button@{On\-Text\-Button}!DKListBox@{D\-K\-List\-Box}}
+\subsubsection[{On\-Text\-Button}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-List\-Box\-::\-On\-Text\-Button (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-K\-Event} $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_k_list_box_ac63823764b57c825508ebd8e9288467e}
+
+
+Reimplemented from \hyperlink{class_d_k_event_abce060932c2e6306209987a60b2886fe}{D\-K\-Event}.
+
+\hypertarget{class_d_k_list_box_a58541f57af036c35c9781e986364334b}{\index{D\-K\-List\-Box@{D\-K\-List\-Box}!Set\-Color@{Set\-Color}}
+\index{Set\-Color@{Set\-Color}!DKListBox@{D\-K\-List\-Box}}
+\subsubsection[{Set\-Color}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-List\-Box\-::\-Set\-Color (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-K\-Color}}]{rgba}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_k_list_box_a58541f57af036c35c9781e986364334b}
+
+
+Reimplemented from \hyperlink{class_d_k_object_ad7efc4ece83aad0ab6798e77b73cc33e}{D\-K\-Object}.
+
+\hypertarget{class_d_k_list_box_a513086fd2d7f6ddffe895b9cba8a3c3c}{\index{D\-K\-List\-Box@{D\-K\-List\-Box}!Set\-Position@{Set\-Position}}
+\index{Set\-Position@{Set\-Position}!DKListBox@{D\-K\-List\-Box}}
+\subsubsection[{Set\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void D\-K\-List\-Box\-::\-Set\-Position (
+\begin{DoxyParamCaption}
+\item[{{\bf D\-K\-Point}}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_d_k_list_box_a513086fd2d7f6ddffe895b9cba8a3c3c}
+
+
+Reimplemented from \hyperlink{class_d_k_object_afe058d7da128d03e09339f6e5a342456}{D\-K\-Object}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_d_k_list_box_a5e1637d160e99de9a037db5a2fa01e32}{\index{D\-K\-List\-Box@{D\-K\-List\-Box}!current\-\_\-selection@{current\-\_\-selection}}
+\index{current\-\_\-selection@{current\-\_\-selection}!DKListBox@{D\-K\-List\-Box}}
+\subsubsection[{current\-\_\-selection}]{\setlength{\rightskip}{0pt plus 5cm}int D\-K\-List\-Box\-::current\-\_\-selection}}\label{class_d_k_list_box_a5e1637d160e99de9a037db5a2fa01e32}
+\hypertarget{class_d_k_list_box_a12ab490712636fff3dce5bbcaf3cc129}{\index{D\-K\-List\-Box@{D\-K\-List\-Box}!m\-\_\-arg@{m\-\_\-arg}}
+\index{m\-\_\-arg@{m\-\_\-arg}!DKListBox@{D\-K\-List\-Box}}
+\subsubsection[{m\-\_\-arg}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ D\-K\-List\-Box\-::m\-\_\-arg}}\label{class_d_k_list_box_a12ab490712636fff3dce5bbcaf3cc129}
+\hypertarget{class_d_k_list_box_a202a56d1285c4c8a54972d174aa06433}{\index{D\-K\-List\-Box@{D\-K\-List\-Box}!m\-\_\-font@{m\-\_\-font}}
+\index{m\-\_\-font@{m\-\_\-font}!DKListBox@{D\-K\-List\-Box}}
+\subsubsection[{m\-\_\-font}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-K\-Font}$\ast$ D\-K\-List\-Box\-::m\-\_\-font}}\label{class_d_k_list_box_a202a56d1285c4c8a54972d174aa06433}
+\hypertarget{class_d_k_list_box_ae6665f42ad516fa0ce5471136a5be0ac}{\index{D\-K\-List\-Box@{D\-K\-List\-Box}!On\-List\-Box@{On\-List\-Box}}
+\index{On\-List\-Box@{On\-List\-Box}!DKListBox@{D\-K\-List\-Box}}
+\subsubsection[{On\-List\-Box}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ D\-K\-List\-Box\-::\-On\-List\-Box)(void $\ast$, {\bf D\-K\-Event} $\ast$)}}\label{class_d_k_list_box_ae6665f42ad516fa0ce5471136a5be0ac}
+\hypertarget{class_d_k_list_box_a913eb79de209938ce6ee29ce84112971}{\index{D\-K\-List\-Box@{D\-K\-List\-Box}!selections@{selections}}
+\index{selections@{selections}!DKListBox@{D\-K\-List\-Box}}
+\subsubsection[{selections}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf D\-K\-Text\-Button}$\ast$$>$ D\-K\-List\-Box\-::selections}}\label{class_d_k_list_box_a913eb79de209938ce6ee29ce84112971}
+\hypertarget{class_d_k_list_box_acac57a4ff43952d752bb7f7bc03df46c}{\index{D\-K\-List\-Box@{D\-K\-List\-Box}!square@{square}}
+\index{square@{square}!DKListBox@{D\-K\-List\-Box}}
+\subsubsection[{square}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\-K\-Square} D\-K\-List\-Box\-::square}}\label{class_d_k_list_box_acac57a4ff43952d752bb7f7bc03df46c}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+G\-:/\-Programming/\-Digital\-Knob/\-Libs/digitalknob/\hyperlink{_d_k_list_box_8h}{D\-K\-List\-Box.\-h}\item 
+G\-:/\-Programming/\-Digital\-Knob/\-Libs/digitalknob/\hyperlink{_d_k_list_box_8cpp}{D\-K\-List\-Box.\-cpp}\end{DoxyCompactItemize}
